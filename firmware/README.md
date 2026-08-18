@@ -1,94 +1,56 @@
 # Firmware
 
-## Milestone 1 Status
+This PlatformIO project has two independent build targets. The original NMEA
+scanner remains in `src/main.cpp` unchanged, while the bench-test gauge is
+isolated under `src/simulated_gauge/`.
 
-The first firmware is intentionally a simple receive-only NMEA 2000 scanner.
+## Choose a target
 
-It uses the ESP32-S3 TWAI peripheral directly rather than adding the NMEA2000 library immediately. This lets us verify the physical CAN connection, source addresses, PGNs, and update rates with the smallest possible software stack.
-
-## Current Decoding
-
-The scanner currently decodes single-frame PGNs:
-
-- 127488 - Engine Parameters, Rapid Update
-  - engine instance
-  - RPM
-  - trim
-- 127505 - Fluid Level
-  - fuel tank instance
-  - level
-  - capacity
-- 129026 - COG & SOG, Rapid Update
-  - GPS speed
-  - course
-
-It also counts every observed PGN/source pair whether or not the PGN is decoded.
-
-## Not Yet Decoded
-
-PGN 127489 (Engine Parameters, Dynamic) is larger than one CAN frame and requires NMEA 2000 fast-packet reassembly. That is the next parser step after basic CAN reception is proven.
-
-Expected future fields include:
-- coolant temperature
-- alternator voltage
-- fuel rate
-- engine hours
-- engine load/torque where available
-- engine status/warning bits
-
-## Toolchain
-
-Initial project:
-- PlatformIO
-- Arduino framework
-- PlatformIO Espressif32 7.0.1
-- generic `esp32-s3-devkitc-1` profile with Waveshare flash/PSRAM overrides
-
-The Waveshare board is an ESP32-S3-WROOM-1-N16R8 (16 MB flash, 8 MB OPI PSRAM). If the initial PlatformIO profile does not correctly initialize the exact Waveshare memory configuration, replace it with a custom board JSON based on the Waveshare hardware before UI development.
-
-## CAN Configuration
-
-Waveshare onboard CAN:
-- GPIO15 = TX
-- GPIO16 = RX
-- 250 kbit/s
-- ESP32 TWAI listen-only mode
-
-The Waveshare CAN termination switch must remain OFF when the unit is attached as a normal drop device to the existing NMEA 2000 backbone.
-
-## Build
-
-From the `firmware` directory:
+The simulated gauge is the default and requires no boat connection:
 
 ```bash
-pio run
+pio run -e simulated-gauge
+pio run -e simulated-gauge -t upload
+pio device monitor -b 115200
 ```
 
-Upload over USB:
+Build and upload the original receive-only NMEA scanner with:
 
 ```bash
-pio run -t upload
+pio run -e nmea-scanner
+pio run -e nmea-scanner -t upload
+pio device monitor -b 115200
 ```
 
-Serial monitor:
+| Target | Entry point | Purpose |
+|---|---|---|
+| `nmea-scanner` | `src/main.cpp` | Original receive-only TWAI/NMEA scanner |
+| `simulated-gauge` | `src/simulated_gauge/main.cpp` | LCD UI using generated engine data |
 
-```bash
-pio device monitor
-```
+PlatformIO's `build_src_filter` compiles exactly one `setup()`/`loop()` pair.
+The original scanner is not overwritten or modified.
 
-## First Boat Test
+## Simulated screen
 
-1. Leave the Waveshare CAN termination resistor disabled.
-2. Power the Waveshare from USB.
-3. Connect CAN-H, CAN-L, and network reference/ground to the NMEA drop cable.
-4. Start the serial monitor at 115200 baud.
-5. Power the boat NMEA 2000 network.
-6. Verify PGNs begin appearing in the statistics output.
-7. Turn the Yamaha ignition/engine on.
-8. Confirm PGN 127488 appears and RPM agrees with the Garmin/Yamaha display.
-9. Change trim and confirm the decoded trim value responds.
-10. Save the serial output as the first real network capture.
+The 800x480 single-engine screen includes RPM, speed, trim, engine temperature,
+oil pressure, battery voltage, fuel flow, engine hours, and engine status. The
+simulator follows an approximately 45-second idle-to-cruise-to-idle cycle.
 
-## Safety
+Display stack:
 
-This is development instrumentation. Do not treat the custom display as a replacement for required Yamaha warning, control, or safety instrumentation.
+- Waveshare ESP32-S3-Touch-LCD-5, 800x480 variant
+- Espressif `ESP32_Display_Panel` 1.0.0
+- LVGL 8.3.11
+- 16 MB flash and 8 MB OPI PSRAM configuration
+
+## First boat test safety
+
+1. Build and flash `nmea-scanner`, not `simulated-gauge`.
+2. Leave the Waveshare CAN termination resistor disabled.
+3. Power the Waveshare from USB.
+4. Connect CAN-H, CAN-L, and network reference/ground to the NMEA drop cable.
+5. Open the serial monitor at 115200 baud.
+6. Power the NMEA 2000 network and verify traffic before starting the engine.
+
+This is development instrumentation, not a replacement for required Yamaha
+warning, control, or safety instrumentation.

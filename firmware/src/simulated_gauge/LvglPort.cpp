@@ -1,5 +1,6 @@
 #include "LvglPort.h"
 
+#include <Arduino.h>
 #include <esp_heap_caps.h>
 #include <esp_timer.h>
 #include <freertos/FreeRTOS.h>

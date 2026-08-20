@@ -16,6 +16,9 @@ Key characteristics from Waveshare documentation:
 - onboard CAN termination switch, disabled by default
 - USB-C 5 V power/programming
 - optional 7-36 V DC input
+- two isolated 5-36 V open-drain digital outputs
+
+The board does not include a buzzer, speaker, or audio amplifier.
 
 ## CAN Pins
 
@@ -25,6 +28,12 @@ Waveshare documents:
 - GPIO16 = CAN RX
 
 The board includes the physical CAN transceiver, so an additional MCP2515 or external CAN controller is not required for the prototype.
+
+## Audible Warning Hardware
+
+Add an external waterproof or panel-sealed 5-12 V active piezo buzzer controlled by isolated digital output DO0. The selected buzzer should draw less than 100 mA and be loud enough to hear at the helm during an underway test.
+
+DO1 remains available as a spare. The buzzer is an externally powered load and must not be connected directly to an ESP32 GPIO. See [Audible Warning System](Audible-Warnings.md) and [Prototype Wiring Design](Wiring.md) for switching, protection, patterns, and validation.
 
 ## Boat Power
 
@@ -69,6 +78,7 @@ Use:
 - Waveshare onboard CAN transceiver
 - USB battery power
 - short NMEA 2000 drop cable
+- active piezo buzzer on DO0 after dockside electrical validation
 
 ### Permanent Marine Version
 
@@ -79,6 +89,7 @@ Evaluate:
 - sealed external connector
 - conformal coating
 - pressure-equalized sealed enclosure
+- sealed buzzer mounting that remains audible without creating a water path
 
 ## Primary Hardware References
 

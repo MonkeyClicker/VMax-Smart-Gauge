@@ -108,6 +108,10 @@ Show:
 - SD status
 - Wi-Fi/OTA status
 - data age/staleness information
+- buzzer DO0 commanded state
+- active alarm priority/pattern phase
+- alarm acknowledgement and silence timer
+- recent alarm history and source PGN
 
 ## Settings Screen
 
@@ -122,6 +126,12 @@ Planned settings:
 - logging options
 - OTA service mode
 - engine source/instance selection if needed
+- master audible alarms
+- touch-feedback chirp
+- night quiet-mode behavior
+- alarm silence duration
+- provisional alarm thresholds
+- dockside buzzer-pattern test
 
 ## Stale and Missing Data
 
@@ -141,9 +151,20 @@ Examples:
 
 Engine warning/status data should be visually distinct from ordinary UI notices. The display must not imply that a warning has been validated until its corresponding NMEA status behavior has been confirmed on the boat.
 
+| Priority | Audible pattern | Visual treatment |
+| --- | --- | --- |
+| Feedback | One 75 ms chirp | Normal touch feedback |
+| Advisory | 250 ms on, 1750 ms off | Amber banner/icon |
+| Warning | Three 250 ms pulses, repeated every 3 seconds | Red warning banner |
+| Critical | Continuous, with a 100 ms gap every 2 seconds | Full red critical overlay |
+
+Touching a warning opens its detail panel. A Silence action temporarily stops its sound but leaves the warning visible. A new higher-priority condition overrides silence. An acknowledged condition sounds again if it clears and later returns.
+
+See [Audible Warning System](Audible-Warnings.md) for complete priority, persistence, and validation rules.
+
 ## Day/Night Behavior
 
-Day mode should prioritize sunlight readability. Night mode should substantially reduce backlight and bright screen area to protect night vision. Manual override should always be available.
+Day mode should prioritize sunlight readability. Night mode should substantially reduce backlight and bright screen area to protect night vision. Manual override should always be available. Quiet mode may suppress feedback and selected advisories, but must not silently suppress validated critical alarms.
 
 ## Mockup Direction
 

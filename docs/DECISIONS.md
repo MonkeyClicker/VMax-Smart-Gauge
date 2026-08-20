@@ -84,3 +84,20 @@ Initial screens:
 5. Settings/System
 
 The interface will be inspired by the Yamaha 6YC but can add functionality such as cruise optimization and detailed logging.
+
+## 2026-08-20 - Audible Warning System
+
+Add an external waterproof or panel-sealed active piezo buzzer because the Waveshare board has no onboard audio device.
+
+Design decisions:
+
+- switch the externally powered buzzer with isolated open-drain output DO0
+- reserve DO1 as a spare
+- keep buzzer load below 100 mA and protect the supply with a dedicated fuse
+- implement non-blocking feedback, advisory, warning, and critical patterns
+- allow temporary silence without clearing visual warnings
+- let higher-priority or returning alarms sound again
+- keep thresholds configurable and provisional until validated
+- treat the custom audible system as supplemental to Yamaha/Garmin warnings
+
+See [Audible Warning System](Audible-Warnings.md) for the complete design and validation plan.

@@ -54,6 +54,23 @@ The firmware should derive additional values from NMEA data, including:
 - Manual brightness override
 - Clearly distinguish unavailable, stale, and valid zero values
 
+## Audible Warning Requirements
+
+- Use an external active piezo buzzer; the selected display board has no onboard audio device
+- Switch the buzzer through isolated digital output DO0, not directly from an ESP32 GPIO
+- Provide distinct patterns for touch feedback, advisory, warning, and critical conditions
+- Generate patterns with a non-blocking state machine
+- Higher-priority warnings shall preempt lower-priority sounds
+- Allow acknowledgement and temporary silence without clearing the visual warning
+- A new higher-priority warning shall cancel temporary silence
+- Returning conditions shall sound again after clearing
+- Provide a dockside test for every warning pattern
+- Persist alarm settings across restart and OTA
+- Keep thresholds configurable and provisional until validated
+- Treat audible alarms as supplemental until compared against Yamaha/Garmin warning behavior
+
+Detailed behavior is defined in [Audible Warning System](Audible-Warnings.md).
+
 ## NMEA 2000 Requirements
 
 - Connect as a normal NMEA 2000 drop device
@@ -103,6 +120,7 @@ Initial PGNs of interest:
 - Use a hydrophobic/ePTFE pressure equalization vent
 - Consider conformal coating as secondary PCB protection
 - Provide sealed cable entry or waterproof connectors
+- Mount the buzzer without creating an uncontrolled water path and verify installed sound level
 
 ## Safety and Reliability Requirements
 
@@ -111,4 +129,6 @@ Initial PGNs of interest:
 - Show NMEA offline/data unavailable state
 - Handle brownouts and restarts cleanly
 - Preserve trip data safely
+- Default the buzzer output to off during boot, reset, OTA, and recovery
+- Audible warning processing must not delay CAN reception, display refresh, logging, or watchdog service
 - Treat the custom display as supplemental until warning/status behavior has been validated against the existing Yamaha/Garmin installation

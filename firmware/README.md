@@ -32,9 +32,29 @@ The targets remain independent; simulated values are never fed into the scanner.
 
 ## Simulated screen
 
-The 800x480 single-engine screen includes RPM, speed, trim, engine temperature,
-oil pressure, battery voltage, fuel flow, engine hours, and engine status. The
-simulator follows an approximately 45-second idle-to-cruise-to-idle cycle.
+The 800x480 single-engine demo uses five touch-selectable pages with a persistent
+bottom navigation bar and status banner. The simulator follows an approximately
+45-second idle-to-cruise-to-idle cycle.
+
+| Page | Content and controls |
+|---|---|
+| Engine | Large tachometer; speed, trim, flow, temperature, oil, course, tank level, voltage, hours, economy |
+| Performance | Current RPM/speed/flow/economy, best cruise RPM and trim, observed best economy by RPM band |
+| Trip | Elapsed time, integrated distance/fuel, average economy, maximum speed/RPM, two-tap trip reset |
+| Diagnostics | Honest demo input/service states, data age, uptime, memory, touch events, visual warning acknowledgement |
+| Settings | US/marine/metric units, day/night palette, normal/warning/offline/unavailable demo scenarios |
+
+Tap the status banner to open Diagnostics. Acknowledging a demo warning leaves it
+visible; no buzzer is driven. Offline mode marks live values `STALE` and pauses
+distance/fuel integration. Unavailable mode hides tank data with `--` while the
+remaining inputs continue. Trip reset requires a second tap within five seconds;
+it preserves the simulated tank level and lifetime engine hours.
+
+All values are generated. The example tank is 60 US gallons, starting at 68%; this
+is not the boat's configured capacity. Cruise observations begin above 2000 RPM.
+Settings and trip totals are not persisted. Night mode changes the palette only,
+not physical backlight brightness. CAN/NMEA, SD, Wi-Fi/OTA, and buzzer services
+are inactive in this target.
 
 Display stack:
 
@@ -64,6 +84,40 @@ Bench verification on 2026-10-05: the firmware built and uploaded successfully,
 the user confirmed the visible gauge and changing values, and serial heartbeats
 continued beyond 55 seconds with stable memory readings. CAN/NMEA and SD logging
 were not validated by this simulated-gauge test.
+
+### Multi-page bench checks
+
+Automated verification on 2026-10-05: build/upload and simulator regression checks
+passed on the Waveshare. All five pages passed label text-fit/bounds checks, as did
+the checked metric/marine layouts and warning/offline/unavailable/night states.
+Repeated page changes returned to the same Engine-page LVGL allocation; free
+device heap stayed at 118052 bytes and free PSRAM at 6829964 bytes during the run,
+with continuous heartbeat uptime past 65 seconds. The user also confirmed that
+the multi-page version looks good and touch navigation is responsive.
+
+1. Tap all five navigation tabs and confirm responsive navigation and legible values.
+2. Select each unit preset; speed, distance, fuel, temperature, oil pressure, and
+   economy should convert consistently across pages.
+3. Select Warning, tap the banner, and acknowledge it in Diagnostics. The warning
+   stays visible. Return to Normal to clear the demonstration condition.
+4. Select Offline and confirm stale fields and frozen trip distance/fuel. Return
+   to Normal and confirm accumulation resumes without inventing totals for the gap.
+5. Select Unavailable and confirm only tank level becomes unavailable.
+6. Try a trip reset once, wait five seconds, and confirm no reset occurred. Then
+   tap reset twice within five seconds and confirm totals reset without refilling
+   the tank or resetting engine hours.
+7. Repeatedly navigate and change units/theme while monitoring memory and uptime.
+
+Optional serial commands at 115200: `1`-`5` select pages; `N/W/O/U` choose demo
+scenarios; `u/k/m` choose unit presets; `d/n` select day/night; `a` acknowledges;
+two `r` commands within five seconds reset the trip. `t` runs portable simulator
+regression checks; `v` checks current label bounds/text fit and reports LVGL memory.
+The same simulator checks can run on a host with a C++17 compiler:
+
+```bash
+c++ -std=c++17 -Wall -Wextra -Werror firmware/test/host/simulated_gauge_test.cpp firmware/src/simulated_gauge/SimulatedEngineData.cpp -o /tmp/vmax-simulated-test
+/tmp/vmax-simulated-test
+```
 
 ## First boat test safety
 

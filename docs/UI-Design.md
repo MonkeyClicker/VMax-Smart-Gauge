@@ -169,3 +169,34 @@ Day mode should prioritize sunlight readability. Night mode should substantially
 ## Mockup Direction
 
 The current preferred mockup direction is a single large tachometer with stacked engine metrics on the right and a compact status strip along the bottom. Multi-engine layouts are explicitly out of scope for the first version.
+
+## Multi-page simulated prototype
+
+The simulated-gauge target implements the five planned pages with fixed, large
+bottom touch tabs. A shared top bar identifies the current page and labels all
+input as simulated. A persistent status banner opens Diagnostics, including a
+visual acknowledgement control for the explicit demo warning scenario.
+
+- Engine retains the large tachometer and puts primary engine/navigation values
+  beside it, with fuel, voltage, hours, and economy in the bottom summary strip.
+- Performance shows current readings plus best observed cruise economy and a
+  six-band RPM table. These are generated observations, not prop recommendations.
+- Trip integrates speed and flow over time. Its two-tap reset expires after five
+  seconds and preserves lifetime hours and remaining tank level.
+- Diagnostics distinguishes generated input from the inactive CAN, SD, Wi-Fi,
+  OTA, and buzzer services. It also shows real device uptime/memory and UI events.
+- Settings selects US, marine, or metric units, a day/night palette, and explicit
+  normal, warning, offline, or unavailable-tank scenarios.
+
+Offline inputs appear as `STALE` rather than frozen current values, while historical
+trip totals remain visible. Distance and fuel accumulation pause across input gaps.
+Unavailable tank level appears as `--`; a valid stationary speed remains zero.
+
+Only the active page's objects exist at a time to bound LVGL memory use. All
+creation, navigation, and updates use the existing LVGL lock. Hardware initialization
+and the NMEA scanner target are unchanged. This prototype does not persist settings
+or trip data, change physical backlight brightness, or activate connected services.
+
+On 2026-10-05, the multi-page prototype built and uploaded successfully, passed
+on-device simulator and label-layout checks with stable memory, and was confirmed
+by the user to look good and respond to touch navigation.

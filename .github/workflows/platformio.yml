@@ -17,6 +17,15 @@ permissions:
   contents: read
 
 jobs:
+  scanner-tests:
+    name: Scanner regression tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Run host parser and diagnostics tests
+        run: bash firmware/test/host/run.sh
+
   build:
     name: Build ${{ matrix.environment }}
     runs-on: ubuntu-latest

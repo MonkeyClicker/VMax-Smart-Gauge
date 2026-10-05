@@ -40,8 +40,30 @@ Display stack:
 
 - Waveshare ESP32-S3-Touch-LCD-5, 800x480 variant
 - Espressif `ESP32_Display_Panel` 1.0.0
-- LVGL 8.3.11
+- LVGL 8.4.0
 - 16 MB flash and 8 MB OPI PSRAM configuration
+
+See [Waveshare display setup and troubleshooting](../docs/Waveshare-Setup.md)
+for the verified bench configuration, USB recovery steps, and display diagnostics.
+
+The simulated target enables native USB CDC with hardware CDC/JTAG
+(`ARDUINO_USB_CDC_ON_BOOT=1`, `ARDUINO_USB_MODE=1`). Mode 1 is confirmed by
+the installed Arduino-ESP32 core. Startup
+messages report flash/PSRAM sizes and each display initialization stage, followed
+by a `Gauge alive` message every five seconds. If output does not resume after
+upload, close the monitor, press RESET without BOOT, reselect the USB port, and
+reopen the monitor at 115200 baud. Confirm the gauge values change through a
+45-second cycle; a successful build alone does not verify the display.
+
+The target also selects the Waveshare board explicitly in its build flags so
+the display library receives the same board selection as the application.
+Relying on discovery of the project configuration header alone can produce
+`Display board init failed` even after a clean build.
+
+Bench verification on 2026-10-05: the firmware built and uploaded successfully,
+the user confirmed the visible gauge and changing values, and serial heartbeats
+continued beyond 55 seconds with stable memory readings. CAN/NMEA and SD logging
+were not validated by this simulated-gauge test.
 
 ## First boat test safety
 

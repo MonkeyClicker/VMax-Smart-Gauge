@@ -5,6 +5,7 @@
 #include <freertos/task.h>
 
 #include "Scanner.h"
+#include "scanner/ScannerScreen.h"
 
 namespace {
 constexpr gpio_num_t CAN_TX_PIN = GPIO_NUM_15;
@@ -22,6 +23,8 @@ struct Snapshot {
 Snapshot current;
 QueueHandle_t snapshotQueue = nullptr;
 uint32_t lastReportMs = 0;
+uint32_t lastScreenMs = 0;
+ScannerScreenStatus screenStatus;
 
 void printValue(const TimedDouble &value, uint32_t nowMs, const char *units) {
     if (!value.seen) Serial.print("UNKNOWN");
@@ -80,6 +83,8 @@ void loggerTask(void *) {
                           static_cast<unsigned long>(snapshot.can.bus_error_count),
                           static_cast<unsigned long>(snapshot.can.rx_error_counter));
         } else Serial.println("CAN status unavailable");
+        Serial.printf("SCREEN refreshes=%lu free heap=%u free PSRAM=%u\n",
+                      static_cast<unsigned long>(scannerScreenRefreshCount()), ESP.getFreeHeap(), ESP.getFreePsram());
     }
 }
 
@@ -109,6 +114,10 @@ void setup() {
     delay(1500);
     Serial.println("V MAX Smart Gauge - NMEA 2000 Scanner");
     Serial.println("CAN TX=GPIO15 RX=GPIO16, 250 kbit/s, LISTEN ONLY");
+    if (!startScannerScreen()) {
+        Serial.println("Display initialization FAILED. Scanner stopped.");
+        while (true) delay(1000);
+    }
     snapshotQueue = xQueueCreate(1, sizeof(Snapshot));
     if (!snapshotQueue || xTaskCreate(loggerTask, "scanner_log", 8192, nullptr, 1, nullptr) != pdPASS) {
         Serial.println("Logger initialization FAILED. Scanner stopped.");
@@ -130,9 +139,30 @@ void loop() {
         const uint32_t pgn = scanner::extractPgn(message.identifier);
         const uint8_t source = message.identifier & 0xFF;
         current.stats.record(pgn, source, nowMs);
+        ++screenStatus.frames;
+        screenStatus.lastFrameMs = nowMs;
         scanner::decode(current.boat, pgn, source, message.data, message.data_length_code, nowMs);
     }
     const uint32_t nowMs = millis();
+    if (uint32_t(nowMs - lastScreenMs) >= 80) {
+        lastScreenMs = nowMs;
+        screenStatus.heartbeatMs = nowMs;
+        twai_status_info_t can{};
+        screenStatus.canStatusValid = twai_get_status_info(&can) == ESP_OK;
+        screenStatus.canRunning = screenStatus.canStatusValid && can.state == TWAI_STATE_RUNNING;
+        screenStatus.busErrors = can.bus_error_count;
+        screenStatus.losses = can.rx_missed_count + can.rx_overrun_count;
+        screenStatus.trackedPgns = 0;
+        for (size_t i = 0; i < scanner::MAX_TRACKED_PGNS; ++i) {
+            if (!current.stats.entries[i].used) continue;
+            bool duplicate = false;
+            for (size_t j = 0; j < i; ++j)
+                if (current.stats.entries[j].used && current.stats.entries[j].pgn == current.stats.entries[i].pgn)
+                    duplicate = true;
+            if (!duplicate) ++screenStatus.trackedPgns;
+        }
+        publishScannerScreen(screenStatus);
+    }
     if (uint32_t(nowMs - lastReportMs) >= scanner::RATE_WINDOW_MS) {
         current.nowMs = nowMs;
         current.canStatusValid = twai_get_status_info(&current.can) == ESP_OK;
@@ -140,5 +170,6 @@ void loop() {
         xQueueOverwrite(snapshotQueue, &current);
         current.stats.resetWindow(nowMs);
         lastReportMs = nowMs;
+        // Serial diagnostics run in loggerTask so USB backpressure cannot stall reception.
     }
 }

@@ -24,7 +24,7 @@ pio device monitor -b 115200
 
 | Target | Entry point | Purpose |
 |---|---|---|
-| `nmea-scanner` | `src/main.cpp` | Original receive-only TWAI/NMEA scanner |
+| `nmea-scanner` | `src/main.cpp` | Receive-only TWAI/NMEA scanner with blue activity screen |
 | `simulated-gauge` | `src/simulated_gauge/main.cpp` | LCD UI using generated engine data |
 
 PlatformIO's `build_src_filter` compiles exactly one `setup()`/`loop()` pair.
@@ -78,6 +78,40 @@ This is development instrumentation, not a replacement for required Yamaha
 warning, control, or safety instrumentation.
 
 ## Scanner diagnostics
+
+Bench verification on 2026-10-06: `nmea-scanner` built and uploaded to the
+Waveshare on COM6. The scanner target now enables native USB CDC with hardware
+CDC/JTAG, matching the verified USB configuration. Repeated five-second snapshots
+reported CAN running with zero missed frames, overruns, bus errors, and receive
+errors. No PGN traffic was observed; boat-network reception remains unverified.
+The initial serial-only test preceded the scanner activity screen described below.
+
+### Blue scanner activity screen
+
+The scanner now initializes the verified Waveshare display stack and shows a
+navy/cyan turbine-style segmented ring, receive-loop status, network traffic
+status, total received extended data frames, distinct currently tracked PGNs,
+cumulative CAN bus errors, uptime, and cumulative missed/overrun frames.
+Tracked PGNs are deduplicated across source addresses in the bounded 64-row
+statistics table; they are not a lifetime distinct-PGN count.
+
+The ring advances from receive-loop heartbeats, rather than an independent
+animation. After 1.5 seconds without a heartbeat it stops and shows `STALLED`.
+CAN stopped/unknown states also stop the ring. Network status distinguishes
+never-seen traffic, current traffic, and traffic stale for five seconds.
+Rendering uses a nonblocking latest-status mailbox and a separate LVGL task;
+serial logging remains separate from reception. The scanner shares only the
+display port with the simulated target; it does not use simulated engine data.
+Startup serial diagnostics check label bounds/text fit, and snapshots include
+screen refresh count and free memory. This display does not add SD logging.
+
+Blue-screen bench verification on 2026-10-06: build/upload passed, board/LCD
+initialization succeeded, and startup label bounds/text-fit checks reported zero
+errors. Repeated snapshots through 37 seconds showed increasing screen refresh
+counts, CAN running, zero CAN errors/losses, and stable free heap (106312 bytes)
+and free PSRAM (6894332 bytes). No network traffic was observed. The user
+confirmed the physical scanner screen looks good. Boat-network reception
+remains unverified.
 
 The scanner emits a snapshot every five seconds rather than printing every CAN
 frame. CAN reception and serial output run separately: a blocked serial host does

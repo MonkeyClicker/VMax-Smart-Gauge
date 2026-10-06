@@ -54,6 +54,12 @@ struct FuelData {
 
 ## System State
 
+The planned [Fuel Configuration](Fuel-Configuration.md) feature adds configured tank
+capacity and a persistent manual inventory alongside raw network FuelData. Keep
+network capacity/percentage, configured capacity, manual remaining volume and selected
+display source distinct. Track inventory baseline, quality and committed consumption
+sequence independently of trip totals.
+
 Track separately from engine values:
 
 - CAN initialized

@@ -69,6 +69,11 @@ Exact thresholds are configuration values, not assumptions embedded in UI code. 
 
 ## Acknowledge, Silence, and Recovery
 
+All detected alarm conditions and their lifecycle transitions shall be recorded
+persistently and available in an on-screen history view, regardless of audible
+enablement or priority preemption. See [Alarm Logging and History](Alarm-History.md)
+for occurrence identity, timestamps, recovery, export and retention.
+
 - Touching the visible warning opens an alarm detail panel.
 - The operator may silence the current audible alarm for a configurable period.
 - Silencing does not clear the visual warning or the underlying condition.

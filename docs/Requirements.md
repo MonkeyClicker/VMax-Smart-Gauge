@@ -45,6 +45,29 @@ The firmware should derive additional values from NMEA data, including:
 
 ## Display Requirements
 
+- The screen shall turn off after five minutes without engine data or touch activity.
+- Returning selected-engine data shall automatically wake the screen.
+- Selected-engine data shall keep the screen awake even when RPM is zero.
+- Touch shall wake the screen if supported by the validated display configuration.
+- The first touch while asleep shall wake only; a subsequent touch shall operate controls.
+- Screen standby shall preserve CAN reception, trip/fuel accounting and logging.
+
+See [Screen Sleep and Wake](Screen-Sleep-and-Wake.md) for timeout semantics,
+touch handling, hardware validation and proposed service/alarm exceptions.
+
+- Fuel capacity shall be configurable in positive whole US gallons from Settings.
+- The Engine screen shall compute and display remaining US gallons without percentage.
+- Fuel Configuration shall support setting current contents in eighth-tank increments,
+  adding a specified number of gallons, and setting FULL without network level data.
+- Add Fuel shall accept positive whole US gallons; computed remaining volume may be fractional.
+- Settings shall explicitly select Network or Manual fuel source; returning network
+  data shall not overwrite the manual estimate or automatically switch sources.
+- Tank configuration and manual contents shall persist independently of trip resets,
+  daily rollover, mode changes, restart and OTA.
+
+See [Fuel Configuration](Fuel-Configuration.md) for source selection,
+consumption accounting, input validation and engineering validation requirements.
+
 - Single-engine display only for the initial implementation
 - 5-inch 800x480 capacitive touchscreen
 - Main screen optimized for quick helm visibility
@@ -55,6 +78,15 @@ The firmware should derive additional values from NMEA data, including:
 - Clearly distinguish unavailable, stale, and valid zero values
 
 ## Audible Warning Requirements
+
+- Log every detected Advisory, Warning and Critical alarm, including concurrent
+  conditions and alarms whose audible output is disabled or silenced.
+- Provide on-screen persistent alarm history and occurrence details.
+- Record activation, acknowledgement, silence, severity changes, confirmed clear
+  and observation interruption without treating unavailable data as a clear.
+- Preserve alarm history independently of trip resets, restart and OTA.
+
+See [Alarm Logging and History](Alarm-History.md) for the detailed feature design.
 
 - Use an external active piezo buzzer; the selected display board has no onboard audio device
 - Switch the buzzer through isolated digital output DO0, not directly from an ESP32 GPIO
@@ -90,6 +122,21 @@ Initial PGNs of interest:
 - 129029 - GNSS Position Data
 
 ## Logging Requirements
+
+- Trip mode shall be selected in Settings: Manual reset or Automatic local-day rollover.
+- Automatic shall preserve the day's recorded totals across gauge restarts.
+- Changing modes shall save the current trip and start a new trip in the selected mode.
+- Both modes shall produce summary-only CSV logs for local Wi-Fi download and SD copy.
+- Daily boundaries shall use local midnight and a time zone selected in Settings.
+- Automatic shall be the initial default; the selected mode shall persist thereafter.
+- Manual and Automatic activity shall be attributed and logged separately.
+- Trip time shall accumulate confirmed engine-running time, including idle time.
+- Recovery shall lose at most 30 seconds of recent data on sudden power removal
+  during normal storage operation; storage faults shall be reported visibly.
+- Logs shall remain until explicitly deleted, without automatic expiry or overwrite.
+
+See [Trip Modes and Logging](Trip-Modes-and-Logging.md) for persistence, clock handling,
+export behavior and engineering validation requirements.
 
 - microSD logging
 - portable log format, initially CSV

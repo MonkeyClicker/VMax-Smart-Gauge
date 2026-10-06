@@ -31,6 +31,12 @@ Recommended home-screen fields:
 
 Calculated economy should also be available prominently when underway.
 
+The planned fuel card displays remaining US gallons without percentage, computed
+from configured tank capacity and the explicitly selected Network/Manual source.
+Settings gains whole-US-gallon capacity/addition inputs, eighth-tank level,
+Add Fuel and FULL controls; see [Fuel Configuration](Fuel-Configuration.md).
+This extends the percentage-only simulated prototype described below.
+
 ## Suggested Main Layout
 
 ```text
@@ -84,6 +90,10 @@ RPM     MPH     GPH     MPG     TRIM
 
 ## Trip Screen
 
+The planned persistent Automatic/Manual modes, Settings controls, daily rollover,
+summary logs and export flows are defined in [Trip Modes and Logging](Trip-Modes-and-Logging.md).
+These extend the session-only prototype described below.
+
 Show:
 
 - elapsed trip time
@@ -95,6 +105,10 @@ Show:
 - best cruise economy
 
 ## Diagnostics Screen
+
+Add an Alarm History action with severity/date filters and occurrence details;
+see [Alarm Logging and History](Alarm-History.md). History persists across restarts
+and shows active, cleared and interrupted conditions separately.
 
 Show:
 
@@ -120,6 +134,7 @@ Planned settings:
 - MPH / knots
 - Fahrenheit / Celsius
 - gallons / liters
+- fuel configuration: capacity in gallons, current level by eighths, Add Fuel and FULL
 - day brightness
 - night brightness
 - automatic day/night mode
@@ -163,6 +178,10 @@ Touching a warning opens its detail panel. A Silence action temporarily stops it
 See [Audible Warning System](Audible-Warnings.md) for complete priority, persistence, and validation rules.
 
 ## Day/Night Behavior
+
+The planned [Screen Sleep and Wake](Screen-Sleep-and-Wake.md) feature turns the
+backlight off after five minutes without selected-engine data or touch and restores
+the current page and day/night preference on engine-data or touch wake.
 
 Day mode should prioritize sunlight readability. Night mode should substantially reduce backlight and bright screen area to protect night vision. Manual override should always be available. Quiet mode may suppress feedback and selected advisories, but must not silently suppress validated critical alarms.
 

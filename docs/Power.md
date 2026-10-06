@@ -29,6 +29,11 @@ Use a stable 5 V USB source with adequate margin for the ESP32-S3, display backl
 
 ## Firmware Power Behavior
 
+Planned [Screen Sleep and Wake](Screen-Sleep-and-Wake.md) uses backlight-off display
+standby after five minutes without engine data or touch. CAN reception, touch
+detection, trip/fuel state and logging remain active so data/touch can wake the screen.
+This feature does not introduce processor deep sleep.
+
 The firmware should tolerate the gauge starting before the engine, the engine starting after the gauge, temporary NMEA loss, unexpected USB removal, and restart after a brownout. Trip state should be checkpointed periodically so an unexpected power loss does not invalidate the whole trip log.
 
 ## Future Review

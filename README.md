@@ -57,6 +57,10 @@ ESP32-S3 based NMEA 2000 multifunction display inspired by the Yamaha 6YC gauge.
 6. Add OTA firmware updates.
 7. Design and test the water-resistant enclosure.
 
+## Wiring and Installation
+
+See the [Complete Boat Wiring Guide](docs/Complete-Wiring.md) for Yamaha engine interface paths, Garmin GPS connection, NMEA 2000 topology, manufacturer part numbers, gauge pin mapping, power wiring, and dockside/boat-test checks. Engine-interface selection depends on the installed Yamaha harness; the guide identifies what must be verified before purchase.
+
 ## Repository Layout
 
 - `docs/` - design and engineering documentation

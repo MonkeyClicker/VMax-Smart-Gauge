@@ -1,5 +1,7 @@
 # Prototype Wiring Design
 
+For the complete motor-to-Garmin-to-network-to-gauge installation, verified part numbers, Micro-C pin mapping, power circuits, and commissioning checks, see [Complete Boat Wiring Guide](Complete-Wiring.md). This page is the earlier prototype summary; use the complete guide for installation details and compatibility limits.
+
 ## Goal
 
 Connect the Waveshare ESP32-S3-Touch-LCD-5 to the existing NMEA 2000 network as an additional drop device while preserving the existing Yamaha and Garmin installation.

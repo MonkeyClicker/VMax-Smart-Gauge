@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate scanner-diag-2 records; report damage and sequence gaps without repair."""
+"""Validate scanner-diag-3 records; report damage and sequence gaps without repair."""
 import argparse
 import re
 from pathlib import Path
@@ -23,7 +23,7 @@ def validate(data):
                 damaged += 1
             continue
         sequence, payload, expected = match.groups()
-        if checksum(payload) != int(expected, 16):
+        if checksum(b'@' + sequence + b' ' + payload) != int(expected, 16):
             damaged += 1
             continue
         sequence = int(sequence)

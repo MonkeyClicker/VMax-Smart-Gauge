@@ -11,7 +11,8 @@ transmit mode. Flash using the existing `firmware/README.md` instructions.
 ## First repeat boat test
 
 1. Open the USB serial monitor at 115200 baud and save its original output.
-2. Reboot the scanner and retain the BOOT and TIMING records. BOOT identifies
+2. Reboot the scanner and retain the BOOT and TIMING records. BOOT is retried until BOOT/TIMING writes complete, repeated on an observed USB
+   reconnect, and available on demand by sending lowercase `i`. BOOT identifies
    the diagnostic firmware, build date/time, SDK, reset reason, pins, and queues.
 3. Run for at least one minute with GPS/network powered and the engine stopped.
 4. Compare CAN `busDelta`, `busHz`, REC/TEC, LOSS deltas, and the alert mask.
@@ -39,16 +40,27 @@ After initialization, one task owns serial output. Each diagnostic record has:
 A leading newline on each write lets the next complete record resynchronize
 after a partial write. Blank lines are ignored by the validator.
 
-The checksum covers the payload bytes only, excluding the sequence, separator,
-checksum suffix, and newline. This detects accidental capture corruption; it is
+The scanner-diag-3 checksum covers `@<record-sequence> <payload>` together,
+including the marker, decimal sequence, and separator. It excludes the leading
+newline and the space before the checksum suffix, suffix, and final newline.
+The validator now uses this format and intentionally rejects older
+scanner-diag-2 payload-only checksums. This detects accidental capture corruption; it is
 not a cryptographic checksum. Records are formatted into bounded buffers;
-serial writes retry partial acceptance for at most 250 ms per record, with
-available-space checks and a 10 ms USB write/lock timeout. They execute outside
+Serial writes retry partial acceptance with a 250 ms record deadline and a
+shared 250 ms deadline for the entire metadata/snapshot/raw batch. Available-space
+checks and a 10 ms USB write/lock timeout bound each transport operation.
+Commands are serviced before records and during partial-write retries, so `s`
+changes capture state while a USB write is stalled. Mode acknowledgements may
+wait until the next batch. Scheduling and an in-flight USB operation can extend
+wall-clock duration beyond the deadline; this is not a hard real-time guarantee. They execute outside
 the CAN receive loop. Scanner core debug output is disabled to avoid interleaving
 framework diagnostics with records after startup.
 
 LOG records report cumulative `incompleteWrites`, `formatFailures`,
-`overwrittenSnapshots`, `rawDrops`, `alertPollFailures`, and `statusFailures`.
+`budgetSkippedRecords`, `overwrittenSnapshots`, `rawDrops`, `alertPollFailures`,
+and `statusFailures`. Budget exhaustion can leave a snapshot incomplete, which
+the validator flags; skipped records are counted rather than silently extending
+the batch.
 These are separate from TWAI's hardware/driver counters. The one-entry snapshot
 mailbox deliberately keeps the latest report when the host is slow; gaps in
 SNAP sequence numbers count overwritten reports. SNAP begin/end markers expose
@@ -98,9 +110,11 @@ indicator still means the receive loop runs, not that the bus is error-free.
 ## Optional raw-frame capture
 
 Send lowercase `r` over USB to enable raw capture; send `s` to stop enqueueing.
+Send `i` to request BOOT/TIMING metadata without rebooting.
 The logger confirms commands in MODE records. Capture starts disabled at boot.
 The queue holds 256 extended, non-RTR frames and never blocks reception.
-Pending frames drain after `s`; the command does not erase them.
+Pending frames drain after `s`; the command does not erase them. Commands are
+read in bounded groups without logging recursively from the input handler.
 
 RAW records include capture sequence, microsecond timestamp, 29-bit CAN ID,
 DLC, and hex payload. The capture sequence advances for every attempted enqueue,

@@ -3,6 +3,7 @@
 #include <stdarg.h>
 #include <esp_system.h>
 #include "ScannerDiagnostics.h"
+#include "ScannerLogging.h"
 #include <driver/twai.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/queue.h>
@@ -57,31 +58,59 @@ uint32_t lastBusErrors = 0, lastErrorMs = 0;
 bool busBaselineValid = false, recentBusErrors = false;
 uint32_t logSequence = 0, incompleteWrites = 0, formatFailures = 0;
 
-// One logger owns serial after setup. Every record is bounded, numbered and
-// checksummed. A slow/disconnected host cannot hold the CAN receive task.
-void logLine(const char *format, ...) {
+scanner::LogControl logControl;
+scanner::LogBudget logBudget;
+uint32_t budgetSkippedRecords = 0;
+
+// Bounded input service can run between records and during USB backpressure.
+// It never emits output, so it cannot recursively enter logLine.
+void serviceLogControl() {
+    logControl.observeConnection(bool(Serial));
+    for (unsigned i = 0; i < 32 && Serial.available(); ++i) {
+        logControl.command(Serial.read());
+        rawEnabled.store(logControl.raw);
+    }
+}
+
+struct UsbTransport {
+    uint32_t nowMs() { return millis(); }
+    void service() { serviceLogControl(); }
+    bool connected() { return logControl.connected; }
+    int space() { return Serial.availableForWrite(); }
+    size_t write(const char *data, size_t size) {
+        return Serial.write(reinterpret_cast<const uint8_t *>(data), size);
+    }
+    void yield() { vTaskDelay(pdMS_TO_TICKS(1)); }
+};
+
+// One logger owns serial after setup. Record and batch deadlines bound output.
+bool logLine(const char *format, ...) {
+    serviceLogControl();
+    if (!logControl.connected || logBudget.expired(millis())) {
+        ++budgetSkippedRecords;
+        return false;
+    }
     char payload[384], record[448];
     va_list args;
     va_start(args, format);
     const int n = vsnprintf(payload, sizeof(payload), format, args);
     va_end(args);
-    if (n < 0 || size_t(n) >= sizeof(payload)) { ++formatFailures; return; }
-    const uint32_t sequence = ++logSequence;
-    const int length = snprintf(record, sizeof(record), "\n@%lu %s *%08lX\n",
-        static_cast<unsigned long>(sequence), payload,
-        static_cast<unsigned long>(scanner::checksum(payload, size_t(n))));
-    if (length < 0 || size_t(length) >= sizeof(record)) { ++formatFailures; return; }
-    size_t written = 0;
-    const uint32_t start = millis();
-    while (written < size_t(length) && uint32_t(millis() - start) < 250) {
-        const int space = Serial.availableForWrite();
-        if (!Serial || space <= 0) { vTaskDelay(pdMS_TO_TICKS(1)); continue; }
-        const size_t remaining = size_t(length) - written;
-        const size_t chunk = remaining < size_t(space) ? remaining : size_t(space);
-        written += Serial.write(reinterpret_cast<const uint8_t *>(record) + written, chunk);
-        vTaskDelay(pdMS_TO_TICKS(1));
-    }
-    if (written != size_t(length)) ++incompleteWrites;
+    if (n < 0 || size_t(n) >= sizeof(payload)) { ++formatFailures; return false; }
+    const int length = scanner::formatRecord(record, sizeof(record), ++logSequence, payload);
+    if (length < 0) { ++formatFailures; return false; }
+    UsbTransport transport;
+    const bool complete = scanner::writeRecord(transport, record, size_t(length), logBudget);
+    if (!complete) ++incompleteWrites;
+    return complete;
+}
+
+bool printMetadata() {
+    const bool boot = logLine("BOOT firmware=scanner-diag-3 build=%s_%s reset=%d sdk=%s TX=15 RX=16 bitrate=250000 mode=LISTEN_ONLY rxQueue=64 rawQueue=256", __DATE__, __TIME__, int(esp_reset_reason()), ESP.getSdkVersion());
+    const twai_timing_config_t timing = TWAI_TIMING_CONFIG_250KBITS();
+    const bool timingWritten = logLine("TIMING clkSrc=%d quantaHz=%lu brp=%lu tseg1=%u tseg2=%u sjw=%u triple=%u commands=r(raw-on),s(raw-off),i(info)",
+        int(timing.clk_src), static_cast<unsigned long>(timing.quanta_resolution_hz),
+        static_cast<unsigned long>(timing.brp), timing.tseg_1, timing.tseg_2, timing.sjw, timing.triple_sampling);
+    return boot && timingWritten;
 }
 
 void describeValue(char *out, size_t size, const TimedDouble &value, uint32_t nowMs) {
@@ -94,22 +123,31 @@ void describeValue(char *out, size_t size, const TimedDouble &value, uint32_t no
 
 // Snapshot sequence gaps expose the latest-value mailbox overwriting old reports.
 void loggerTask(void *) {
-    logLine("BOOT firmware=scanner-diag-2 build=%s_%s reset=%d sdk=%s TX=15 RX=16 bitrate=250000 mode=LISTEN_ONLY rxQueue=64 rawQueue=256", __DATE__, __TIME__, int(esp_reset_reason()), ESP.getSdkVersion());
-    const twai_timing_config_t timing = TWAI_TIMING_CONFIG_250KBITS();
-    logLine("TIMING clkSrc=%d quantaHz=%lu brp=%lu tseg1=%u tseg2=%u sjw=%u triple=%u commands=r(raw-on),s(raw-off)",
-        int(timing.clk_src), static_cast<unsigned long>(timing.quanta_resolution_hz),
-        static_cast<unsigned long>(timing.brp), timing.tseg_1, timing.tseg_2, timing.sjw, timing.triple_sampling);
     Snapshot snapshot;
     uint32_t lastSnapshot = 0, overwritten = 0;
     while (true) {
-        while (Serial.available()) {
-            const int command = Serial.read();
-            if (command == 'r' || command == 's') {
-                rawEnabled.store(command == 'r');
-                logLine("MODE raw=%u rawDrops=%lu", rawEnabled.load(), static_cast<unsigned long>(rawDrops.load()));
-            }
+        serviceLogControl();
+        if (!logControl.connected) {
+            // Keep the latest snapshot and leave raw-frame loss accounting to
+            // the bounded receive queue while the host is absent.
+            vTaskDelay(pdMS_TO_TICKS(10));
+            continue;
         }
-        if (xQueueReceive(snapshotQueue, &snapshot, 0) == pdTRUE) {
+        logBudget = scanner::LogBudget{millis(), 250};
+        if (logControl.metadataPending) {
+            const uint32_t request = logControl.metadataRequest;
+            const bool complete = printMetadata();
+            logControl.metadataResult(complete, request);
+            if (!complete) { vTaskDelay(pdMS_TO_TICKS(1)); continue; }
+        }
+        if (logControl.modePending) {
+            // Clear before writing so a command arriving during the write
+            // remains pending for acknowledgement on the next pass.
+            logControl.modePending = false;
+            if (!logLine("MODE raw=%u rawDrops=%lu", rawEnabled.load(), static_cast<unsigned long>(rawDrops.load())))
+                logControl.modePending = true;
+        }
+        if (!logBudget.expired(millis()) && xQueueReceive(snapshotQueue, &snapshot, 0) == pdTRUE) {
             overwritten += snapshot.sequence - lastSnapshot - 1;
             lastSnapshot = snapshot.sequence;
             logLine("SNAP begin=%lu ms=%lu elapsedMs=%lu", static_cast<unsigned long>(snapshot.sequence), static_cast<unsigned long>(snapshot.nowMs), static_cast<unsigned long>(snapshot.elapsedMs));
@@ -134,12 +172,12 @@ void loggerTask(void *) {
                 logLine("CAN state=%d queued=%lu highWater=%lu busTotal=%lu busDelta=%lu busHz=%.2f deltaValid=%u REC=%lu TEC=%lu", int(c.state), static_cast<unsigned long>(c.msgs_to_rx), static_cast<unsigned long>(snapshot.queueHighWater), static_cast<unsigned long>(c.bus_error_count), static_cast<unsigned long>(snapshot.busDelta), scanner::perSecond(snapshot.busDelta, snapshot.elapsedMs), snapshot.deltaValid, static_cast<unsigned long>(c.rx_error_counter), static_cast<unsigned long>(c.tx_error_counter));
                 logLine("LOSS missed=%lu delta=%lu overruns=%lu deltaOverrun=%lu receiveFailures=%lu maxLoopUs=%lu alerts=0x%08lX", static_cast<unsigned long>(c.rx_missed_count), static_cast<unsigned long>(snapshot.missedDelta), static_cast<unsigned long>(c.rx_overrun_count), static_cast<unsigned long>(snapshot.overrunDelta), static_cast<unsigned long>(snapshot.receiveFailures), static_cast<unsigned long>(snapshot.maxLoopUs), static_cast<unsigned long>(snapshot.alerts));
             } else logLine("CAN status=UNAVAILABLE");
-            logLine("LOG incompleteWrites=%lu formatFailures=%lu overwrittenSnapshots=%lu raw=%u rawDrops=%lu alertPollFailures=%lu statusFailures=%lu", static_cast<unsigned long>(incompleteWrites), static_cast<unsigned long>(formatFailures), static_cast<unsigned long>(overwritten), rawEnabled.load(), static_cast<unsigned long>(snapshot.rawDrops), static_cast<unsigned long>(snapshot.alertPollFailures), static_cast<unsigned long>(snapshot.statusFailures));
+            logLine("LOG incompleteWrites=%lu formatFailures=%lu budgetSkippedRecords=%lu overwrittenSnapshots=%lu raw=%u rawDrops=%lu alertPollFailures=%lu statusFailures=%lu", static_cast<unsigned long>(incompleteWrites), static_cast<unsigned long>(formatFailures), static_cast<unsigned long>(budgetSkippedRecords), static_cast<unsigned long>(overwritten), rawEnabled.load(), static_cast<unsigned long>(snapshot.rawDrops), static_cast<unsigned long>(snapshot.alertPollFailures), static_cast<unsigned long>(snapshot.statusFailures));
             logLine("SNAP end=%lu heap=%lu psram=%lu refreshes=%lu evictions=%lu", static_cast<unsigned long>(snapshot.sequence), static_cast<unsigned long>(snapshot.heap), static_cast<unsigned long>(snapshot.psram), static_cast<unsigned long>(snapshot.screenRefreshes), static_cast<unsigned long>(snapshot.stats.evictions));
         }
         // Bound each raw batch so commands and snapshots cannot be starved.
         RawFrame frame;
-        for (unsigned i = 0; i < 16 && xQueueReceive(rawQueue, &frame, 0) == pdTRUE; ++i) {
+        for (unsigned i = 0; i < 16 && !logBudget.expired(millis()) && logControl.connected && xQueueReceive(rawQueue, &frame, 0) == pdTRUE; ++i) {
             char hex[17];
             for (unsigned j = 0; j < frame.length; ++j) snprintf(hex + j * 2, 3, "%02X", frame.data[j]);
             hex[frame.length * 2] = 0;

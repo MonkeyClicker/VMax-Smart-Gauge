@@ -15,6 +15,7 @@ def checksum(payload):
 def validate(data):
     valid = damaged = gaps = 0
     previous = None
+    pending_snapshot = None
     for line in data.splitlines():
         match = re.fullmatch(rb'@(\d+) (.*) \*([0-9A-F]{8})', line)
         if not match:
@@ -33,7 +34,19 @@ def validate(data):
             else:
                 gaps += sequence - previous - 1
         previous = sequence
+        begin = re.match(rb'SNAP begin=(\d+)\b', payload)
+        end = re.match(rb'SNAP end=(\d+)\b', payload)
+        if begin:
+            if pending_snapshot is not None:
+                damaged += 1
+            pending_snapshot = int(begin.group(1))
+        if end:
+            if pending_snapshot != int(end.group(1)):
+                damaged += 1
+            pending_snapshot = None
         valid += 1
+    if pending_snapshot is not None:
+        damaged += 1
     return valid, damaged, gaps
 
 

@@ -56,7 +56,8 @@ partial reports. A host can still lose bytes even when the device accepts a
 complete write, so retain checksum validation and sequence checks.
 
 Run `python tools/validate_scanner_log.py capture.log` on a saved capture.
-It reports valid records, damaged/unframed lines, and missing record sequences;
+It reports valid records, damaged/unframed lines or incomplete/mismatched
+snapshot boundaries, and missing record sequences;
 exit status is nonzero on damage, gaps, or no valid records. Initialization text
 before the first numbered record is intentionally unframed. Validate only the
 numbered portion for a clean result. Separate captures at each reboot; sequence

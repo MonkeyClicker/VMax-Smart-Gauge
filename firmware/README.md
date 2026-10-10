@@ -206,3 +206,5 @@ These tests cover signed fuel decoding, unavailable values, source/instance
 changes, truncated payloads, timestamp rollover, reporting windows, and statistics
 table eviction. They do not replace ESP32 or boat testing. Before boat use, check
 serial backpressure under load and confirm CAN loss counters stay acceptable.
+
+Scanner capture format, CAN alerts, raw capture commands, and repeat boat-test procedure: [Scanner Diagnostics](../docs/Scanner-Diagnostics.md).

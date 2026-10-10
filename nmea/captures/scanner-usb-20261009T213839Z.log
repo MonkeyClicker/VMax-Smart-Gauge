@@ -1,0 +1,148 @@
+
+--- NMEA SNAPSHOT timeMs=52501 ---
+ENGINE src=2 inst=1 rpm=0.000 trim=2%
+GPS  cog=0.0PGN      SRC   FRAMES     FRAME_RATE_HZ  AGE_MS
+126720   0     920        20.75 240
+129025   0     475        9.78 79
+65314    2     447        8.00 481
+128259   2     50         1.00 969
+127489       7.98 481
+130310   0     84         2.00 400
+65345    2     50         1.00 806
+65346    2     50         1.00 643
+128267   0     5          0.00 45391
+129029   0     104        2.99 400
+129540   0     826        16.16 400
+130312   0     20         0.60 400
+129284   0     186        4.99 560
+129283   0     27         1.00 560
+129539   0     15         0.00 16388
+127258   0     22         0.00 14370
+126993   0     1          0.00 6701
+STATS evictions=0 (counts reset when a pair is evicted)
+CAN state=1 queued=5 missed=20 overruns=0 busErrors=16018 rxErrors=0
+SCREEN refreshes=623 free heap=106048 free PSRAM=6894332
+
+--- NMEA SNAPSHOT timeMs=57501 ---
+ENGINE src=2 inst=1 rpm=0.000 trim=2%
+GPS src=0 sog=0.000 m/s cog=0.000 rad
+PGN      SRC   FRAMES     FRAME_RATE_HZ  AGE_MS
+126720   0     1001       16.20 408
+129025   0     526        10.20 2
+65314    2     493        9.20 2
+129026   0     221        4.00 166
+127488   2     532        9.80 3
+65344    2     110        2.20 2
+128259   2     56         1.20 2
+127489   2     441        8.20 0
+130310   0     94         2.00 408
+65345    2     55         1.00 810
+65346    2     55         1.00 654
+128267   0     5          0.00 50391
+129029   0     124        4.00 408
+129540   0     909        16.60 408
+130312   0     22         0.40 1379
+129284   0     208        4.40 572
+129283   0     32         1.00 572
+129539   0     15         0.00 21388
+127258   0     22         0.00 19370
+126993   0     1          0.00 11701
+STATS evictions=0 (counts reset when a pair is evicted)
+CAN state=1 queued=0 missed=20 overruns=0 busErrors=17538 rxErrors=0
+SCREEN refreshes=685 free heap=106048 free PSRAM=6894332
+
+--- NMEA SNAPSHOT timeMs=62504 ---
+ENGINE src=2 inst=1 rpm=0.000 trim=2%
+GPS src=0 sog=0.000 m/s cog=0.000 rad
+PGN      SRC   FRAMES     FRAME_RATE_HZ  AGE_MS
+126720   0     1100       19.79 242
+129025   0     574        9.59 80
+65314    2     536        8.59 80
+129026   0     241        4.00 162
+127488   2     577        8.99 0
+65344    2     119        1.80 482
+128259   2     60         0.80 964
+127489   2     480        7.80 482
+130310   0     103        1.80 400
+65345    2     60         1
+65346    2     60         1.00 642
+128267   0     5          0.00 55394
+129029   0     143        3.80 401
+129540   0     993        16.79 400
+130312   0     25         0.60 401
+129284   0     228        4.00 562
+129283   0     37         1.00 562
+129539   0     1
+126993   0     1          0.00 16704
+STATS evictions=0 (counts reset when a pair is evicted)
+CAN state=1 queued=7 missed=20 overruns=0 busErrors=19117 rxErrors=0
+SCREEN refreshes=747 free heap=106048 free PSRAM=6894332
+
+--- NMEA SNAPSHOT tim0 trim=2%
+GPS src=0 sog=0.000 m/s cog=0.000 rad
+PGN      SRC   FRAMES     FRAME_RATE_HZ  AGE_MS
+128 1
+65314    2     581        8.98 155
+129026   0     261        3.99 163
+127488   2     624        9.38 75
+65344    2     129        2.00 491
+128259   2     65         1.00 972
+127489   2     520    8267   0     5          0.00 60406
+129029   0     167        4.79 405
+129540   0     1075       16.36 405
+130312   0     27         0.40 1456
+129284   0     246        3.59 569
+129283   0     42         1.00 569
+129539   0     16         0.00 5412
+127258   0     22         0.00 29385
+126993   0     1          0.00 21716
+STATS evictions=0 (counts reset when a pair is evicted)
+CAN state=1 queued=7 missed=20 overruns=0 busErrors=20647 rxErrors=0
+SCREEN refreshes=809 free heap=106048 free PSRAM=6894332
+
+---ENGINE src=2 inst=1 rpm=0.000 trim=2%
+GPS src=0 sog=0.000 mg=0.000 rad
+PGN      SRC   FRAMES     FRAME_RATE_HZ  AGE_MS
+126720   9025   0     675        9.97 74
+65314    2     627        9.17 0
+129026   0     281        3.99 160
+127488   2     669        8.97 79
+65344    2     139        1.99 480
+128259   2     70   1.00 1040
+127489   2     56023        1.99 396
+65345    2     70         1.00 806
+65346    2     70         1.00 724
+128267   0     5          0.00 65421
+129029   0     193        5.18 396
+129540   0     1158       16.55 396
+130312   0     30         0.60 473
+129284   0     261        2.99 561
+129283   0     47         1.00 561
+129539   0     16         0.00 10427
+127258   0     22         0.00 34400
+126993   0     1          0.00 26731
+STATS evictions=0 (counts reset when a pair is evicted)
+CAN state=1 queued=6 missed=20 overruns=0 busErrors=22187 rxErrors=0
+SCREEN refreshes=871 free heap=106048 free PSRAM=6894332
+
+--- NMEA SNAPSHOT timeMs=77601 ---
+ENGINE src=2 inst=1 rpm=0.000 trim=2%
+GPS src=0 sog=0.000 m/s cog=0.000 r    1373       17.75 485
+129025   0     7127488   2     718        9.66 0
+65344    2     150        2.17 81
+128259   2     76         1.18 81
+127489   2     604        8.68 81
+130310       0.99 887
+65346    2     75         0.99 809
+128267             0.00 70491
+129029   0     224        6.11 485
+129540   0     1234       14.99 485
+130312   0     32         0.39 1527
+129284   0     271        1.97 646
+129283   0     52         0.99 646
+129539   0     19         0.59 2491
+127258   0     22         0.00 39470
+126993   0     1          0.00 31801
+STATS evictions=0 (counts reset when a pair is evicted)
+CAN state=1 queued=4 missed=20 overruns=0 busErrors=23685 rxErrors=0
+SCREEN refreshes=934 free heap=106048 free PSRAM=6894332

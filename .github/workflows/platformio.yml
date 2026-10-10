@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - "firmware/**"
+      - "tools/validate_scanner_log.py"
       - ".github/workflows/platformio.yml"
   push:
     branches:
       - main
     paths:
       - "firmware/**"
+      - "tools/validate_scanner_log.py"
       - ".github/workflows/platformio.yml"
   workflow_dispatch:
 

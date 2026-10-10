@@ -127,3 +127,5 @@ Version 1 is ready for normal use when:
 - OTA/recovery works
 - logging failures do not affect core display functionality
 - enclosure splash resistance has been practically tested
+
+For numbered USB captures and CAN-error diagnosis, follow [Scanner Diagnostics](Scanner-Diagnostics.md).

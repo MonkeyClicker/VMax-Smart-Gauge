@@ -8,6 +8,7 @@ struct ScannerScreenStatus {
     uint32_t trackedPgns = 0;
     uint32_t busErrors = 0;
     uint32_t losses = 0;
+    bool recentBusErrors = false;
     bool canRunning = false;
     bool canStatusValid = false;
 };

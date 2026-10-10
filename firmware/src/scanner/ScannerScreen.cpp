@@ -65,8 +65,10 @@ void refresh(lv_timer_t *) {
     lv_obj_set_style_text_color(running, lv_color_hex(healthy ? INK : 0xFF987E), 0);
     const char *traffic = !healthy ? "SCANNER NEEDS ATTENTION" :
         status.frames == 0 ? "WAITING FOR NETWORK" :
-        now - status.lastFrameMs >= 5000 ? "NETWORK TRAFFIC STALE" : "RECEIVING NMEA DATA";
+        now - status.lastFrameMs >= 5000 ? "NETWORK TRAFFIC STALE" :
+        status.recentBusErrors ? "RECEIVING - CAN ERRORS" : "RECEIVING NMEA DATA";
     lv_label_set_text(network, traffic);
+    lv_obj_set_style_text_color(network, lv_color_hex(status.recentBusErrors ? 0xFF987E : CYAN), 0);
     lv_label_set_text_fmt(values[0], "%llu", static_cast<unsigned long long>(status.frames));
     lv_label_set_text_fmt(values[1], "%lu", static_cast<unsigned long>(status.trackedPgns));
     if (status.canStatusValid)

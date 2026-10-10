@@ -1,7 +1,11 @@
 # Scanner diagnostics and captures
 
 The `nmea-scanner` target remains receive-only at 250 kbit/s on GPIO15 TX /
-GPIO16 RX. The diagnostics update does not change bitrate, termination, or
+GPIO16 RX. TIMING reports the configured clock source, quanta frequency, BRP,
+segments, SJW, and sampling mode. BRP=0 means the driver derives its prescaler
+from the quanta frequency; it is not a zero physical prescaler.
+
+The diagnostics update does not change bitrate, termination, or
 transmit mode. Flash using the existing `firmware/README.md` instructions.
 
 ## First repeat boat test

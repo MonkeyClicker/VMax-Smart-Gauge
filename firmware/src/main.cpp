@@ -96,7 +96,8 @@ void describeValue(char *out, size_t size, const TimedDouble &value, uint32_t no
 void loggerTask(void *) {
     logLine("BOOT firmware=scanner-diag-2 build=%s_%s reset=%d sdk=%s TX=15 RX=16 bitrate=250000 mode=LISTEN_ONLY rxQueue=64 rawQueue=256", __DATE__, __TIME__, int(esp_reset_reason()), ESP.getSdkVersion());
     const twai_timing_config_t timing = TWAI_TIMING_CONFIG_250KBITS();
-    logLine("TIMING brp=%lu tseg1=%u tseg2=%u sjw=%u triple=%u commands=r(raw-on),s(raw-off)",
+    logLine("TIMING clkSrc=%d quantaHz=%lu brp=%lu tseg1=%u tseg2=%u sjw=%u triple=%u commands=r(raw-on),s(raw-off)",
+        int(timing.clk_src), static_cast<unsigned long>(timing.quanta_resolution_hz),
         static_cast<unsigned long>(timing.brp), timing.tseg_1, timing.tseg_2, timing.sjw, timing.triple_sampling);
     Snapshot snapshot;
     uint32_t lastSnapshot = 0, overwritten = 0;

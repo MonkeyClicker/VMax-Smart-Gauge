@@ -35,6 +35,7 @@ jobs:
       fail-fast: false
       matrix:
         environment:
+          - live-gauge
           - simulated-gauge
           - nmea-scanner
 

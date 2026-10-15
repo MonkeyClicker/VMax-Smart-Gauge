@@ -15,6 +15,10 @@ The initial product is intentionally a single-engine display for the 2024 Yamaha
 
 ## Main Screen Priorities
 
+Startup first shows a five-second navy/cyan V MAX boot presentation with a
+subtle turbine/ring animation and clearly readable running firmware version,
+then opens the Engine page. See [Startup Boot Screen](Boot-Screen.md).
+
 RPM is the dominant value. The remaining primary values should be visible without changing screens.
 
 Recommended home-screen fields:
@@ -31,11 +35,13 @@ Recommended home-screen fields:
 
 Calculated economy should also be available prominently when underway.
 
-The planned fuel card displays remaining US gallons without percentage, computed
-from configured tank capacity and the explicitly selected Network/Manual source.
-Settings gains whole-US-gallon capacity/addition inputs, eighth-tank level,
-Add Fuel and FULL controls; see [Fuel Configuration](Fuel-Configuration.md).
-This extends the percentage-only simulated prototype described below.
+Live Gauge v0.1.2 displays remaining US gallons without percentage, labeled NET
+for a fresh network level, EST for a calculated estimate, or EST? for incomplete
+coverage. Settings provides Tank Capacity and Set / Reset Fuel Amount, each with
+a numeric keypad and Save/Cancel. The amount screen accepts zero through capacity
+and offers FULL. Fresh valid network levels override a manual starting amount.
+See [Fuel Configuration](Fuel-Configuration.md) for consumption and persistence.
+Dedicated Add Fuel and eighth-tank shortcuts remain planned.
 
 ## Suggested Main Layout
 

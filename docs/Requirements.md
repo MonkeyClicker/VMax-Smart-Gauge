@@ -45,6 +45,15 @@ The firmware should derive additional values from NMEA data, including:
 
 ## Display Requirements
 
+- Show a polished five-second boot screen on startup with V MAX branding,
+  a navy/cyan animated visual, and the running firmware version.
+- Start the five-second interval when the boot screen first becomes visible;
+  then transition automatically to the Engine page without requiring touch.
+- The boot presentation shall not block CAN reception, initialization, logging,
+  or watchdog service, and shall yield to startup failures or critical warnings.
+
+See [Startup Boot Screen](Boot-Screen.md) for the feature request and acceptance criteria.
+
 - The screen shall turn off after five minutes without engine data or touch activity.
 - Returning selected-engine data shall automatically wake the screen.
 - Selected-engine data shall keep the screen awake even when RPM is zero.
@@ -60,8 +69,10 @@ touch handling, hardware validation and proposed service/alarm exceptions.
 - Fuel Configuration shall support setting current contents in eighth-tank increments,
   adding a specified number of gallons, and setting FULL without network level data.
 - Add Fuel shall accept positive whole US gallons; computed remaining volume may be fractional.
-- Settings shall explicitly select Network or Manual fuel source; returning network
-  data shall not overwrite the manual estimate or automatically switch sources.
+- Settings shall allow setting/resetting current fuel amount, including empty and FULL.
+- Fresh valid network tank levels shall override a manually entered amount.
+  If network levels become stale/unavailable, continue an estimate from the latest
+  baseline and valid measured consumption; do not revert to an older manual value.
 - Tank configuration and manual contents shall persist independently of trip resets,
   daily rollover, mode changes, restart and OTA.
 

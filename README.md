@@ -2,6 +2,14 @@
 
 ESP32-S3 based NMEA 2000 multifunction display inspired by the Yamaha 6YC gauge.
 
+## First live firmware
+
+[Live Gauge v0.1.2](docs/Live-Firmware-v0.1.md) combines confirmed engine/GPS decoding,
+the five-page touch display, versioned five-second boot screen, session trips,
+CAN diagnostics, saved tank capacity and starting fuel amount and optional raw USB capture. The default PlatformIO target is
+`live-gauge`; scanner and simulator builds remain available. This is a first
+boat-test build; existing CAN errors and hardware validation remain outstanding.
+
 ## Target Boat Setup
 
 - 2024 Yamaha V MAX SHO 250

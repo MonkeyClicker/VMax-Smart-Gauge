@@ -13,3 +13,11 @@ python3 "$script_dir/log_validator_test.py"
 "${CXX:-c++}" -std=c++17 -Wall -Wextra -Werror -I "$script_dir/../../include" \
     "$script_dir/logging_test.cpp" -o "$test_binary"
 "$test_binary"
+
+"${CXX:-c++}" -std=c++17 -Wall -Wextra -Werror -I "$script_dir/../../include" \
+    "$script_dir/live_model_test.cpp" -o "$test_binary"
+"$test_binary"
+
+"${CXX:-c++}" -std=c++17 -Wall -Wextra -Werror -I "$script_dir/../../include" \
+    "$script_dir/fuel_inventory_test.cpp" -o "$test_binary"
+"$test_binary"

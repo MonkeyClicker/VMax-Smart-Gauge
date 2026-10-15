@@ -1,0 +1,1684 @@
+
+@196 BOOT firmware=scanner-diag-3 build=Oct 10 2026_10:55:26 reset=1 sdk=v5.3.2-282-gcfea4f7c98-dirty TX=15 RX=16 bitrate=250000 mode=LISTEN_ONLY rxQueue=64 rawQueue=256 *6C48FD7E
+
+@197 TIMING clkSrc=4 quantaHz=5000000 brp=0 tseg1=15 tseg2=4 sjw=3 triple=0 commands=r(raw-on),s(raw-off),i(info) *CCC72C12
+
+@198 SNAP begin=90 ms=454424 elapsedMs=5005 *33E1ABA5
+
+@199 ENGINE src=2 inst=1 rpm=0.000 trimPct=71 *763558D9
+
+@200 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=385950 *CB4B27E3
+
+@201 PGN pgn=65314 src=2 frames=223308 frameHz=523.88 ageMs=160 *F8042167
+
+@202 PGN pgn=127488 src=2 frames=58227 frameHz=194.61 ageMs=1 *3F4BABC0
+
+@203 PGN pgn=65346 src=2 frames=6408 frameHz=26.77 ageMs=806 *1E27C1D7
+
+@204 PGN pgn=127489 src=2 frames=19263 frameHz=39.76 ageMs=1047 *148E3C5D
+
+@205 PGN pgn=65344 src=2 frames=12622 frameHz=26.77 ageMs=1613 *4D60303D
+
+@206 PGN pgn=65345 src=2 frames=6006 frameHz=25.17 ageMs=3873 *6C101B3D
+
+@207 PGN pgn=128259 src=2 frames=6390 frameHz=24.38 ageMs=3066 *1C4569A2
+
+@208 CAN state=1 queued=64 highWater=64 busTotal=234546 busDelta=3115 busHz=622.38 deltaValid=1 REC=0 TEC=0 *CD47A734
+
+@209 LOSS missed=235309 delta=3023 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80569 alerts=0x00000A00 *217C8CD2
+
+@210 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *30FC2A83
+
+@211 SNAP end=90 heap=99524 psram=6894332 refreshes=5604 evictions=0 *4B107227
+
+@212 SNAP begin=91 ms=459443 elapsedMs=5019 *D7CCB592
+
+@213 ENGINE src=2 inst=1 rpm=0.000 trimPct=71 *4BD52540
+
+@214 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=390969 *DF2380D6
+
+@215 PGN pgn=65314 src=2 frames=225798 frameHz=496.11 ageMs=0 *EC6AF637
+
+@216 PGN pgn=127488 src=2 frames=59168 frameHz=187.49 ageMs=324 *26B7041E
+
+@217 PGN pgn=65346 src=2 frames=6543 frameHz=26.90 ageMs=3807 *F387B7B1
+
+@218 PGN pgn=127489 src=2 frames=19622 frameHz=71.53 ageMs=567 *17ED4248
+
+@219 PGN pgn=65344 src=2 frames=12894 frameHz=54.19 ageMs=1131 *1A010809
+
+@220 PGN pgn=65345 src=2 frames=6128 frameHz=24.31 ageMs=1944 *7AAE87AC
+
+@221 PGN pgn=128259 src=2 frames=6390 frameHz=0.00 ageMs=8085 *1CD47791
+
+@222 CAN state=1 queued=63 highWater=64 busTotal=237579 busDelta=3033 busHz=604.30 deltaValid=1 REC=0 TEC=0 *176266E1
+
+@223 LOSS missed=238374 delta=3065 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81576 alerts=0x00000A00 *DEBD2A9A
+
+@224 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *FDBCEFFE
+
+@225 SNAP end=91 heap=99524 psram=6894332 refreshes=5666 evictions=0 *58FB4503
+
+@226 SNAP begin=92 ms=464459 elapsedMs=5016 *2796E9F8
+
+@227 ENGINE src=2 inst=1 rpm=0.000 trimPct=71 *28E9FAE1
+
+@228 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=395985 *B30B2014
+
+@229 PGN pgn=65314 src=2 frames=228751 frameHz=588.72 ageMs=80 *6A9F9FD9
+
+@230 PGN pgn=127488 src=2 frames=59844 frameHz=134.77 ageMs=1448 *72A9315E
+
+@231 PGN pgn=65346 src=2 frames=6638 frameHz=18.94 ageMs=1856 *88C28E55
+
+@232 PGN pgn=127489 src=2 frames=19857 frameHz=46.85 ageMs=565 *8B7B2745
+
+@233 PGN pgn=65344 src=2 frames=12990 frameHz=19.14 ageMs=2665 *0CB8A181
+
+@234 PGN pgn=65345 src=2 frames=6262 frameHz=26.71 ageMs=0 *BAA9E08A
+
+@235 PGN pgn=128259 src=2 frames=6525 frameHz=26.91 ageMs=4121 *FB339225
+
+@236 CAN state=1 queued=64 highWater=64 busTotal=240596 busDelta=3017 busHz=601.48 deltaValid=1 REC=0 TEC=0 *3E083AC0
+
+@237 LOSS missed=241432 delta=3058 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79696 alerts=0x00000A00 *1C5CEB34
+
+@238 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *7398FAC1
+
+@239 SNAP end=92 heap=99524 psram=6894332 refreshes=5728 evictions=0 *783CF3BE
+
+@240 SNAP begin=93 ms=469470 elapsedMs=5011 *F7B24564
+
+@241 ENGINE src=2 inst=1 rpm=933.500 trimPct=71 *F1A17ECB
+
+@242 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=400996 *6248E771
+
+@243 PGN pgn=65314 src=2 frames=231544 frameHz=557.37 ageMs=0 *CA9189FE
+
+@244 PGN pgn=127488 src=2 frames=60682 frameHz=167.23 ageMs=1049 *75B84F11
+
+@245 PGN pgn=65346 src=2 frames=6754 frameHz=23.15 ageMs=1857 *0D7F8E17
+
+@246 PGN pgn=127489 src=2 frames=20069 frameHz=42.31 ageMs=645 *95E982A3
+
+@247 PGN pgn=65344 src=2 frames=13116 frameHz=25.14 ageMs=4122 *B250BC96
+
+@248 PGN pgn=65345 src=2 frames=6380 frameHz=23.55 ageMs=4928 *8E9D6A4A
+
+@249 PGN pgn=128259 src=2 frames=6660 frameHz=26.94 ageMs=2101 *B2FB676D
+
+@250 CAN state=1 queued=63 highWater=64 busTotal=243604 busDelta=3008 busHz=600.28 deltaValid=1 REC=0 TEC=0 *3858C243
+
+@251 LOSS missed=244494 delta=3062 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80531 alerts=0x00000A00 *52E81014
+
+@252 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *33FFD3A1
+
+@253 SNAP end=93 heap=99524 psram=6894332 refreshes=5790 evictions=0 *B47B04F6
+
+@254 SNAP begin=94 ms=474488 elapsedMs=5018 *065EF074
+
+@255 ENGINE src=2 inst=1 rpm=859.500 trimPct=71 *BA9738ED
+
+@256 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=406014 *263DE1D9
+
+@257 PGN pgn=65314 src=2 frames=234286 frameHz=546.43 ageMs=0 *85319AAE
+
+@258 PGN pgn=127488 src=2 frames=61553 frameHz=173.58 ageMs=892 *9C9EB2E6
+
+@259 PGN pgn=65346 src=2 frames=6888 frameHz=26.70 ageMs=1862 *03AE9350
+
+@260 PGN pgn=127489 src=2 frames=20295 frameHz=45.04 ageMs=80 *3CAEBA54
+
+@261 PGN pgn=65344 src=2 frames=13348 frameHz=46.23 ageMs=649 *78B72CF0
+
+@262 PGN pgn=65345 src=2 frames=6380 frameHz=0.00 ageMs=9946 *AE54C8CE
+
+@263 PGN pgn=128259 src=2 frames=6763 frameHz=20.53 ageMs=2105 *B47D85DA
+
+@264 CAN state=1 queued=64 highWater=64 busTotal=246668 busDelta=3064 busHz=610.60 deltaValid=1 REC=0 TEC=0 *69C24C99
+
+@265 LOSS missed=247622 delta=3128 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80617 alerts=0x00000A00 *C3DEE71B
+
+@266 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *E24BD814
+
+@267 SNAP end=94 heap=99524 psram=6894332 refreshes=5852 evictions=0 *616423FF
+
+@268 SNAP begin=95 ms=479506 elapsedMs=5018 *EC892F7C
+
+@269 ENGINE src=2 inst=1 rpm=832.000 trimPct=71 *A29C45A0
+
+@270 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=411032 *16FEC50D
+
+@271 PGN pgn=65314 src=2 frames=237129 frameHz=566.56 ageMs=0 *5792E73D
+
+@272 PGN pgn=127488 src=2 frames=62333 frameHz=155.44 ageMs=244 *3192AB53
+
+@273 PGN pgn=65346 src=2 frames=6888 frameHz=0.00 ageMs=6880 *B27565BA
+
+@274 PGN pgn=127489 src=2 frames=20530 frameHz=46.83 ageMs=159 *FCE4E67E
+
+@275 PGN pgn=65344 src=2 frames=13560 frameHz=42.25 ageMs=646 *55835BD0
+
+@276 PGN pgn=65345 src=2 frames=6486 frameHz=21.12 ageMs=2992 *0087761A
+
+@277 PGN pgn=128259 src=2 frames=6862 frameHz=19.73 ageMs=2182 *B17BBB86
+
+@278 CAN state=1 queued=63 highWater=64 busTotal=249784 busDelta=3116 busHz=620.96 deltaValid=1 REC=0 TEC=0 *B4A821DD
+
+@279 LOSS missed=250706 delta=3084 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=82692 alerts=0x00000A00 *26E659C9
+
+@280 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *3B7BF7EC
+
+@281 SNAP end=95 heap=99524 psram=6894332 refreshes=5914 evictions=0 *762524C9
+
+@282 SNAP begin=96 ms=484512 elapsedMs=5006 *ADDB77E3
+
+@283 ENGINE src=2 inst=1 rpm=804.750 trimPct=71 *241310EF
+
+@284 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=416038 *267277E1
+
+@285 PGN pgn=65314 src=2 frames=239908 frameHz=555.13 ageMs=1 *0F8B8C7F
+
+@286 PGN pgn=127488 src=2 frames=63284 frameHz=189.97 ageMs=241 *9A9E723E
+
+@287 PGN pgn=65346 src=2 frames=6888 frameHz=0.00 ageMs=11886 *8E4110C9
+
+@288 PGN pgn=127489 src=2 frames=20763 frameHz=46.54 ageMs=161 *BF48FBF8
+
+@289 PGN pgn=65344 src=2 frames=13658 frameHz=19.58 ageMs=645 *480501EA
+
+@290 PGN pgn=65345 src=2 frames=6614 frameHz=25.57 ageMs=2985 *742C4848
+
+@291 PGN pgn=128259 src=2 frames=6994 frameHz=26.37 ageMs=2174 *79666737
+
+@292 CAN state=1 queued=63 highWater=64 busTotal=252831 busDelta=3047 busHz=608.67 deltaValid=1 REC=0 TEC=0 *C4E89F5B
+
+@293 LOSS missed=253797 delta=3091 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80599 alerts=0x00000A00 *E72430F6
+
+@294 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *1428B097
+
+@295 SNAP end=96 heap=99524 psram=6894332 refreshes=5976 evictions=0 *8A35690D
+
+@296 SNAP begin=97 ms=489530 elapsedMs=5018 *D888E5E5
+
+@297 ENGINE src=2 inst=1 rpm=816.500 trimPct=71 *D9E0C6E0
+
+@298 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=421056 *F2D41DE4
+
+@299 PGN pgn=65314 src=2 frames=242776 frameHz=571.54 ageMs=0 *999F183F
+
+@300 PGN pgn=127488 src=2 frames=63896 frameHz=121.96 ageMs=321 *7A95BE8A
+
+@301 PGN pgn=65346 src=2 frames=6984 frameHz=19.13 ageMs=4855 *19C61B9F
+
+@302 PGN pgn=127489 src=2 frames=21106 frameHz=68.35 ageMs=159 *2A77CA25
+
+@303 PGN pgn=65344 src=2 frames=13901 frameHz=48.43 ageMs=728 *D3E004D6
+
+@304 PGN pgn=65345 src=2 frames=6750 frameHz=27.10 ageMs=2994 *F84EBC9C
+
+@305 PGN pgn=128259 src=2 frames=6994 frameHz=0.00 ageMs=7192 *8748D340
+
+@306 CAN state=1 queued=64 highWater=64 busTotal=255874 busDelta=3043 busHz=606.42 deltaValid=1 REC=0 TEC=0 *A0DAB2EF
+
+@307 LOSS missed=256956 delta=3159 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80906 alerts=0x00000A00 *64D10EFF
+
+@308 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *ADC6C4D1
+
+@309 SNAP end=97 heap=99524 psram=6894332 refreshes=6038 evictions=0 *FE200E8E
+
+@310 SNAP begin=98 ms=494552 elapsedMs=5022 *74486C66
+
+@311 ENGINE src=2 inst=1 rpm=804.750 trimPct=71 *3874F43F
+
+@312 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=426078 *D28BDBE0
+
+@313 PGN pgn=65314 src=2 frames=245756 frameHz=593.39 ageMs=80 *33F23D12
+
+@314 PGN pgn=127488 src=2 frames=64565 frameHz=133.21 ageMs=324 *C315751F
+
+@315 PGN pgn=65346 src=2 frames=7089 frameHz=20.91 ageMs=0 *F29077E1
+
+@316 PGN pgn=127489 src=2 frames=21313 frameHz=41.22 ageMs=1702 *81A56E84
+
+@317 PGN pgn=65344 src=2 frames=14008 frameHz=21.31 ageMs=2188 *D49AB8B8
+
+@318 PGN pgn=65345 src=2 frames=6851 frameHz=20.11 ageMs=2997 *62641804
+
+@319 PGN pgn=128259 src=2 frames=7100 frameHz=21.11 ageMs=162 *0509CA1E
+
+@320 CAN state=1 queued=63 highWater=64 busTotal=258890 busDelta=3016 busHz=600.56 deltaValid=1 REC=0 TEC=0 *F5039638
+
+@321 LOSS missed=260162 delta=3206 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81060 alerts=0x00000A00 *4A7FB144
+
+@322 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *57DF94C5
+
+@323 SNAP end=98 heap=99524 psram=6894332 refreshes=6100 evictions=0 *0108F353
+
+@324 SNAP begin=99 ms=499566 elapsedMs=5014 *1D89FEA9
+
+@325 ENGINE src=2 inst=1 rpm=761.750 trimPct=71 *E673BEF6
+
+@326 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=431092 *8AC03331
+
+@327 PGN pgn=65314 src=2 frames=248614 frameHz=570.00 ageMs=80 *3B43395A
+
+@328 PGN pgn=127488 src=2 frames=65381 frameHz=162.74 ageMs=1049 *AC767CF8
+
+@329 PGN pgn=65346 src=2 frames=7229 frameHz=27.92 ageMs=77 *C716630A
+
+@330 PGN pgn=127489 src=2 frames=21583 frameHz=53.85 ageMs=1690 *3286CF77
+
+@331 PGN pgn=65344 src=2 frames=14115 frameHz=21.34 ageMs=2259 *E21D1BF1
+
+@332 PGN pgn=65345 src=2 frames=6851 frameHz=0.00 ageMs=8011 *81F39115
+
+@333 PGN pgn=128259 src=2 frames=7198 frameHz=19.55 ageMs=238 *52DD79D8
+
+@334 CAN state=1 queued=64 highWater=64 busTotal=261923 busDelta=3033 busHz=604.91 deltaValid=1 REC=0 TEC=0 *FC097D47
+
+@335 LOSS missed=263318 delta=3156 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80967 alerts=0x00000A00 *38CA9816
+
+@336 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *9A438106
+
+@337 SNAP end=99 heap=99524 psram=6894332 refreshes=6162 evictions=0 *F6DE3309
+
+@338 SNAP begin=100 ms=504583 elapsedMs=5017 *7AE5B120
+
+@339 ENGINE src=2 inst=1 rpm=754.000 trimPct=71 *D286D8FD
+
+@340 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=436109 *D625F221
+
+@341 PGN pgn=65314 src=2 frames=251387 frameHz=552.72 ageMs=0 *4C0BC36C
+
+@342 PGN pgn=127488 src=2 frames=66073 frameHz=137.93 ageMs=1454 *55B936AE
+
+@343 PGN pgn=65346 src=2 frames=7340 frameHz=22.12 ageMs=4932 *954BEA2F
+
+@344 PGN pgn=127489 src=2 frames=21805 frameHz=44.25 ageMs=1698 *FAC71923
+
+@345 PGN pgn=65344 src=2 frames=14360 frameHz=48.83 ageMs=2261 *E962148C
+
+@346 PGN pgn=65345 src=2 frames=6983 frameHz=26.31 ageMs=1049 *74CF39DA
+
+@347 PGN pgn=128259 src=2 frames=7326 frameHz=25.51 ageMs=241 *0C7E2143
+
+@348 CAN state=1 queued=63 highWater=64 busTotal=264962 busDelta=3039 busHz=605.74 deltaValid=1 REC=0 TEC=0 *6156A915
+
+@349 LOSS missed=266461 delta=3143 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81246 alerts=0x00000A00 *81401106
+
+@350 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *DE9162F6
+
+@351 SNAP end=100 heap=99524 psram=6894332 refreshes=6224 evictions=0 *88EF0D7F
+
+@352 SNAP begin=101 ms=509594 elapsedMs=5011 *04954B1C
+
+@353 ENGINE src=2 inst=1 rpm=750.000 trimPct=71 *D0F3C85D
+
+@354 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=441120 *129BD1C1
+
+@355 PGN pgn=65314 src=2 frames=254127 frameHz=546.80 ageMs=0 *328FE516
+
+@356 PGN pgn=127488 src=2 frames=67087 frameHz=202.35 ageMs=643 *5293C393
+
+@357 PGN pgn=65346 src=2 frames=7340 frameHz=0.00 ageMs=9943 *BCBE55FE
+
+@358 PGN pgn=127489 src=2 frames=22024 frameHz=43.70 ageMs=1692 *D1200813
+
+@359 PGN pgn=65344 src=2 frames=14458 frameHz=19.56 ageMs=3717 *697F7CD0
+
+@360 PGN pgn=65345 src=2 frames=7116 frameHz=26.54 ageMs=1046 *2EB6E289
+
+@361 PGN pgn=128259 src=2 frames=7463 frameHz=27.34 ageMs=241 *1A16EA0A
+
+@362 CAN state=1 queued=63 highWater=64 busTotal=268017 busDelta=3055 busHz=609.66 deltaValid=1 REC=0 TEC=0 *1706F2E5
+
+@363 LOSS missed=269538 delta=3077 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79322 alerts=0x00000A00 *52F0DC1C
+
+@364 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *9E00CD63
+
+@365 SNAP end=101 heap=99524 psram=6894332 refreshes=6286 evictions=0 *F07F7C99
+
+@366 SNAP begin=102 ms=514607 elapsedMs=5013 *1CD58193
+
+@367 ENGINE src=2 inst=1 rpm=742.250 trimPct=71 *317652AC
+
+@368 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=446133 *849C8263
+
+@369 PGN pgn=65314 src=2 frames=257044 frameHz=581.89 ageMs=77 *38FEA080
+
+@370 PGN pgn=127488 src=2 frames=67770 frameHz=136.25 ageMs=644 *49662390
+
+@371 PGN pgn=65346 src=2 frames=7449 frameHz=21.74 ageMs=2988 *7200F950
+
+@372 PGN pgn=127489 src=2 frames=22262 frameHz=47.48 ageMs=1776 *EB946C5F
+
+@373 PGN pgn=65344 src=2 frames=14688 frameHz=45.88 ageMs=241 *A606B738
+
+@374 PGN pgn=65345 src=2 frames=7227 frameHz=22.14 ageMs=1048 *6F3BC8BF
+
+@375 PGN pgn=128259 src=2 frames=7463 frameHz=0.00 ageMs=5254 *0A9E6258
+
+@376 CAN state=1 queued=0 highWater=64 busTotal=270990 busDelta=2973 busHz=593.06 deltaValid=1 REC=0 TEC=0 *E3655BCC
+
+@377 LOSS missed=272649 delta=3111 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80902 alerts=0x00000A00 *10DB0325
+
+@378 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *7FA194E8
+
+@379 SNAP end=102 heap=99524 psram=6894332 refreshes=6348 evictions=0 *DE3A4D32
+
+@380 SNAP begin=103 ms=519626 elapsedMs=5019 *99ED4874
+
+@381 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *8ADDE60D
+
+@382 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=451152 *B53DF56A
+
+@383 PGN pgn=65314 src=2 frames=259923 frameHz=573.62 ageMs=78 *ACC20BFB
+
+@384 PGN pgn=127488 src=2 frames=68385 frameHz=122.53 ageMs=646 *80476390
+
+@385 PGN pgn=65346 src=2 frames=7582 frameHz=26.50 ageMs=2988 *6071BA08
+
+@386 PGN pgn=127489 src=2 frames=22606 frameHz=68.54 ageMs=1775 *02DBC371
+
+@387 PGN pgn=65344 src=2 frames=14919 frameHz=46.03 ageMs=243 *D475B3D6
+
+@388 PGN pgn=65345 src=2 frames=7321 frameHz=18.73 ageMs=1127 *EA812EC1
+
+@389 PGN pgn=128259 src=2 frames=7463 frameHz=0.00 ageMs=10273 *D9252E4A
+
+@390 CAN state=1 queued=0 highWater=64 busTotal=274046 busDelta=3056 busHz=608.89 deltaValid=1 REC=0 TEC=0 *CC96D0D9
+
+@391 LOSS missed=275793 delta=3144 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80935 alerts=0x00000A00 *617F4D48
+
+@392 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *5DEC4C04
+
+@393 SNAP end=103 heap=99524 psram=6894332 refreshes=6410 evictions=0 *F0B29885
+
+@394 SNAP begin=104 ms=524653 elapsedMs=5027 *24D81F0B
+
+@395 ENGINE src=2 inst=1 rpm=714.750 trimPct=71 *28E4DC87
+
+@396 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=456179 *369E5719
+
+@397 PGN pgn=65314 src=2 frames=262865 frameHz=585.24 ageMs=80 *79B16251
+
+@398 PGN pgn=127488 src=2 frames=69181 frameHz=158.34 ageMs=0 *5807FAEE
+
+@399 PGN pgn=65346 src=2 frames=7701 frameHz=23.67 ageMs=2998 *71F88892
+
+@400 PGN pgn=127489 src=2 frames=22856 frameHz=49.73 ageMs=1780 *8A47E9C5
+
+@401 PGN pgn=65344 src=2 frames=15054 frameHz=26.85 ageMs=324 *707E2B72
+
+@402 PGN pgn=65345 src=2 frames=7321 frameHz=0.00 ageMs=6154 *80134696
+
+@403 PGN pgn=128259 src=2 frames=7561 frameHz=19.49 ageMs=3319 *E231F7FE
+
+@404 CAN state=1 queued=64 highWater=64 busTotal=277174 busDelta=3128 busHz=622.24 deltaValid=1 REC=0 TEC=0 *E02B0DD7
+
+@405 LOSS missed=278974 delta=3181 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80030 alerts=0x00000A00 *D1D2BA43
+
+@406 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *E937CEF4
+
+@407 SNAP end=104 heap=99524 psram=6894332 refreshes=6472 evictions=0 *D83C4AB8
+
+@408 SNAP begin=105 ms=529673 elapsedMs=5020 *D9E155FA
+
+@409 ENGINE src=2 inst=1 rpm=718.750 trimPct=71 *9096A523
+
+@410 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=461199 *5BAC8B54
+
+@411 PGN pgn=65314 src=2 frames=265673 frameHz=559.36 ageMs=80 *2FE3EEFC
+
+@412 PGN pgn=127488 src=2 frames=70007 frameHz=164.54 ageMs=77 *2181BDC5
+
+@413 PGN pgn=65346 src=2 frames=7795 frameHz=18.73 ageMs=2998 *100084F9
+
+@414 PGN pgn=127489 src=2 frames=23100 frameHz=48.61 ageMs=1296 *74D15F9F
+
+@415 PGN pgn=65344 src=2 frames=15271 frameHz=43.23 ageMs=322 *1BCCC16B
+
+@416 PGN pgn=65345 src=2 frames=7321 frameHz=0.00 ageMs=11174 *9D847C8F
+
+@417 PGN pgn=128259 src=2 frames=7694 frameHz=26.49 ageMs=3321 *D1B80275
+
+@418 CAN state=1 queued=64 highWater=64 busTotal=280228 busDelta=3054 busHz=608.37 deltaValid=1 REC=0 TEC=0 *445BC3AA
+
+@419 LOSS missed=282093 delta=3119 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80648 alerts=0x00000A00 *80DCB703
+
+@420 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *1239F150
+
+@421 SNAP end=105 heap=99524 psram=6894332 refreshes=6534 evictions=0 *4E8EF616
+
+@422 SNAP begin=106 ms=534689 elapsedMs=5016 *5C5C6731
+
+@423 ENGINE src=2 inst=1 rpm=714.750 trimPct=71 *EEA198AF
+
+@424 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=466215 *D9DCE2F7
+
+@425 PGN pgn=65314 src=2 frames=268552 frameHz=573.96 ageMs=80 *C7FC68E0
+
+@426 PGN pgn=127488 src=2 frames=70882 frameHz=174.44 ageMs=77 *E39F80F7
+
+@427 PGN pgn=65346 src=2 frames=7795 frameHz=0.00 ageMs=8014 *482F7CB4
+
+@428 PGN pgn=127489 src=2 frames=23319 frameHz=43.66 ageMs=1294 *123D2166
+
+@429 PGN pgn=65344 src=2 frames=15396 frameHz=24.92 ageMs=1859 *F592D72D
+
+@430 PGN pgn=65345 src=2 frames=7434 frameHz=22.53 ageMs=4122 *B4975C7B
+
+@431 PGN pgn=128259 src=2 frames=7811 frameHz=23.33 ageMs=3313 *0B617C83
+
+@432 CAN state=1 queued=64 highWater=64 busTotal=283243 busDelta=3015 busHz=601.08 deltaValid=1 REC=0 TEC=0 *43907AFC
+
+@433 LOSS missed=285177 delta=3084 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=83311 alerts=0x00000A00 *4636AC72
+
+@434 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *B252B273
+
+@435 SNAP end=106 heap=99524 psram=6894332 refreshes=6596 evictions=0 *FC0793D4
+
+@436 SNAP begin=107 ms=539711 elapsedMs=5022 *7B1873CF
+
+@437 ENGINE src=2 inst=1 rpm=714.750 trimPct=71 *EC9E874C
+
+@438 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=471237 *0A428CEC
+
+@439 PGN pgn=65314 src=2 frames=271474 frameHz=581.84 ageMs=77 *0185AE32
+
+@440 PGN pgn=127488 src=2 frames=71631 frameHz=149.14 ageMs=1455 *3808A784
+
+@441 PGN pgn=65346 src=2 frames=7919 frameHz=24.69 ageMs=1050 *FC486580
+
+@442 PGN pgn=127489 src=2 frames=23538 frameHz=43.61 ageMs=1293 *64FD08A9
+
+@443 PGN pgn=65344 src=2 frames=15524 frameHz=25.49 ageMs=1861 *9B16C824
+
+@444 PGN pgn=65345 src=2 frames=7531 frameHz=19.32 ageMs=4128 *BBF69E69
+
+@445 PGN pgn=128259 src=2 frames=7907 frameHz=19.12 ageMs=3323 *E9B4AA4D
+
+@446 CAN state=1 queued=1 highWater=64 busTotal=286226 busDelta=2983 busHz=593.99 deltaValid=1 REC=0 TEC=0 *50A8C6E7
+
+@447 LOSS missed=288194 delta=3017 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=82146 alerts=0x00000A00 *2142B20C
+
+@448 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *212E0192
+
+@449 SNAP end=107 heap=99524 psram=6894332 refreshes=6658 evictions=0 *D90A59BD
+
+@450 SNAP begin=108 ms=544734 elapsedMs=5023 *1219F8CC
+
+@451 ENGINE src=2 inst=1 rpm=699.250 trimPct=71 *7F45EDD9
+
+@452 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=476260 *87F16067
+
+@453 PGN pgn=65314 src=2 frames=274296 frameHz=561.82 ageMs=1 *75151C52
+
+@454 PGN pgn=127488 src=2 frames=72327 frameHz=138.56 ageMs=649 *7C7719BC
+
+@455 PGN pgn=65346 src=2 frames=8017 frameHz=19.51 ageMs=1053 *F2C5F41D
+
+@456 PGN pgn=127489 src=2 frames=23919 frameHz=75.85 ageMs=1377 *55FF9663
+
+@457 PGN pgn=65344 src=2 frames=15751 frameHz=45.19 ageMs=1865 *C3C0C382
+
+@458 PGN pgn=65345 src=2 frames=7656 frameHz=24.89 ageMs=4210 *563A3264
+
+@459 PGN pgn=128259 src=2 frames=7907 frameHz=0.00 ageMs=8346 *F6E6D2BD
+
+@460 CAN state=1 queued=63 highWater=64 busTotal=289299 busDelta=3073 busHz=611.79 deltaValid=1 REC=0 TEC=0 *A6B9680A
+
+@461 LOSS missed=291312 delta=3118 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79274 alerts=0x00000A00 *A0477E02
+
+@462 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *8C7F5662
+
+@463 SNAP end=108 heap=99524 psram=6894332 refreshes=6720 evictions=0 *6A5BE914
+
+@464 SNAP begin=109 ms=549749 elapsedMs=5015 *CBF1FA5C
+
+@465 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *4120D56C
+
+@466 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=481275 *9C29915A
+
+@467 PGN pgn=65314 src=2 frames=277090 frameHz=557.13 ageMs=77 *AD7123E6
+
+@468 PGN pgn=127488 src=2 frames=73170 frameHz=168.10 ageMs=324 *946A61AB
+
+@469 PGN pgn=65346 src=2 frames=8131 frameHz=22.73 ageMs=1132 *EC81C0C1
+
+@470 PGN pgn=127489 src=2 frames=24110 frameHz=38.09 ageMs=2832 *F4DE5DE5
+
+@471 PGN pgn=65344 src=2 frames=15887 frameHz=27.12 ageMs=3398 *B72B6B4C
+
+@472 PGN pgn=65345 src=2 frames=7785 frameHz=25.72 ageMs=4206 *3147CA97
+
+@473 PGN pgn=128259 src=2 frames=8044 frameHz=27.32 ageMs=1376 *50C82BE8
+
+@474 CAN state=1 queued=64 highWater=64 busTotal=292267 busDelta=2968 busHz=591.82 deltaValid=1 REC=0 TEC=0 *3AFBD0EA
+
+@475 LOSS missed=294366 delta=3054 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=78815 alerts=0x00000A00 *253B0D50
+
+@476 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *2653FE31
+
+@477 SNAP end=109 heap=99524 psram=6894332 refreshes=6782 evictions=0 *C5564864
+
+@478 SNAP begin=110 ms=554753 elapsedMs=5004 *0BFCE286
+
+@479 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *DD346782
+
+@480 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=486279 *EECCFEDD
+
+@481 PGN pgn=65314 src=2 frames=279916 frameHz=564.75 ageMs=77 *9FABF7DF
+
+@482 PGN pgn=127488 src=2 frames=74080 frameHz=181.85 ageMs=161 *38420FA2
+
+@483 PGN pgn=65346 src=2 frames=8264 frameHz=26.58 ageMs=1130 *88C66253
+
+@484 PGN pgn=127489 src=2 frames=24328 frameHz=43.57 ageMs=2902 *A0ECE4E4
+
+@485 PGN pgn=65344 src=2 frames=15988 frameHz=20.18 ageMs=3385 *76545200
+
+@486 PGN pgn=65345 src=2 frames=7785 frameHz=0.00 ageMs=9210 *57D7B3A6
+
+@487 PGN pgn=128259 src=2 frames=8162 frameHz=23.58 ageMs=1373 *8ABA30A5
+
+@488 CAN state=1 queued=64 highWater=64 busTotal=295272 busDelta=3005 busHz=600.52 deltaValid=1 REC=0 TEC=0 *D463E6A5
+
+@489 LOSS missed=297444 delta=3078 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80510 alerts=0x00000A00 *CE05D33A
+
+@490 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *8BC4734D
+
+@491 SNAP end=110 heap=99524 psram=6894332 refreshes=6844 evictions=0 *24896195
+
+@492 SNAP begin=111 ms=559764 elapsedMs=5011 *12E64FDC
+
+@493 ENGINE src=2 inst=1 rpm=707.000 trimPct=88 *C3AF1C6A
+
+@494 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=491290 *A682C237
+
+@495 PGN pgn=65314 src=2 frames=282881 frameHz=591.70 ageMs=80 *9DDD29A8
+
+@496 PGN pgn=127488 src=2 frames=74777 frameHz=139.09 ageMs=161 *DF816AB1
+
+@497 PGN pgn=65346 src=2 frames=8264 frameHz=0.00 ageMs=6141 *2653E8DC
+
+@498 PGN pgn=127489 src=2 frames=24580 frameHz=50.29 ageMs=2905 *AD430881
+
+@499 PGN pgn=65344 src=2 frames=16216 frameHz=45.50 ageMs=0 *AC1ABFCA
+
+@500 PGN pgn=65345 src=2 frames=7882 frameHz=19.36 ageMs=2181 *E052C22C
+
+@501 PGN pgn=128259 src=2 frames=8258 frameHz=19.16 ageMs=1373 *270C61D3
+
+@502 CAN state=1 queued=63 highWater=64 busTotal=298287 busDelta=3015 busHz=601.68 deltaValid=1 REC=0 TEC=0 *686D3605
+
+@503 LOSS missed=300522 delta=3078 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79396 alerts=0x00000A00 *DAAD9951
+
+@504 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *1A7C0ED7
+
+@505 SNAP end=111 heap=99524 psram=6894332 refreshes=6906 evictions=0 *2CF0CD0D
+
+@506 SNAP begin=112 ms=564772 elapsedMs=5008 *C3E1A07E
+
+@507 ENGINE src=2 inst=1 rpm=722.750 trimPct=88 *C9463EDF
+
+@508 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=496298 *D00F57F2
+
+@509 PGN pgn=65314 src=2 frames=285687 frameHz=560.30 ageMs=79 *BEB3F695
+
+@510 PGN pgn=127488 src=2 frames=75705 frameHz=185.30 ageMs=161 *2D5F409F
+
+@511 PGN pgn=65346 src=2 frames=8264 frameHz=0.00 ageMs=11149 *E56A6887
+
+@512 PGN pgn=127489 src=2 frames=24818 frameHz=47.52 ageMs=2906 *3DD1BC1B
+
+@513 PGN pgn=65344 src=2 frames=16354 frameHz=27.56 ageMs=0 *CD96070E
+
+@514 PGN pgn=65345 src=2 frames=7982 frameHz=19.97 ageMs=2261 *54B38732
+
+@515 PGN pgn=128259 src=2 frames=8357 frameHz=19.77 ageMs=1376 *13603A1C
+
+@516 CAN state=1 queued=63 highWater=64 busTotal=301293 busDelta=3006 busHz=600.24 deltaValid=1 REC=0 TEC=0 *80856BD7
+
+@517 LOSS missed=303613 delta=3091 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80029 alerts=0x00000A00 *9B47227C
+
+@518 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *2274F754
+
+@519 SNAP end=112 heap=99524 psram=6894332 refreshes=6968 evictions=0 *6C7FAF9F
+
+@520 SNAP begin=113 ms=569781 elapsedMs=5009 *01ABEC15
+
+@521 ENGINE src=2 inst=1 rpm=711.000 trimPct=88 *F2CF055D
+
+@522 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=501307 *57B1EBEC
+
+@523 PGN pgn=65314 src=2 frames=288566 frameHz=574.77 ageMs=80 *D8252FD6
+
+@524 PGN pgn=127488 src=2 frames=76305 frameHz=119.78 ageMs=241 *86D29BAB
+
+@525 PGN pgn=65346 src=2 frames=8385 frameHz=24.16 ageMs=4118 *C88D645B
+
+@526 PGN pgn=127489 src=2 frames=25180 frameHz=72.27 ageMs=890 *4600A5BD
+
+@527 PGN pgn=65344 src=2 frames=16587 frameHz=46.52 ageMs=77 *E3ADBBB8
+
+@528 PGN pgn=65345 src=2 frames=8099 frameHz=23.36 ageMs=2262 *6C4F40D4
+
+@529 PGN pgn=128259 src=2 frames=8357 frameHz=0.00 ageMs=6385 *2F659942
+
+@530 CAN state=1 queued=1 highWater=64 busTotal=304304 busDelta=3011 busHz=601.12 deltaValid=1 REC=0 TEC=0 *AFD3D8FD
+
+@531 LOSS missed=306641 delta=3028 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81138 alerts=0x00000A00 *F2512626
+
+@532 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *06834A34
+
+@533 SNAP end=113 heap=99524 psram=6894332 refreshes=7030 evictions=0 *C466E8B3
+
+@534 SNAP begin=114 ms=574800 elapsedMs=5019 *E6A27462
+
+@535 ENGINE src=2 inst=1 rpm=711.000 trimPct=88 *563AD262
+
+@536 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=506326 *EE950085
+
+@537 PGN pgn=65314 src=2 frames=291337 frameHz=552.10 ageMs=0 *471037E4
+
+@538 PGN pgn=127488 src=2 frames=77017 frameHz=141.86 ageMs=242 *811A2F56
+
+@539 PGN pgn=65346 src=2 frames=8490 frameHz=20.92 ageMs=4128 *032EB70A
+
+@540 PGN pgn=127489 src=2 frames=25504 frameHz=64.55 ageMs=891 *FB070A3E
+
+@541 PGN pgn=65344 src=2 frames=16819 frameHz=46.22 ageMs=1460 *ECEDE618
+
+@542 PGN pgn=65345 src=2 frames=8232 frameHz=26.50 ageMs=2267 *D7D222A7
+
+@543 PGN pgn=128259 src=2 frames=8357 frameHz=0.00 ageMs=11404 *280A71D4
+
+@544 CAN state=1 queued=63 highWater=64 busTotal=307360 busDelta=3056 busHz=608.89 deltaValid=1 REC=0 TEC=0 *22B69FD3
+
+@545 LOSS missed=309841 delta=3200 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81089 alerts=0x00000A00 *53B17E99
+
+@546 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *C6EC8C4D
+
+@547 SNAP end=114 heap=99524 psram=6894332 refreshes=7092 evictions=0 *2666BD07
+
+@548 SNAP begin=115 ms=579814 elapsedMs=5014 *9488A143
+
+@549 ENGINE src=2 inst=1 rpm=711.000 trimPct=98 *32F72CD6
+
+@550 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=511340 *0295F0BD
+
+@551 PGN pgn=65314 src=2 frames=294203 frameHz=571.60 ageMs=0 *18BB1FD5
+
+@552 PGN pgn=127488 src=2 frames=77908 frameHz=177.70 ageMs=242 *7D86BD71
+
+@553 PGN pgn=65346 src=2 frames=8593 frameHz=20.54 ageMs=4204 *D49D3829
+
+@554 PGN pgn=127489 src=2 frames=25700 frameHz=39.09 ageMs=892 *1A21CABB
+
+@555 PGN pgn=65344 src=2 frames=16940 frameHz=24.13 ageMs=1455 *570DB9C6
+
+@556 PGN pgn=65345 src=2 frames=8232 frameHz=0.00 ageMs=7281 *E44154CE
+
+@557 PGN pgn=128259 src=2 frames=8492 frameHz=26.92 ageMs=4445 *F51FFEC3
+
+@558 CAN state=1 queued=64 highWater=64 busTotal=310441 busDelta=3081 busHz=614.48 deltaValid=1 REC=0 TEC=0 *762E9DCF
+
+@559 LOSS missed=312923 delta=3082 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81570 alerts=0x00000A00 *C0FCBF9A
+
+@560 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *CE4B382D
+
+@561 SNAP end=115 heap=99524 psram=6894332 refreshes=7154 evictions=0 *25A1B8B5
+
+@562 SNAP begin=116 ms=584829 elapsedMs=5015 *F9ADB863
+
+@563 ENGINE src=2 inst=1 rpm=714.750 trimPct=99 *4F740FAC
+
+@564 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=516355 *FC80F6E9
+
+@565 PGN pgn=65314 src=2 frames=297012 frameHz=560.12 ageMs=0 *BB4BF0AE
+
+@566 PGN pgn=127488 src=2 frames=78612 frameHz=140.38 ageMs=646 *0BAC98E5
+
+@567 PGN pgn=65346 src=2 frames=8726 frameHz=26.52 ageMs=4202 *F08C6AF0
+
+@568 PGN pgn=127489 src=2 frames=25951 frameHz=50.05 ageMs=968 *829E3DCD
+
+@569 PGN pgn=65344 src=2 frames=17170 frameHz=45.86 ageMs=1457 *A5B322E2
+
+@570 PGN pgn=65345 src=2 frames=8331 frameHz=19.74 ageMs=242 *EAD26A73
+
+@571 PGN pgn=128259 src=2 frames=8611 frameHz=23.73 ageMs=4446 *FCB5A7CB
+
+@572 CAN state=1 queued=63 highWater=64 busTotal=313419 busDelta=2978 busHz=593.82 deltaValid=1 REC=0 TEC=0 *0F06DBD6
+
+@573 LOSS missed=315989 delta=3066 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80827 alerts=0x00000A00 *1B5167CB
+
+@574 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *491931FA
+
+@575 SNAP end=116 heap=99524 psram=6894332 refreshes=7216 evictions=0 *53EB8874
+
+@576 SNAP begin=117 ms=589842 elapsedMs=5013 *A5795DEF
+
+@577 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *9247C52D
+
+@578 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=521368 *09DCB774
+
+@579 PGN pgn=65314 src=2 frames=299761 frameHz=548.37 ageMs=0 *AE8F88A1
+
+@580 PGN pgn=127488 src=2 frames=79587 frameHz=194.49 ageMs=161 *7641F142
+
+@581 PGN pgn=65346 src=2 frames=8726 frameHz=0.00 ageMs=9215 *5AC8E542
+
+@582 PGN pgn=127489 src=2 frames=26186 frameHz=46.88 ageMs=971 *8FEEBF06
+
+@583 PGN pgn=65344 src=2 frames=17307 frameHz=27.33 ageMs=2991 *9A2D036C
+
+@584 PGN pgn=65345 src=2 frames=8435 frameHz=20.75 ageMs=322 *1E50726F
+
+@585 PGN pgn=128259 src=2 frames=8710 frameHz=19.75 ageMs=4444 *52A4960D
+
+@586 CAN state=1 queued=63 highWater=64 busTotal=316392 busDelta=2973 busHz=593.06 deltaValid=1 REC=0 TEC=0 *24F0A5CF
+
+@587 LOSS missed=319090 delta=3101 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81417 alerts=0x00000A00 *72CD42A5
+
+@588 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *15286A9B
+
+@589 SNAP end=117 heap=99524 psram=6894332 refreshes=7278 evictions=0 *3FE4767E
+
+@590 SNAP begin=118 ms=594848 elapsedMs=5006 *2EEC0DDE
+
+@591 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *06B1C208
+
+@592 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=526374 *584505CE
+
+@593 PGN pgn=65314 src=2 frames=302683 frameHz=583.70 ageMs=0 *0C5DF639
+
+@594 PGN pgn=127488 src=2 frames=80274 frameHz=137.24 ageMs=159 *A07DD9DF
+
+@595 PGN pgn=65346 src=2 frames=8842 frameHz=23.17 ageMs=2178 *02C1F33A
+
+@596 PGN pgn=127489 src=2 frames=26412 frameHz=45.15 ageMs=967 *01B05B4F
+
+@597 PGN pgn=65344 src=2 frames=17423 frameHz=23.17 ageMs=2988 *0113210C
+
+@598 PGN pgn=65345 src=2 frames=8563 frameHz=25.57 ageMs=321 *AFE86EEA
+
+@599 PGN pgn=128259 src=2 frames=8813 frameHz=20.58 ageMs=4519 *ECEEF1DA
+
+@600 CAN state=1 queued=64 highWater=64 busTotal=319355 busDelta=2963 busHz=591.89 deltaValid=1 REC=0 TEC=0 *84802673
+
+@601 LOSS missed=322181 delta=3091 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80568 alerts=0x00000A00 *FC42DB95
+
+@602 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *68FD5876
+
+@603 SNAP end=118 heap=99524 psram=6894332 refreshes=7340 evictions=0 *F6AE9C5A
+
+@604 SNAP begin=119 ms=599874 elapsedMs=5026 *CBD0029F
+
+@605 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *A7C7A928
+
+@606 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=531400 *042F8A18
+
+@607 PGN pgn=65314 src=2 frames=305700 frameHz=600.28 ageMs=80 *05AB65F1
+
+@608 PGN pgn=127488 src=2 frames=80812 frameHz=107.04 ageMs=0 *AAB026CB
+
+@609 PGN pgn=65346 src=2 frames=8939 frameHz=19.30 ageMs=2189 *1DAF076D
+
+@610 PGN pgn=127489 src=2 frames=26765 frameHz=70.23 ageMs=972 *5F7904E0
+
+@611 PGN pgn=65344 src=2 frames=17644 frameHz=43.97 ageMs=3001 *407B7C93
+
+@612 PGN pgn=65345 src=2 frames=8689 frameHz=25.07 ageMs=323 *9580CA93
+
+@613 PGN pgn=128259 src=2 frames=8813 frameHz=0.00 ageMs=9545 *0AFB384A
+
+@614 CAN state=1 queued=64 highWater=64 busTotal=322384 busDelta=3029 busHz=602.67 deltaValid=1 REC=0 TEC=0 *C44AA7F9
+
+@615 LOSS missed=325261 delta=3080 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=78816 alerts=0x00000A00 *C182DDD5
+
+@616 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *910761DD
+
+@617 SNAP end=119 heap=99524 psram=6894332 refreshes=7402 evictions=0 *52F942B1
+
+@618 SNAP begin=120 ms=604885 elapsedMs=5011 *B06B82BF
+
+@619 ENGINE src=2 inst=1 rpm=695.250 trimPct=71 *A78D58FF
+
+@620 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=536411 *A6BA455D
+
+@621 PGN pgn=65314 src=2 frames=308617 frameHz=582.12 ageMs=80 *F424AB83
+
+@622 PGN pgn=127488 src=2 frames=81653 frameHz=167.83 ageMs=0 *9C041C34
+
+@623 PGN pgn=65346 src=2 frames=9061 frameHz=24.35 ageMs=2259 *78357211
+
+@624 PGN pgn=127489 src=2 frames=26974 frameHz=41.71 ageMs=1049 *40E9B984
+
+@625 PGN pgn=65344 src=2 frames=17765 frameHz=24.15 ageMs=4522 *9783A4F4
+
+@626 PGN pgn=65345 src=2 frames=8689 frameHz=0.00 ageMs=5334 *02747A2F
+
+@627 PGN pgn=128259 src=2 frames=8942 frameHz=25.74 ageMs=2503 *D687853D
+
+@628 CAN state=1 queued=64 highWater=64 busTotal=325391 busDelta=3007 busHz=600.08 deltaValid=1 REC=0 TEC=0 *9F77E476
+
+@629 LOSS missed=328321 delta=3060 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79740 alerts=0x00000A00 *A34BE3D1
+
+@630 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *AF49B53D
+
+@631 SNAP end=120 heap=99524 psram=6894332 refreshes=7464 evictions=0 *12F086ED
+
+@632 SNAP begin=121 ms=609903 elapsedMs=5018 *8C6D4EF1
+
+@633 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *4EE96787
+
+@634 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=541429 *6CB9002F
+
+@635 PGN pgn=65314 src=2 frames=311320 frameHz=538.66 ageMs=0 *7D020B4B
+
+@636 PGN pgn=127488 src=2 frames=82564 frameHz=181.55 ageMs=242 *6DDA2068
+
+@637 PGN pgn=65346 src=2 frames=9197 frameHz=27.10 ageMs=2262 *49027F48
+
+@638 PGN pgn=127489 src=2 frames=27190 frameHz=43.05 ageMs=483 *2FA744D0
+
+@639 PGN pgn=65344 src=2 frames=17995 frameHz=45.83 ageMs=1050 *9AF0BF0D
+
+@640 PGN pgn=65345 src=2 frames=8689 frameHz=0.00 ageMs=10352 *0D524895
+
+@641 PGN pgn=128259 src=2 frames=9044 frameHz=20.33 ageMs=2507 *23C21E0D
+
+@642 CAN state=1 queued=63 highWater=64 busTotal=328437 busDelta=3046 busHz=607.01 deltaValid=1 REC=0 TEC=0 *F65F7EE2
+
+@643 LOSS missed=331430 delta=3109 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80198 alerts=0x00000A00 *6A4E7BCB
+
+@644 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *7DA233A0
+
+@645 SNAP end=121 heap=99524 psram=6894332 refreshes=7526 evictions=0 *19CE643A
+
+@646 SNAP begin=122 ms=614917 elapsedMs=5014 *C7605EFC
+
+@647 ENGINE src=2 inst=1 rpm=726.500 trimPct=71 *A389BD65
+
+@648 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=546443 *E192DE09
+
+@649 PGN pgn=65314 src=2 frames=314193 frameHz=573.00 ageMs=1 *E2894631
+
+@650 PGN pgn=127488 src=2 frames=83330 frameHz=152.77 ageMs=242 *54F32CDA
+
+@651 PGN pgn=65346 src=2 frames=9197 frameHz=0.00 ageMs=7276 *46A67C24
+
+@652 PGN pgn=127489 src=2 frames=27421 frameHz=46.07 ageMs=561 *BE15AB13
+
+@653 PGN pgn=65344 src=2 frames=18215 frameHz=43.88 ageMs=1050 *A6A7098E
+
+@654 PGN pgn=65345 src=2 frames=8787 frameHz=19.55 ageMs=3397 *5043D916
+
+@655 PGN pgn=128259 src=2 frames=9140 frameHz=19.15 ageMs=2588 *2A986650
+
+@656 CAN state=1 queued=64 highWater=64 busTotal=331494 busDelta=3057 busHz=609.69 deltaValid=1 REC=0 TEC=0 *128B0B19
+
+@657 LOSS missed=334530 delta=3100 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=82235 alerts=0x00000A00 *AC8AEB09
+
+@658 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *06F23983
+
+@659 SNAP end=122 heap=99524 psram=6894332 refreshes=7588 evictions=0 *B8D95970
+
+@660 SNAP begin=123 ms=619927 elapsedMs=5010 *226A09DF
+
+@661 ENGINE src=2 inst=1 rpm=722.750 trimPct=71 *7690694C
+
+@662 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=551453 *6B5C17D8
+
+@663 PGN pgn=65314 src=2 frames=317012 frameHz=562.67 ageMs=0 *0196D352
+
+@664 PGN pgn=127488 src=2 frames=84157 frameHz=165.07 ageMs=646 *9C0641E0
+
+@665 PGN pgn=65346 src=2 frames=9295 frameHz=19.56 ageMs=242 *5F6BC519
+
+@666 PGN pgn=127489 src=2 frames=27659 frameHz=47.50 ageMs=565 *71AD62D8
+
+@667 PGN pgn=65344 src=2 frames=18313 frameHz=19.56 ageMs=1049 *BD24638A
+
+@668 PGN pgn=65345 src=2 frames=8916 frameHz=25.75 ageMs=3391 *7D4C245C
+
+@669 PGN pgn=128259 src=2 frames=9268 frameHz=25.55 ageMs=2583 *367541DC
+
+@670 CAN state=1 queued=63 highWater=64 busTotal=334502 busDelta=3008 busHz=600.40 deltaValid=1 REC=0 TEC=0 *664A0E3F
+
+@671 LOSS missed=337596 delta=3066 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79588 alerts=0x00000A00 *76CC76E8
+
+@672 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *A90634CF
+
+@673 SNAP end=123 heap=99524 psram=6894332 refreshes=7650 evictions=0 *86DF4287
+
+@674 SNAP begin=124 ms=624939 elapsedMs=5012 *B6D7F6A6
+
+@675 ENGINE src=2 inst=1 rpm=699.250 trimPct=71 *F3DF0005
+
+@676 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=556465 *A58E3761
+
+@677 PGN pgn=65314 src=2 frames=319877 frameHz=571.63 ageMs=0 *7B66019C
+
+@678 PGN pgn=127488 src=2 frames=84772 frameHz=122.71 ageMs=725 *B7FA081C
+
+@679 PGN pgn=65346 src=2 frames=9390 frameHz=18.95 ageMs=322 *2509D605
+
+@680 PGN pgn=127489 src=2 frames=27999 frameHz=67.84 ageMs=565 *89F433FE
+
+@681 PGN pgn=65344 src=2 frames=18546 frameHz=46.49 ageMs=1130 *4AE5C575
+
+@682 PGN pgn=65345 src=2 frames=9050 frameHz=26.74 ageMs=3395 *F4937878
+
+@683 PGN pgn=128259 src=2 frames=9268 frameHz=0.00 ageMs=7595 *12894EF3
+
+@684 CAN state=1 queued=63 highWater=64 busTotal=337533 busDelta=3031 busHz=604.75 deltaValid=1 REC=0 TEC=0 *DC8AB4F5
+
+@685 LOSS missed=340716 delta=3120 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81102 alerts=0x00000A00 *709ACEDD
+
+@686 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *FBB01FBA
+
+@687 SNAP end=124 heap=99524 psram=6894332 refreshes=7712 evictions=0 *350381DA
+
+@688 SNAP begin=125 ms=629955 elapsedMs=5016 *5B70EC25
+
+@689 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *42CD2DF4
+
+@690 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=561481 *E97ECAC5
+
+@691 PGN pgn=65314 src=2 frames=322831 frameHz=588.92 ageMs=0 *F24E2B90
+
+@692 PGN pgn=127488 src=2 frames=85446 frameHz=134.37 ageMs=724 *0EA130B9
+
+@693 PGN pgn=65346 src=2 frames=9524 frameHz=26.71 ageMs=321 *0FD2DCE4
+
+@694 PGN pgn=127489 src=2 frames=28204 frameHz=40.87 ageMs=2098 *7BF70990
+
+@695 PGN pgn=65344 src=2 frames=18657 frameHz=22.13 ageMs=2585 *C32F2781
+
+@696 PGN pgn=65345 src=2 frames=9154 frameHz=20.73 ageMs=3392 *CE3D94E6
+
+@697 PGN pgn=128259 src=2 frames=9385 frameHz=23.33 ageMs=563 *DA4AE597
+
+@698 CAN state=1 queued=64 highWater=64 busTotal=340585 busDelta=3052 busHz=608.45 deltaValid=1 REC=0 TEC=0 *ECCE98F4
+
+@699 LOSS missed=343824 delta=3108 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=83291 alerts=0x00000A00 *D11CC40C
+
+@700 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *B60E298D
+
+@701 SNAP end=125 heap=99524 psram=6894332 refreshes=7774 evictions=0 *AA0B3C6A
+
+@702 SNAP begin=126 ms=634972 elapsedMs=5017 *8E40EA0B
+
+@703 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *7CDBBA9F
+
+@704 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=566498 *9753D05A
+
+@705 PGN pgn=65314 src=2 frames=325820 frameHz=595.77 ageMs=79 *A1BE5D62
+
+@706 PGN pgn=127488 src=2 frames=86230 frameHz=156.27 ageMs=0 *4C2EC23D
+
+@707 PGN pgn=65346 src=2 frames=9657 frameHz=26.51 ageMs=323 *0F6BD715
+
+@708 PGN pgn=127489 src=2 frames=28459 frameHz=50.83 ageMs=2101 *DB3D5C56
+
+@709 PGN pgn=65344 src=2 frames=18750 frameHz=18.54 ageMs=2587 *4CF7FF25
+
+@710 PGN pgn=65345 src=2 frames=9154 frameHz=0.00 ageMs=8409 *BA8BBC13
+
+@711 PGN pgn=128259 src=2 frames=9480 frameHz=18.94 ageMs=566 *81601954
+
+@712 CAN state=1 queued=64 highWater=64 busTotal=343605 busDelta=3020 busHz=601.95 deltaValid=1 REC=0 TEC=0 *A1F08A58
+
+@713 LOSS missed=346887 delta=3063 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79507 alerts=0x00000A00 *360544BE
+
+@714 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *FDE20B5A
+
+@715 SNAP end=126 heap=99524 psram=6894332 refreshes=7836 evictions=0 *C529814F
+
+@716 SNAP begin=127 ms=639987 elapsedMs=5015 *45AAFDEE
+
+@717 ENGINE src=2 inst=1 rpm=699.250 trimPct=71 *B2028A58
+
+@718 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=571513 *76FC41CF
+
+@719 PGN pgn=65314 src=2 frames=328709 frameHz=576.07 ageMs=81 *1F9918D7
+
+@720 PGN pgn=127488 src=2 frames=86962 frameHz=145.96 ageMs=0 *E2D93F87
+
+@721 PGN pgn=65346 src=2 frames=9657 frameHz=0.00 ageMs=5338 *6EE6625A
+
+@722 PGN pgn=127489 src=2 frames=28694 frameHz=46.86 ageMs=2103 *652D1891
+
+@723 PGN pgn=65344 src=2 frames=18996 frameHz=49.05 ageMs=2669 *D9070E98
+
+@724 PGN pgn=65345 src=2 frames=9271 frameHz=23.33 ageMs=1453 *4B047DC5
+
+@725 PGN pgn=128259 src=2 frames=9593 frameHz=22.53 ageMs=645 *969365A6
+
+@726 CAN state=1 queued=64 highWater=64 busTotal=346587 busDelta=2982 busHz=594.62 deltaValid=1 REC=0 TEC=0 *8B54ED44
+
+@727 LOSS missed=349964 delta=3077 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80856 alerts=0x00000A00 *5F78CFE0
+
+@728 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *89FF24CF
+
+@729 SNAP end=127 heap=99524 psram=6894332 refreshes=7898 evictions=0 *0738C609
+
+@730 SNAP begin=128 ms=645004 elapsedMs=5017 *D9A898DA
+
+@731 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *EF091AA4
+
+@732 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=576530 *ED7889C7
+
+@733 PGN pgn=65314 src=2 frames=331427 frameHz=541.76 ageMs=76 *EC9CD7A4
+
+@734 PGN pgn=127488 src=2 frames=87975 frameHz=201.91 ageMs=1049 *FF7FDFBD
+
+@735 PGN pgn=65346 src=2 frames=9657 frameHz=0.00 ageMs=10355 *85DD4908
+
+@736 PGN pgn=127489 src=2 frames=28907 frameHz=42.46 ageMs=2101 *2F419AEB
+
+@737 PGN pgn=65344 src=2 frames=19093 frameHz=19.33 ageMs=4123 *4C693EC9
+
+@738 PGN pgn=65345 src=2 frames=9404 frameHz=26.51 ageMs=1454 *E76CAADA
+
+@739 PGN pgn=128259 src=2 frames=9727 frameHz=26.71 ageMs=643 *A762E196
+
+@740 CAN state=1 queued=64 highWater=64 busTotal=349615 busDelta=3028 busHz=603.55 deltaValid=1 REC=0 TEC=0 *DE379278
+
+@741 LOSS missed=353052 delta=3088 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81151 alerts=0x00000A00 *53FEEA58
+
+@742 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *3EA7DCDF
+
+@743 SNAP end=128 heap=99524 psram=6894332 refreshes=7960 evictions=0 *A54E8FE8
+
+@744 SNAP begin=129 ms=650019 elapsedMs=5015 *2560F83A
+
+@745 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *AF817451
+
+@746 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=581545 *9BB16A50
+
+@747 PGN pgn=65314 src=2 frames=334290 frameHz=570.89 ageMs=0 *F4CD2B8F
+
+@748 PGN pgn=127488 src=2 frames=88635 frameHz=131.61 ageMs=1049 *3DFE3BAB
+
+@749 PGN pgn=65346 src=2 frames=9757 frameHz=19.94 ageMs=3395 *52FC0A15
+
+@750 PGN pgn=127489 src=2 frames=29240 frameHz=66.40 ageMs=80 *A0C20C22
+
+@751 PGN pgn=65344 src=2 frames=19311 frameHz=43.47 ageMs=645 *D7EEB5EB
+
+@752 PGN pgn=65345 src=2 frames=9521 frameHz=23.33 ageMs=1455 *A938D104
+
+@753 PGN pgn=128259 src=2 frames=9727 frameHz=0.00 ageMs=5658 *9A4A2723
+
+@754 CAN state=1 queued=63 highWater=64 busTotal=352738 busDelta=3123 busHz=622.73 deltaValid=1 REC=0 TEC=0 *0B878569
+
+@755 LOSS missed=356152 delta=3100 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=82951 alerts=0x00000A00 *03601E3F
+
+@756 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *7B511DF8
+
+@757 SNAP end=129 heap=99524 psram=6894332 refreshes=8022 evictions=0 *95F6E622
+
+@758 SNAP begin=130 ms=655026 elapsedMs=5007 *5C759ADF
+
+@759 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *08E3BFD6
+
+@760 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=586552 *E5368CA3
+
+@761 PGN pgn=65314 src=2 frames=337142 frameHz=569.60 ageMs=0 *11AAF7C7
+
+@762 PGN pgn=127488 src=2 frames=89311 frameHz=135.01 ageMs=240 *8CC7148F
+
+@763 PGN pgn=65346 src=2 frames=9881 frameHz=24.77 ageMs=3391 *5ACB104E
+
+@764 PGN pgn=127489 src=2 frames=29597 frameHz=71.30 ageMs=160 *68D18436
+
+@765 PGN pgn=65344 src=2 frames=19534 frameHz=44.54 ageMs=643 *EBBFFEA0
+
+@766 PGN pgn=65345 src=2 frames=9616 frameHz=18.97 ageMs=1453 *4043810E
+
+@767 PGN pgn=128259 src=2 frames=9727 frameHz=0.00 ageMs=10665 *F6021B40
+
+@768 CAN state=1 queued=63 highWater=64 busTotal=355750 busDelta=3012 busHz=601.56 deltaValid=1 REC=0 TEC=0 *47A4FE06
+
+@769 LOSS missed=359217 delta=3065 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=78914 alerts=0x00000A00 *8A987C11
+
+@770 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *F84CB90C
+
+@771 SNAP end=130 heap=99524 psram=6894332 refreshes=8084 evictions=0 *E0FC1010
+
+@772 SNAP begin=131 ms=660050 elapsedMs=5024 *92288F56
+
+@773 ENGINE src=2 inst=1 rpm=699.250 trimPct=71 *D8DBDB52
+
+@774 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=591576 *A5098642
+
+@775 PGN pgn=65314 src=2 frames=339951 frameHz=559.12 ageMs=0 *E0690B22
+
+@776 PGN pgn=127488 src=2 frames=90178 frameHz=172.57 ageMs=323 *CB89DAF7
+
+@777 PGN pgn=65346 src=2 frames=10016 frameHz=26.87 ageMs=3401 *247D191E
+
+@778 PGN pgn=127489 src=2 frames=29874 frameHz=55.14 ageMs=161 *2908CDCC
+
+@779 PGN pgn=65344 src=2 frames=19643 frameHz=21.70 ageMs=728 *ABAB7509
+
+@780 PGN pgn=65345 src=2 frames=9616 frameHz=0.00 ageMs=6477 *D0F7E06E
+
+@781 PGN pgn=128259 src=2 frames=9828 frameHz=20.10 ageMs=3646 *CCF5541A
+
+@782 CAN state=1 queued=63 highWater=64 busTotal=358823 busDelta=3073 busHz=611.66 deltaValid=1 REC=0 TEC=0 *875500B5
+
+@783 LOSS missed=362334 delta=3117 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81008 alerts=0x00000A00 *71278B2B
+
+@784 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *1E11A621
+
+@785 SNAP end=131 heap=99524 psram=6894332 refreshes=8146 evictions=0 *DD86DF8B
+
+@786 SNAP begin=132 ms=665069 elapsedMs=5019 *50485C21
+
+@787 ENGINE src=2 inst=1 rpm=699.250 trimPct=71 *91B93E0B
+
+@788 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=596595 *C47711B3
+
+@789 PGN pgn=65314 src=2 frames=342778 frameHz=563.26 ageMs=80 *99AA67A4
+
+@790 PGN pgn=127488 src=2 frames=90957 frameHz=155.21 ageMs=0 *05843F88
+
+@791 PGN pgn=65346 src=2 frames=10126 frameHz=21.92 ageMs=3403 *06167C23
+
+@792 PGN pgn=127489 src=2 frames=30087 frameHz=42.44 ageMs=162 *197258F0
+
+@793 PGN pgn=65344 src=2 frames=19885 frameHz=48.22 ageMs=728 *DE82E6E5
+
+@794 PGN pgn=65345 src=2 frames=9616 frameHz=0.00 ageMs=11496 *AEAE19A8
+
+@795 PGN pgn=128259 src=2 frames=9931 frameHz=20.52 ageMs=3726 *B4FDF93B
+
+@796 CAN state=1 queued=63 highWater=64 busTotal=361825 busDelta=3002 busHz=598.13 deltaValid=1 REC=0 TEC=0 *AFBB4F0E
+
+@797 LOSS missed=365468 delta=3134 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=82247 alerts=0x00000A00 *2BF2DD38
+
+@798 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *84DC0ADE
+
+@799 SNAP end=132 heap=99524 psram=6894332 refreshes=8208 evictions=0 *C46F89E6
+
+@800 SNAP begin=133 ms=670082 elapsedMs=5013 *1874EE0E
+
+@801 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *9C8502D7
+
+@802 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=601608 *0B653592
+
+@803 PGN pgn=65314 src=2 frames=345676 frameHz=578.10 ageMs=81 *6CEE4161
+
+@804 PGN pgn=127488 src=2 frames=91760 frameHz=160.18 ageMs=0 *DD1A7FCF
+
+@805 PGN pgn=65346 src=2 frames=10126 frameHz=0.00 ageMs=8416 *6A5855A4
+
+@806 PGN pgn=127489 src=2 frames=30317 frameHz=45.88 ageMs=163 *77FD73B4
+
+@807 PGN pgn=65344 src=2 frames=19986 frameHz=20.15 ageMs=2261 *AF14649D
+
+@808 PGN pgn=65345 src=2 frames=9750 frameHz=26.73 ageMs=4526 *E057547F
+
+@809 PGN pgn=128259 src=2 frames=10066 frameHz=26.93 ageMs=3714 *1430F4A2
+
+@810 CAN state=1 queued=63 highWater=64 busTotal=364822 busDelta=2997 busHz=597.85 deltaValid=1 REC=0 TEC=0 *519D20C3
+
+@811 LOSS missed=368572 delta=3104 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81078 alerts=0x00000A00 *8F9E54D4
+
+@812 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *90BE5D07
+
+@813 SNAP end=133 heap=99524 psram=6894332 refreshes=8270 evictions=0 *CA2A48B7
+
+@814 SNAP begin=134 ms=675090 elapsedMs=5008 *E315DF1A
+
+@815 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *16260950
+
+@816 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=606616 *7AE86C3D
+
+@817 PGN pgn=65314 src=2 frames=348556 frameHz=575.08 ageMs=81 *25945446
+
+@818 PGN pgn=127488 src=2 frames=92478 frameHz=143.37 ageMs=0 *8BE3EE93
+
+@819 PGN pgn=65346 src=2 frames=10249 frameHz=24.56 ageMs=1449 *CE1BB087
+
+@820 PGN pgn=127489 src=2 frames=30563 frameHz=49.12 ageMs=240 *97770BB8
+
+@821 PGN pgn=65344 src=2 frames=20112 frameHz=25.16 ageMs=2256 *E96D2018
+
+@822 PGN pgn=65345 src=2 frames=9871 frameHz=24.16 ageMs=4522 *7A3AA296
+
+@823 PGN pgn=128259 src=2 frames=10188 frameHz=24.36 ageMs=3714 *5B74C08A
+
+@824 CAN state=1 queued=63 highWater=64 busTotal=367817 busDelta=2995 busHz=598.04 deltaValid=1 REC=0 TEC=0 *9FC55413
+
+@825 LOSS missed=371618 delta=3046 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79255 alerts=0x00000A00 *F28EC8A9
+
+@826 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *F6AB3E26
+
+@827 SNAP end=134 heap=99524 psram=6894332 refreshes=8332 evictions=0 *825E26F2
+
+@828 SNAP begin=135 ms=680097 elapsedMs=5007 *FC65FBB6
+
+@829 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *2CCE1D3D
+
+@830 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=611623 *8907A959
+
+@831 PGN pgn=65314 src=2 frames=351374 frameHz=562.81 ageMs=0 *F682B654
+
+@832 PGN pgn=127488 src=2 frames=93158 frameHz=135.81 ageMs=1051 *E44C9678
+
+@833 PGN pgn=65346 src=2 frames=10381 frameHz=26.36 ageMs=1455 *145ECC77
+
+@834 PGN pgn=127489 src=2 frames=30912 frameHz=69.70 ageMs=242 *A74C323D
+
+@835 PGN pgn=65344 src=2 frames=20346 frameHz=46.73 ageMs=2258 *F3E9FEB6
+
+@836 PGN pgn=65345 src=2 frames=9967 frameHz=19.17 ageMs=4517 *BCE34E78
+
+@837 PGN pgn=128259 src=2 frames=10188 frameHz=0.00 ageMs=8721 *C01CF5E9
+
+@838 CAN state=1 queued=64 highWater=64 busTotal=370836 busDelta=3019 busHz=602.96 deltaValid=1 REC=0 TEC=0 *2CF7E0EF
+
+@839 LOSS missed=374704 delta=3086 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81206 alerts=0x00000A00 *9E4B79F8
+
+@840 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *9A7D6796
+
+@841 SNAP end=135 heap=99524 psram=6894332 refreshes=8394 evictions=0 *2A8CBD09
+
+@842 SNAP begin=136 ms=685117 elapsedMs=5020 *84C4D4C0
+
+@843 ENGINE src=2 inst=1 rpm=679.750 trimPct=71 *9308B833
+
+@844 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=616643 *C79FEF8D
+
+@845 PGN pgn=65314 src=2 frames=354248 frameHz=572.51 ageMs=0 *ECF8EB28
+
+@846 PGN pgn=127488 src=2 frames=93960 frameHz=159.76 ageMs=648 *EE456BAB
+
+@847 PGN pgn=65346 src=2 frames=10506 frameHz=24.90 ageMs=1455 *002F4AE7
+
+@848 PGN pgn=127489 src=2 frames=31177 frameHz=52.79 ageMs=243 *68722EA4
+
+@849 PGN pgn=65344 src=2 frames=20442 frameHz=19.12 ageMs=3721 *C4521473
+
+@850 PGN pgn=65345 src=2 frames=10062 frameHz=18.92 ageMs=4532 *01F992A1
+
+@851 PGN pgn=128259 src=2 frames=10289 frameHz=20.12 ageMs=1699 *8B52BF3B
+
+@852 CAN state=1 queued=63 highWater=64 busTotal=373937 busDelta=3101 busHz=617.73 deltaValid=1 REC=0 TEC=0 *452D6230
+
+@853 LOSS missed=377732 delta=3028 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79207 alerts=0x00000A00 *CDD5F290
+
+@854 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *1E0C7731
+
+@855 SNAP end=136 heap=99524 psram=6894332 refreshes=8456 evictions=0 *A9D41C1C
+
+@856 SNAP begin=137 ms=690130 elapsedMs=5013 *AF52A2F1
+
+@857 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *04E39D63
+
+@858 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=621656 *412BF086
+
+@859 PGN pgn=65314 src=2 frames=357076 frameHz=564.13 ageMs=0 *9F02CF18
+
+@860 PGN pgn=127488 src=2 frames=94879 frameHz=183.32 ageMs=567 *FB6E5A3A
+
+@861 PGN pgn=65346 src=2 frames=10605 frameHz=19.75 ageMs=1455 *175B8F3C
+
+@862 PGN pgn=127489 src=2 frames=31311 frameHz=26.73 ageMs=3232 *78E7CCBA
+
+@863 PGN pgn=65344 src=2 frames=20672 frameHz=45.88 ageMs=244 *F496E68F
+
+@864 PGN pgn=65345 src=2 frames=10062 frameHz=0.00 ageMs=9545 *E7D24585
+
+@865 PGN pgn=128259 src=2 frames=10401 frameHz=22.34 ageMs=1779 *51DA960F
+
+@866 CAN state=1 queued=63 highWater=64 busTotal=377001 busDelta=3064 busHz=611.21 deltaValid=1 REC=0 TEC=0 *7187222E
+
+@867 LOSS missed=380810 delta=3078 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80534 alerts=0x00000A00 *C91204D8
+
+@868 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *5CA07A88
+
+@869 SNAP end=137 heap=99524 psram=6894332 refreshes=8518 evictions=0 *0C48439F
+
+@870 SNAP begin=138 ms=695137 elapsedMs=5007 *2B3724BF
+
+@871 ENGINE src=2 inst=1 rpm=699.250 trimPct=71 *83A70DBB
+
+@872 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=626663 *B2E000F1
+
+@873 PGN pgn=65314 src=2 frames=359970 frameHz=577.99 ageMs=0 *60AE46AB
+
+@874 PGN pgn=127488 src=2 frames=95571 frameHz=138.21 ageMs=565 *C8F6971F
+
+@875 PGN pgn=65346 src=2 frames=10605 frameHz=0.00 ageMs=6462 *DB427796
+
+@876 PGN pgn=127489 src=2 frames=31526 frameHz=42.94 ageMs=3228 *62A1FBCD
+
+@877 PGN pgn=65344 src=2 frames=20908 frameHz=47.13 ageMs=243 *29A41F6B
+
+@878 PGN pgn=65345 src=2 frames=10197 frameHz=26.96 ageMs=2583 *B73CEBB5
+
+@879 PGN pgn=128259 src=2 frames=10534 frameHz=26.56 ageMs=1775 *18CCA5C9
+
+@880 CAN state=1 queued=64 highWater=64 busTotal=380003 busDelta=3002 busHz=599.56 deltaValid=1 REC=0 TEC=0 *468958BA
+
+@881 LOSS missed=383895 delta=3085 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81239 alerts=0x00000A00 *DE73FD53
+
+@882 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *33120E24
+
+@883 SNAP end=138 heap=99524 psram=6894332 refreshes=8580 evictions=0 *19DB8873
+
+@884 SNAP begin=139 ms=700157 elapsedMs=5020 *A13C824D
+
+@885 ENGINE src=2 inst=1 rpm=699.250 trimPct=71 *488D844E
+
+@886 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=631683 *96F72DAE
+
+@887 PGN pgn=65314 src=2 frames=362777 frameHz=559.16 ageMs=0 *7E1615E4
+
+@888 PGN pgn=127488 src=2 frames=96501 frameHz=185.26 ageMs=566 *3B8A7C0A
+
+@889 PGN pgn=65346 src=2 frames=10605 frameHz=0.00 ageMs=11482 *61B672AB
+
+@890 PGN pgn=127489 src=2 frames=31757 frameHz=46.02 ageMs=3240 *A52EDCE0
+
+@891 PGN pgn=65344 src=2 frames=21033 frameHz=24.90 ageMs=322 *9FFDEB19
+
+@892 PGN pgn=65345 src=2 frames=10325 frameHz=25.50 ageMs=2591 *57AC5F0C
+
+@893 PGN pgn=128259 src=2 frames=10661 frameHz=25.30 ageMs=1782 *4F4F7F97
+
+@894 CAN state=1 queued=63 highWater=64 busTotal=383005 busDelta=3002 busHz=598.01 deltaValid=1 REC=0 TEC=0 *CA4C8288
+
+@895 LOSS missed=386961 delta=3066 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79547 alerts=0x00000A00 *AC92A71B
+
+@896 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *AB857AC3
+
+@897 SNAP end=139 heap=99524 psram=6894332 refreshes=8642 evictions=0 *BCAD1FAC
+
+@898 SNAP begin=140 ms=705172 elapsedMs=5015 *61C82060
+
+@899 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *FB1E7CFC
+
+@900 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=636698 *9B54F0D6
+
+@901 PGN pgn=65314 src=2 frames=365885 frameHz=619.74 ageMs=79 *29DD9FE3
+
+@902 PGN pgn=127488 src=2 frames=97056 frameHz=110.67 ageMs=0 *B0CF2511
+
+@903 PGN pgn=65346 src=2 frames=10729 frameHz=24.73 ageMs=4525 *729CC12F
+
+@904 PGN pgn=127489 src=2 frames=32131 frameHz=74.58 ageMs=1292 *046D15D8
+
+@905 PGN pgn=65344 src=2 frames=21129 frameHz=19.14 ageMs=1779 *3B5DBEC2
+
+@906 PGN pgn=65345 src=2 frames=10422 frameHz=19.34 ageMs=2588 *08536FD1
+
+@907 PGN pgn=128259 src=2 frames=10661 frameHz=0.00 ageMs=6797 *309C71E6
+
+@908 CAN state=1 queued=64 highWater=64 busTotal=386022 busDelta=3017 busHz=601.60 deltaValid=1 REC=0 TEC=0 *E68A1979
+
+@909 LOSS missed=390025 delta=3064 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80069 alerts=0x00000A00 *3579E472
+
+@910 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *69BD66F0
+
+@911 SNAP end=140 heap=99524 psram=6894332 refreshes=8704 evictions=0 *A64203E2
+
+@912 SNAP begin=141 ms=710176 elapsedMs=5004 *7B382CD0
+
+@913 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *0BDC4EEA
+
+@914 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=641702 *79C97A13
+
+@915 PGN pgn=65314 src=2 frames=368634 frameHz=549.36 ageMs=0 *507A1085
+
+@916 PGN pgn=127488 src=2 frames=98008 frameHz=190.25 ageMs=644 *A8F08102
+
+@917 PGN pgn=65346 src=2 frames=10862 frameHz=26.58 ageMs=4519 *F9924D1A
+
+@918 PGN pgn=127489 src=2 frames=32407 frameHz=55.16 ageMs=1288 *670666A1
+
+@919 PGN pgn=65344 src=2 frames=21237 frameHz=21.58 ageMs=1854 *3370EC12
+
+@920 PGN pgn=65345 src=2 frames=10422 frameHz=0.00 ageMs=7592 *A342AFC6
+
+@921 PGN pgn=128259 src=2 frames=10753 frameHz=18.39 ageMs=4759 *50A47137
+
+@922 CAN state=1 queued=64 highWater=64 busTotal=389056 busDelta=3034 busHz=606.31 deltaValid=1 REC=0 TEC=0 *2DA543BD
+
+@923 LOSS missed=393100 delta=3075 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80084 alerts=0x00000A00 *9B3B8C4A
+
+@924 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *4A454C01
+
+@925 SNAP end=141 heap=99524 psram=6894332 refreshes=8766 evictions=0 *25B92078
+
+@926 SNAP begin=142 ms=715195 elapsedMs=5019 *94693B30
+
+@927 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *5E89B086
+
+@928 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=646721 *DF9D7AEE
+
+@929 PGN pgn=65314 src=2 frames=371448 frameHz=560.67 ageMs=0 *B7738918
+
+@930 PGN pgn=127488 src=2 frames=98715 frameHz=140.86 ageMs=1051 *285FBD94
+
+@931 PGN pgn=65346 src=2 frames=10976 frameHz=22.71 ageMs=4529 *1B9E5AB8
+
+@932 PGN pgn=127489 src=2 frames=32625 frameHz=43.43 ageMs=1293 *121E8206
+
+@933 PGN pgn=65344 src=2 frames=21485 frameHz=49.41 ageMs=1861 *36B43BAB
+
+@934 PGN pgn=65345 src=2 frames=10552 frameHz=25.90 ageMs=647 *C8465167
+
+@935 PGN pgn=128259 src=2 frames=10846 frameHz=18.53 ageMs=4853 *76D3341E
+
+@936 CAN state=1 queued=63 highWater=64 busTotal=392088 busDelta=3032 busHz=604.10 deltaValid=1 REC=0 TEC=0 *5DDB7ACD
+
+@937 LOSS missed=396180 delta=3080 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80605 alerts=0x00000A00 *A6B6E1ED
+
+@938 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *B526553E
+
+@939 SNAP end=142 heap=99524 psram=6894332 refreshes=8828 evictions=0 *8C672921
+
+@940 SNAP begin=143 ms=720210 elapsedMs=5015 *C9A7AC07
+
+@941 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *8E3B29E7
+
+@942 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=651736 *E51345D6
+
+@943 PGN pgn=65314 src=2 frames=374185 frameHz=545.76 ageMs=78 *A4AEE289
+
+@944 PGN pgn=127488 src=2 frames=99735 frameHz=203.39 ageMs=242 *7A972D0B
+
+@945 PGN pgn=65346 src=2 frames=10976 frameHz=0.00 ageMs=9544 *8DB12EF1
+
+@946 PGN pgn=127489 src=2 frames=32852 frameHz=45.26 ageMs=1293 *715B2622
+
+@947 PGN pgn=65344 src=2 frames=21583 frameHz=19.54 ageMs=3311 *662EE6CC
+
+@948 PGN pgn=65345 src=2 frames=10685 frameHz=26.52 ageMs=647 *54903EFE
+
+@949 PGN pgn=128259 src=2 frames=10976 frameHz=25.92 ageMs=4850 *E56D3B87
+
+@950 CAN state=1 queued=64 highWater=64 busTotal=395185 busDelta=3097 busHz=617.55 deltaValid=1 REC=0 TEC=0 *A13B18A5
+
+@951 LOSS missed=399226 delta=3046 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=78656 alerts=0x00000A00 *4ED70CD4
+
+@952 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *C8ABF082
+
+@953 SNAP end=143 heap=99524 psram=6894332 refreshes=8890 evictions=0 *BC7EE371
+
+@954 SNAP begin=144 ms=725229 elapsedMs=5019 *C2480CE6
+
+@955 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *6B0089CC
+
+@956 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=656755 *E947D0BD
+
+@957 PGN pgn=65314 src=2 frames=377131 frameHz=586.97 ageMs=0 *75E6C4EF
+
+@958 PGN pgn=127488 src=2 frames=100414 frameHz=135.29 ageMs=243 *C2AA3A6B
+
+@959 PGN pgn=65346 src=2 frames=11093 frameHz=23.31 ageMs=2587 *EB28738E
+
+@960 PGN pgn=127489 src=2 frames=33104 frameHz=50.21 ageMs=1376 *31651A02
+
+@961 PGN pgn=65344 src=2 frames=21697 frameHz=22.71 ageMs=3398 *5E026C5E
+
+@962 PGN pgn=65345 src=2 frames=10783 frameHz=19.53 ageMs=647 *27F92F3E
+
+@963 PGN pgn=128259 src=2 frames=11107 frameHz=26.10 ageMs=4855 *461BEF60
+
+@964 CAN state=1 queued=64 highWater=64 busTotal=398212 busDelta=3027 busHz=603.11 deltaValid=1 REC=0 TEC=0 *134334C6
+
+@965 LOSS missed=402299 delta=3073 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80903 alerts=0x00000A00 *D5798DF6
+
+@966 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *1F7F624B
+
+@967 SNAP end=144 heap=99524 psram=6894332 refreshes=8952 evictions=0 *BD188DD0
+
+@968 SNAP begin=145 ms=730251 elapsedMs=5022 *C19DFB39
+
+@969 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *EE665A15
+
+@970 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=661777 *264B597B
+
+@971 PGN pgn=65314 src=2 frames=380021 frameHz=575.47 ageMs=0 *610FCB60
+
+@972 PGN pgn=127488 src=2 frames=101033 frameHz=123.26 ageMs=323 *9FC42184
+
+@973 PGN pgn=65346 src=2 frames=11230 frameHz=27.28 ageMs=2587 *CB67485F
+
+@974 PGN pgn=127489 src=2 frames=33454 frameHz=69.69 ageMs=1375 *DA04EC7A
+
+@975 PGN pgn=65344 src=2 frames=21933 frameHz=46.99 ageMs=3399 *A7931629
+
+@976 PGN pgn=65345 src=2 frames=10897 frameHz=22.70 ageMs=725 *646D98F7
+
+@977 PGN pgn=128259 src=2 frames=11107 frameHz=0.00 ageMs=9877 *EF4AAAAD
+
+@978 CAN state=1 queued=64 highWater=64 busTotal=401252 busDelta=3040 busHz=605.34 deltaValid=1 REC=0 TEC=0 *8FE6B922
+
+@979 LOSS missed=405380 delta=3081 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79507 alerts=0x00000A00 *692871CC
+
+@980 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *C503DE27
+
+@981 SNAP end=145 heap=99524 psram=6894332 refreshes=9014 evictions=0 *4872638B
+
+@982 SNAP begin=146 ms=735268 elapsedMs=5017 *ADCE0DE5
+
+@983 ENGINE src=2 inst=1 rpm=711.000 trimPct=71 *AB7E74FD
+
+@984 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=666794 *63747296
+
+@985 PGN pgn=65314 src=2 frames=382962 frameHz=586.21 ageMs=80 *46158411
+
+@986 PGN pgn=127488 src=2 frames=101810 frameHz=154.87 ageMs=322 *B10BB0E6
+
+@987 PGN pgn=65346 src=2 frames=11333 frameHz=20.53 ageMs=2588 *EDF44C94
+
+@988 PGN pgn=127489 src=2 frames=33700 frameHz=49.03 ageMs=1374 *8192A25E
+
+@989 PGN pgn=65344 src=2 frames=22047 frameHz=22.72 ageMs=0 *2665E894
+
+@990 PGN pgn=65345 src=2 frames=10897 frameHz=0.00 ageMs=5742 *85429946
+
+@991 PGN pgn=128259 src=2 frames=11215 frameHz=21.53 ageMs=2911 *223B4ED2
+
+@992 CAN state=1 queued=63 highWater=64 busTotal=404253 busDelta=3001 busHz=598.17 deltaValid=1 REC=0 TEC=0 *F0DD9F7E
+
+@993 LOSS missed=408502 delta=3122 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80779 alerts=0x00000A00 *4865F49C
+
+@994 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *3BEFDA54
+
+@995 SNAP end=146 heap=99524 psram=6894332 refreshes=9076 evictions=0 *5C09E131
+
+@996 SNAP begin=147 ms=740282 elapsedMs=5014 *6BE13118
+
+@997 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *53FA858F
+
+@998 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=671808 *BC394CB1
+
+@999 PGN pgn=65314 src=2 frames=385698 frameHz=545.67 ageMs=80 *29AEAED8
+
+@1000 PGN pgn=127488 src=2 frames=102637 frameHz=164.94 ageMs=641 *1000E1AB
+
+@1001 PGN pgn=65346 src=2 frames=11434 frameHz=20.14 ageMs=2665 *B89BF625
+
+@1002 PGN pgn=127489 src=2 frames=33941 frameHz=48.07 ageMs=887 *332D76AC
+
+@1003 PGN pgn=65344 src=2 frames=22287 frameHz=47.87 ageMs=1 *D8338DA0
+
+@1004 PGN pgn=65345 src=2 frames=10897 frameHz=0.00 ageMs=10756 *FBE9734C
+
+@1005 PGN pgn=128259 src=2 frames=11349 frameHz=26.73 ageMs=2907 *54E2A04B
+
+@1006 CAN state=1 queued=63 highWater=64 busTotal=407293 busDelta=3040 busHz=606.30 deltaValid=1 REC=0 TEC=0 *60960892
+
+@1007 LOSS missed=411631 delta=3129 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=81113 alerts=0x00000A00 *C9AAF884
+
+@1008 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *D3F176A3
+
+@1009 SNAP end=147 heap=99524 psram=6894332 refreshes=9138 evictions=0 *1DEC091C
+
+@1010 SNAP begin=148 ms=745298 elapsedMs=5016 *1AB8E2B1
+
+@1011 ENGINE src=2 inst=1 rpm=707.000 trimPct=71 *70226BED
+
+@1012 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=676824 *5EC1BE9E
+
+@1013 PGN pgn=65314 src=2 frames=388469 frameHz=552.43 ageMs=0 *3FB18CF1
+
+@1014 PGN pgn=127488 src=2 frames=103506 frameHz=173.25 ageMs=646 *A549F2DB
+
+@1015 PGN pgn=65346 src=2 frames=11434 frameHz=0.00 ageMs=7681 *1A198612
+
+@1016 PGN pgn=127489 src=2 frames=34170 frameHz=45.65 ageMs=889 *2807E4F1
+
+@1017 PGN pgn=65344 src=2 frames=22522 frameHz=46.85 ageMs=1457 *D0CDEBCC
+
+@1018 PGN pgn=65345 src=2 frames=11014 frameHz=23.33 ageMs=3716 *264BD458
+
+@1019 PGN pgn=128259 src=2 frames=11464 frameHz=22.93 ageMs=2907 *92EF2CA6
+
+@1020 CAN state=1 queued=63 highWater=64 busTotal=410306 busDelta=3013 busHz=600.68 deltaValid=1 REC=0 TEC=0 *C0638E92
+
+@1021 LOSS missed=414707 delta=3076 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=79418 alerts=0x00000A00 *EF52E9C5
+
+@1022 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *C4DE8E6F
+
+@1023 SNAP end=148 heap=99524 psram=6894332 refreshes=9200 evictions=0 *AA5B73CB
+
+@1024 SNAP begin=149 ms=750308 elapsedMs=5010 *67F24EB1
+
+@1025 ENGINE src=2 inst=1 rpm=703.250 trimPct=71 *B86E3EC1
+
+@1026 PGN pgn=60928 src=2 frames=143 frameHz=0.00 ageMs=681834 *3D065558
+
+@1027 PGN pgn=65314 src=2 frames=391296 frameHz=564.27 ageMs=0 *794A92EB
+
+@1028 PGN pgn=127488 src=2 frames=104295 frameHz=157.49 ageMs=1052 *C306FB50
+
+@1029 PGN pgn=65346 src=2 frames=11568 frameHz=26.75 ageMs=645 *3F3901B6
+
+@1030 PGN pgn=127489 src=2 frames=34408 frameHz=47.50 ageMs=890 *BA9ABAF9
+
+@1031 PGN pgn=65344 src=2 frames=22656 frameHz=26.75 ageMs=1457 *BF6FC071
+
+@1032 PGN pgn=65345 src=2 frames=11111 frameHz=19.36 ageMs=3714 *D09CF4E2
+
+@1033 PGN pgn=128259 src=2 frames=11562 frameHz=19.56 ageMs=2910 *93828A62
+
+@1034 CAN state=1 queued=63 highWater=64 busTotal=413307 busDelta=3001 busHz=599.00 deltaValid=1 REC=0 TEC=0 *3169E76F
+
+@1035 LOSS missed=417779 delta=3072 overruns=0 deltaOverrun=0 receiveFailures=0 maxLoopUs=80752 alerts=0x00000A00 *62631E1D
+
+@1036 LOG incompleteWrites=72 formatFailures=0 budgetSkippedRecords=936 overwrittenSnapshots=0 raw=0 rawDrops=0 alertPollFailures=0 statusFailures=0 *CD94CF88
+
+@1037 SNAP end=149 heap=99524 psram=6894332 refreshes=9262 evictions=0 *E6A72023

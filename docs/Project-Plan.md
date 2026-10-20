@@ -98,6 +98,12 @@ Deliver:
 
 ## Milestone 7 - Marine Enclosure
 
+Build an external, removable test enclosure first for running-data collection
+and evaluation of wiring, connections, and ports. Develop the in-dash design
+alongside it, informed by boat testing. The original bezel fit is physically
+confirmed; the chamfered variant is awaiting print evaluation. See
+[Enclosure](Enclosure.md) for scope and open mechanical choices.
+
 Design and validate:
 
 - ASA housing

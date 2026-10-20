@@ -1,5 +1,19 @@
 # Design Decisions
 
+## 2026-10-20 - External Test Enclosure First
+
+Build the first complete enclosure as an external, removable unit for boat test
+runs. Use it to collect running data and determine wiring connections, cable
+routing, and port placement while developing the later in-dash enclosure.
+Mounting details and final connectors are not yet selected. Existing USB power
+and NMEA 2000 drop-device decisions remain in effect.
+
+The user confirmed that the original printed front bezel fits perfectly. Retain
+its glass pocket and screen alignment. A separate 0.8 mm chamfered bezel variant
+has been created and is awaiting physical print evaluation.
+
+See [Enclosure](Enclosure.md) for the external prototype design priorities.
+
 ## 2026-08-18 - Project Goal
 
 Build a custom ESP32-S3 NMEA 2000 multifunction gauge inspired by the Yamaha 6YC for a 2024 Yamaha V MAX SHO 250.

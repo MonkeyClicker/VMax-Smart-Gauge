@@ -3,3 +3,6 @@ firmware/.pio/
 # Generated Python caches
 __pycache__/
 *.py[cod]
+
+# Local CAD generation dependency download
+.tmp-cad-deps/

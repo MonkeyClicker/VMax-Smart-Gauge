@@ -6,6 +6,42 @@ Build a serviceable marine enclosure that can tolerate rain, spray, and normal h
 
 ## Current Mechanical Direction
 
+### First enclosure: external test unit
+
+The first complete enclosure will be an external, removable unit for boat test
+runs, rather than an in-dash installation. Use it to collect running data and
+evaluate wiring, cable routing, connection types, and port placement while the
+in-dash enclosure is developed separately.
+
+The original printed bezel was physically test-fitted by the user and reported
+to fit perfectly. Preserve its glass pocket and viewing-area alignment. A second
+test bezel adds a 0.8 mm, 45-degree chamfer around the front screen opening;
+its physical print/acceptance is pending.
+
+External prototype design priorities:
+- serviceable rear cover for wiring changes and microSD access
+- room for connector bodies, cable bends, and strain relief
+- replaceable cable-entry panel so ports can evolve without replacing the housing
+- removable external mounting arrangement; bracket and attachment details remain to be selected
+- access to USB power/programming and recovery during testing, with protection
+  against spray when in use; OTA is still outstanding
+- retain the planned front seal, rear gasket, and protected cable entries for boat use
+
+Draft 1 printable parts and assembly notes are available in
+[external-v1](../enclosure/STL/external-v1/README.md). It includes an integral
+chamfered front housing, six-screw rear cover and gasket track, blank replaceable
+cable panel, four adjustable display fingers, and a removable U bracket. The
+156 x 116 x 49 mm body (excluding pivots and panel) is a dry-fit draft; port
+selection, retainer padding, seals and mounting security require validation.
+
+Continue the existing prototype electrical plan: regulated USB battery power and
+a separate NMEA 2000 drop connection. External mounting does not change the power
+or CAN termination decisions. Final port types, enclosure depth, and mounting
+geometry remain open until connector and mounting choices are established.
+Enclosure availability does not imply SD logging firmware is complete.
+
+### Marine enclosure construction
+
 - ASA 3D-printed housing
 - touchscreen glass exposed through front bezel
 - perimeter seal around touchscreen glass

@@ -19,6 +19,9 @@ boat-test build; existing CAN errors and hardware validation remain outstanding.
 
 ## Planned Hardware
 
+See the [bill of materials](hardware/BOM.md) for selected parts, procurement
+status, and saved specifications for enclosure design.
+
 - Waveshare ESP32-S3-Touch-LCD-5
 - 5 inch 800x480 capacitive touchscreen
 - ESP32-S3-WROOM-1-N16R8

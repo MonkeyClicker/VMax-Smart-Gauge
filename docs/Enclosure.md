@@ -91,7 +91,22 @@ The final unit needs:
 - NMEA 2000/CAN connection
 - power connection
 
+Current NMEA panel candidate: **FireEarth/AliExpress M12 A-coded 5-pin male
+pigtail**, 30 cm, 22 AWG, seller-specified 15.5-16 mm panel cutout. Hat Labs is
+deferred due to shipping/tariff cost. See [BOM](../hardware/BOM.md) and
+[current connector specifications](../hardware/datasheets/AliExpress-NMEA2000-Panel-Male.md).
+The new `cable-panel-two-port.stl` has a 16 mm NMEA hole and provisional 16 mm
+USB-C hole, 34 mm apart, preserving the original panel's outline and fasteners.
+Confirm flange/nut clearance, body depth and allowable panel thickness on receipt.
+
 USB programming should not require an external exposed port because OTA is planned. Internal USB remains available for recovery.
+
+For the external test enclosure, the user has ordered a panel-mount USB-C
+female-to-male extension, selected **FPC-10cm** variant, for power/programming.
+See [USB component notes](../hardware/datasheets/USB-C-Panel-Extension.md).
+Plan its position alongside NMEA on the replaceable rear panel after measuring
+both connectors. Mounting dimensions, reach, power/data operation and sealing
+require verification; a two-port fit-test panel is now available alongside the blank.
 
 ## Pressure Equalization
 

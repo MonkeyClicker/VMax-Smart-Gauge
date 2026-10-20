@@ -1,5 +1,15 @@
 # Design Decisions
 
+## 2026-10-20 - NMEA Panel Connector Selection
+
+Select the Hat Labs male NMEA 2000 panel pigtail connector, current 12 mm-hole
+version with 30 cm prewired leads. The user is ordering it; receipt is not
+confirmed. Plan to mount it in the external enclosure's replaceable rear panel.
+Retain separate USB power and insulate the unused red network-power lead.
+See [BOM](../hardware/BOM.md) and [specifications](../hardware/datasheets/Hat-Labs-NMEA2000-Panel-Male.md).
+Unknown flange, nut, body and panel-thickness dimensions require measurement
+before the panel cutout is finalized.
+
 ## 2026-10-20 - External Test Enclosure First
 
 Build the first complete enclosure as an external, removable unit for boat test

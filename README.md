@@ -2,6 +2,8 @@
 
 ESP32-S3 based NMEA 2000 multifunction display inspired by the Yamaha 6YC gauge.
 
+![V MAX Smart Gauge prototype infographic showing the touchscreen, enclosure, rear bulkhead connectors, and NMEA 2000 system connections](media/graphics/vmax-smart-gauge-infographic-v3.png)
+
 ## First live firmware
 
 [Live Gauge v0.1.2](docs/Live-Firmware-v0.1.md) combines confirmed engine/GPS decoding,

@@ -13,3 +13,5 @@ Primary components:
 Do not commit copyrighted vendor documents unless redistribution is permitted; links and engineering notes are preferred.
 
 See the [bill of materials](../BOM.md) for component selections and procurement status.
+
+Purchased component: [Yamaha engine-to-NMEA 2000 interface cable](Yamaha-Engine-Interface-Purchased.md) — Amazon ASIN B0BRM64RSX; user-confirmed purchase.

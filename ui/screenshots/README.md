@@ -9,6 +9,7 @@ All readings are generated demo data, not boat measurements.
 
 | Page | Photo |
 | --- | --- |
+| Engine | [Engine screen](2026-10-21-simulator-engine.jpg) |
 | Trip | [Trip screen](2026-10-21-simulator-trip.jpg) |
 | Performance | [Performance screen](2026-10-21-simulator-performance.jpg) |
 | Settings | [Settings screen](2026-10-21-simulator-settings.jpg) |

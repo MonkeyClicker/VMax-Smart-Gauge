@@ -1,0 +1,115 @@
+{
+  "housing": {
+    "triangles": 7070,
+    "volume_mm3": 192388.94,
+    "bounds_mm": [
+      [
+        -90.4000015258789,
+        -58.0,
+        0.0
+      ],
+      [
+        90.4000015258789,
+        58.0,
+        46.0
+      ]
+    ],
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "rear-cover": {
+    "triangles": 2894,
+    "volume_mm3": 48858.28,
+    "bounds_mm": [
+      [
+        -78.0,
+        -58.0,
+        0.0
+      ],
+      [
+        78.0,
+        58.0,
+        3.0
+      ]
+    ],
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "cable-panel-blank": {
+    "triangles": 1308,
+    "volume_mm3": 9947.91,
+    "bounds_mm": [
+      [
+        -40.0,
+        -21.0,
+        0.0
+      ],
+      [
+        40.0,
+        21.0,
+        3.0
+      ]
+    ],
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "display-retainer-print-4": {
+    "triangles": 504,
+    "volume_mm3": 213.38,
+    "bounds_mm": [
+      [
+        -3.9951846599578857,
+        -7.495184898376465,
+        0.0
+      ],
+      [
+        3.9951846599578857,
+        3.4951846599578857,
+        3.0
+      ]
+    ],
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "tilt-bracket": {
+    "triangles": 1084,
+    "volume_mm3": 61827.16,
+    "bounds_mm": [
+      [
+        -96.0,
+        -15.0,
+        0.0
+      ],
+      [
+        96.0,
+        15.0,
+        82.0
+      ]
+    ],
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "assembly": {
+    "interference_check": "passed",
+    "hardware_and_display_not_modeled": true,
+    "glass_seat_z_mm": 2,
+    "rear_cover_z_mm": [
+      46,
+      49
+    ],
+    "nominal_pocket_mm": [
+      128.3,
+      88.05,
+      4.3
+    ],
+    "window_mm": [
+      110.0,
+      66.8
+    ],
+    "body_excluding_pivots_mm": [
+      156,
+      116,
+      46
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+Generated using built-in image_gen.
+
+Use case: infographic-diagram.
+Create a polished high-resolution portrait technical product infographic for "V MAX SMART GAUGE", inspired by the layout of reference image 1: large labeled hardware hero above, tidy system connection diagram below. Reference 1 is layout inspiration only; exclude Facebook UI, author, Arduino hardware and all SenseView text. Reference 2 is the project's approved navy/cyan screen aesthetic. Reference 3 is the actual draft enclosure geometry to inspire the product render.
+White/light-gray engineering poster background, navy headings, cyan accents, precise black text, attractive realistic 3D exploded/cutaway hardware illustration. Clear readable typography and generous separation. Portrait about 2:3.
+Title verbatim: "V MAX SMART GAUGE"
+Subtitle: "ESP32-S3 • NMEA 2000 • 5-inch Touchscreen"
+Hero: landscape 5-inch marine display in compact matte dark navy/black chamfered enclosure with side pivot bracket, partially exploded rear shell showing a plausible single Waveshare ESP32-S3 touchscreen board and short neatly routed cables. Screen uses navy cyan circular RPM gauge, sample value 3500 RPM, small sample GPS speed 32.4 MPH. Small adjacent caption "Illustrative display". Do not reproduce scanner status as engine reading.
+Five concise labeled callouts with thin leader lines:
+"5-inch Touchscreen" / "800 × 480 capacitive display"
+"ESP32-S3 Controller" / "16 MB flash • 8 MB PSRAM"
+"Onboard CAN Interface" / "TJA1051 transceiver"
+"USB-C Power" / "Separate regulated 5 V supply"
+"Prototype Enclosure" / "Serviceable rear cover • Tilt bracket"
+Below hero, broad navy section ribbon "SYSTEM CONNECTIONS".
+Lower third is an exceptionally clean conceptual system topology, no detailed connector pinout. One continuous horizontal NMEA 2000 backbone with a 120 Ω end terminator at EACH of its two ends. Four distinct T connections on backbone with drops to: "Yamaha V MAX SHO 250" via box "Existing compatible interface / gateway"; "Existing network power"; "Garmin 106sv" caption "GPS data"; "V MAX Smart Gauge" caption "Micro-C drop • Receive only". Gauge on right, small LiFePO4 battery icon above/right of gauge with separate arrow to gauge marked "Regulated 5 V USB". Network power feed separate from USB gauge power. All device connections are drops from same backbone, never serially connect devices. Use cyan lines for data backbone and orange for USB supply, clear small legend "Cyan: NMEA 2000 data" and "Orange: USB power". Under diagram concise note "Gauge termination OFF • NET-S unused at gauge". Tiny footer "Prototype concept • Enclosure and installation validation in progress".
+No claims of waterproof certification, no Yamaha or Garmin logos, no additional external CAN controller, no invented components, no internal battery in gauge. Diagram is conceptual, clean and logical. Looks like professional maker hardware infographic with highly legible labels.

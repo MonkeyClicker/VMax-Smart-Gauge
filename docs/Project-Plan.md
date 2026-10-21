@@ -4,6 +4,17 @@
 
 Deliver a reliable single-engine ESP32-S3 NMEA 2000 smart gauge for the 2024 Yamaha V MAX SHO 250, integrated with the existing Garmin/NMEA 2000 installation.
 
+## Current implementation
+
+The [first live-data firmware, v0.1.0](Live-Firmware-v0.1.md), implements the
+standard engine/GPS decoding and main display, session trip calculations,
+CAN diagnostics and raw USB capture. The five-second versioned boot screen is
+implemented. v0.1.1 adds persistent tank-capacity setup and network-derived
+remaining US gallons. v0.1.2 adds a resettable starting amount, independent fuel
+inventory, and automatic priority for fresh network tank levels. This does not mark the milestones fully accepted: physical CAN
+errors, on-device live-gauge acceptance, verified alarm interpretation, SD logging,
+persistent trips, dedicated refueling controls, and OTA remain outstanding.
+
 ## Milestone 1 - NMEA Discovery
 
 Build and validate a receive-first scanner.
@@ -46,6 +57,7 @@ Deliverables:
 - hours
 - economy
 - stale/unavailable states
+- five-second branded boot screen with running firmware version; see [feature request](Boot-Screen.md)
 
 ## Milestone 4 - Diagnostics
 
@@ -85,6 +97,12 @@ Deliver:
 - day/night brightness settings
 
 ## Milestone 7 - Marine Enclosure
+
+Build an external, removable test enclosure first for running-data collection
+and evaluation of wiring, connections, and ports. Develop the in-dash design
+alongside it, informed by boat testing. The original bezel fit is physically
+confirmed; the chamfered variant is awaiting print evaluation. See
+[Enclosure](Enclosure.md) for scope and open mechanical choices.
 
 Design and validate:
 

@@ -1,0 +1,19 @@
+Built-in image_gen edit of v1. Interface layout referenced from firmware/src/live_gauge/GaugeUi.cpp. Generated representation, not a captured framebuffer.
+
+Edit the attached infographic. Change ONLY the screen contents on BOTH V MAX Smart Gauge devices (large hero upper left and small device in lower connection diagram). Preserve every other element, text, layout, enclosure, wiring, and background exactly.
+Replace the invented stylized dashboard with the project's ACTUAL Live Gauge v0.1.2 ENGINE interface described precisely below. This is a flat functional LVGL UI, NOT a glossy dial illustration. Project screen is 800 x 480, landscape; map this exact layout onto both screens in perspective.
+
+Screen background solid #071019. Panel backgrounds #101E2A, subtle 1 pixel #294153 border, rounded 10px corners. Text white #E7F5FF, cyan #40D9FF, secondary labels #8FAABD. Montserrat sans serif.
+All coordinates below are original 800x480 pixels, scaled to fit the physical glass:
+Header: cyan "V MAX" at (16,13), size20; white "ENGINE" at (140,16), size16; cyan "LIVE v0.1.2" at (500,17), size14; white "ENGINE + GPS" at (640,17), size14.
+Thin status banner at (12,50) size776x32 reading "Live engine and GPS data" in small white text.
+Main body begins at (12,94). All following content coordinates relative to this body:
+Left tach: simple thin cyan 270 degree arc, bounding box x5,y0,w262,h220; dark gray remaining arc, no radial numerals, no tick marks, no turbine segments, no needles, no icons. Large centered white "3500" at x20,y70,width232,size48. Cyan centered "ENGINE RPM" at x20,y132,width232,size16. Small white "YAMAHA V MAX SHO 250" at x30,y174.
+To right six equal rectangular cards arranged three columns by two rows:
+top row y0,h92: at x284,w156 label "mph" value "32.4"; at x448,w156 label "Trim %" value "24"; at x612,w164 label "Fuel gph" value "9.2".
+second row y100,h92: at x284 label "Coolant F" value "154"; at x448 label "Oil psi" value "58"; at x612 label "Course true" value "126".
+Each card label at inset10, top10 size14; value inset10 top43 size24.
+Across bottom of body y230,h82 are four equal cards widths188 at x0,196,392,588. Labels and values: "Fuel EST US gal" / "28.0"; "Charging V" / "14.2"; "Engine hours" / "52.1"; "mpg" / "3.52".
+Five bottom navigation buttons at absolute y422,h48, x12,168,324,480,636 each width148. Exact labels "ENGINE", "PERFORMANCE", "TRIP", "DIAGNOSTICS", "SETTINGS" centered size16. ENGINE selected with #175675 fill, others #101E2A.
+The entire 800x480 UI must be visible within each display glass with no cropping, maintain layout and small realistic screen text even if device in diagram has tiny text. Do not simplify into a tach plus two values. No extra decorative shapes or dashboard icons.
+Keep existing "Illustrative display" caption because values are examples. Everything outside the two display surfaces stays unchanged.

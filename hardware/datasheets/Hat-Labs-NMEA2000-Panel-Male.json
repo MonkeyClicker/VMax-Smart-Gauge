@@ -1,0 +1,54 @@
+{
+  "bom_id": "NMEA-01",
+  "manufacturer": "Hat Labs",
+  "product_name": "NMEA 2000 panel pigtail connector, male",
+  "manufacturer_part_number": null,
+  "source_url": "https://shop.hatlabs.fi/products/nmea-2000-panel-pigtail-connector-male",
+  "verified_date": "2026-10-20",
+  "quantity_per_unit": 1,
+  "procurement_status": "deferred_shipping_tariff_cost_aliexpress_candidate_under_evaluation",
+  "variant": "current compact 12 mm mounting-hole version",
+  "vendor_specifications": {
+    "connector_style": "NMEA 2000 compatible Micro-C",
+    "gender": "male",
+    "mounting": "rear mount with panel nut outside enclosure",
+    "mounting_hole_diameter_mm": 12.0,
+    "lead_length_mm": 300,
+    "red_black_awg": 22,
+    "white_blue_awg": 24,
+    "ingress_protection": "IP67",
+    "ingress_test_conditions": null,
+    "maximum_panel_thickness_mm": null,
+    "usable_mounting_thread_length_mm": null,
+    "mounting_thread": null,
+    "flange_diameter_mm": null,
+    "nut_across_flats_mm": null,
+    "internal_projection_mm": null,
+    "external_projection_mm": null,
+    "antirotation_geometry": null,
+    "shield_drain_lead": null
+  },
+  "supplier_wire_functions": {
+    "black": "GND",
+    "red": "12V",
+    "white": "H",
+    "blue": "L"
+  },
+  "project_wiring": {
+    "black": "CAN reference / ground per wiring documentation",
+    "red": "disconnected and individually insulated; separate USB power",
+    "white": "CAN-H",
+    "blue": "CAN-L"
+  },
+  "cad_integration": {
+    "target": "external-v1 replaceable rear cable panel",
+    "existing_panel_thickness_mm": 3.0,
+    "existing_panel_outline_mm": [80.0, 42.0],
+    "existing_cover_opening_mm": [64.0, 26.0],
+    "cutout_location_mm": null,
+    "printed_hole_allowance_mm": null,
+    "connector_fit_physically_verified": false,
+    "panel_stl_has_connector_cutout": false,
+    "unknown_values_require_measurement": true
+  }
+}

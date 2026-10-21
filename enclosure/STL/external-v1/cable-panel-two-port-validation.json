@@ -1,0 +1,38 @@
+{
+  "closed_manifold": true,
+  "single_connected_part": true,
+  "triangles": 2596,
+  "bounds_mm": [
+    [
+      -40.0,
+      -21.0,
+      0.0
+    ],
+    [
+      40.0,
+      21.0,
+      3.0
+    ]
+  ],
+  "port_holes_inside_rear_cover_opening": true,
+  "ports": [
+    {
+      "name": "NMEA",
+      "center_mm": [
+        -17.0,
+        0
+      ],
+      "diameter_mm": 16.0
+    },
+    {
+      "name": "USB-C",
+      "center_mm": [
+        17.0,
+        0
+      ],
+      "diameter_mm": 16.0
+    }
+  ],
+  "usb_diameter_provisional": true,
+  "flange_nut_envelopes_verified": false
+}

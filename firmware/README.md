@@ -1,12 +1,21 @@
 # Firmware
 
-This PlatformIO project has two independent build targets. The NMEA scanner is in `src/main.cpp`, with portable decoding and statistics
+This PlatformIO project has three independent build targets. The real-data v0.1 gauge
+is in `src/live_gauge/`; see [live firmware guide](../docs/Live-Firmware-v0.1.md).
+The NMEA scanner is in `src/main.cpp`, with portable decoding and statistics
 in `include/Scanner.h`. The bench-test gauge is
 isolated under `src/simulated_gauge/`.
 
 ## Choose a target
 
-The simulated gauge is the default and requires no boat connection:
+The real-data gauge is the default:
+
+```bash
+pio run -e live-gauge
+pio run -e live-gauge -t upload
+```
+
+The simulated gauge requires no boat connection:
 
 ```bash
 pio run -e simulated-gauge
@@ -24,6 +33,7 @@ pio device monitor -b 115200
 
 | Target | Entry point | Purpose |
 |---|---|---|
+| `live-gauge` | `src/live_gauge/main.cpp` | Real engine/GPS five-page gauge, versioned boot screen and optional raw USB capture |
 | `nmea-scanner` | `src/main.cpp` | Receive-only TWAI/NMEA scanner with blue activity screen |
 | `simulated-gauge` | `src/simulated_gauge/main.cpp` | LCD UI using generated engine data |
 

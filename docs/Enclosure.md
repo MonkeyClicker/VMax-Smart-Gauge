@@ -12,6 +12,42 @@ The bezel is 197 × 162 mm, proposed cutout 174 × 139 mm, and housing depth beh
 
 ## Current Mechanical Direction
 
+### First enclosure: external test unit
+
+The first complete enclosure will be an external, removable unit for boat test
+runs, rather than an in-dash installation. Use it to collect running data and
+evaluate wiring, cable routing, connection types, and port placement while the
+in-dash enclosure is developed separately.
+
+The original printed bezel was physically test-fitted by the user and reported
+to fit perfectly. Preserve its glass pocket and viewing-area alignment. A second
+test bezel adds a 0.8 mm, 45-degree chamfer around the front screen opening;
+its physical print/acceptance is pending.
+
+External prototype design priorities:
+- serviceable rear cover for wiring changes and microSD access
+- room for connector bodies, cable bends, and strain relief
+- replaceable cable-entry panel so ports can evolve without replacing the housing
+- removable external mounting arrangement; bracket and attachment details remain to be selected
+- access to USB power/programming and recovery during testing, with protection
+  against spray when in use; OTA is still outstanding
+- retain the planned front seal, rear gasket, and protected cable entries for boat use
+
+Draft 1 printable parts and assembly notes are available in
+[external-v1](../enclosure/STL/external-v1/README.md). It includes an integral
+chamfered front housing, six-screw rear cover and gasket track, blank replaceable
+cable panel, four adjustable display fingers, and a removable U bracket. The
+156 x 116 x 49 mm body (excluding pivots and panel) is a dry-fit draft; port
+selection, retainer padding, seals and mounting security require validation.
+
+Continue the existing prototype electrical plan: regulated USB battery power and
+a separate NMEA 2000 drop connection. External mounting does not change the power
+or CAN termination decisions. Final port types, enclosure depth, and mounting
+geometry remain open until connector and mounting choices are established.
+Enclosure availability does not imply SD logging firmware is complete.
+
+### Marine enclosure construction
+
 - PETG flush-dash prototype for the owner’s Ender 3; ASA remains an outdoor-material option
 - touchscreen glass exposed through front bezel
 - perimeter seal around touchscreen glass
@@ -61,7 +97,22 @@ The final unit needs:
 - NMEA 2000/CAN connection
 - power connection
 
+Current NMEA panel candidate: **FireEarth/AliExpress M12 A-coded 5-pin male
+pigtail**, 30 cm, 22 AWG, seller-specified 15.5-16 mm panel cutout. Hat Labs is
+deferred due to shipping/tariff cost. See [BOM](../hardware/BOM.md) and
+[current connector specifications](../hardware/datasheets/AliExpress-NMEA2000-Panel-Male.md).
+The new `cable-panel-two-port.stl` has a 16 mm NMEA hole and provisional 16 mm
+USB-C hole, 34 mm apart, preserving the original panel's outline and fasteners.
+Confirm flange/nut clearance, body depth and allowable panel thickness on receipt.
+
 USB programming should not require an external exposed port because OTA is planned. Internal USB remains available for recovery.
+
+For the external test enclosure, the user has ordered a panel-mount USB-C
+female-to-male extension, selected **FPC-10cm** variant, for power/programming.
+See [USB component notes](../hardware/datasheets/USB-C-Panel-Extension.md).
+Plan its position alongside NMEA on the replaceable rear panel after measuring
+both connectors. Mounting dimensions, reach, power/data operation and sealing
+require verification; a two-port fit-test panel is now available alongside the blank.
 
 ## Pressure Equalization
 
@@ -85,4 +136,3 @@ Before permanent helm installation:
 5. repeat spray test after thermal cycling
 6. inspect cable entries and pressure vent
 7. only then repeat with powered electronics
-

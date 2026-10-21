@@ -1,0 +1,142 @@
+{
+  "body": {
+    "bounds_mm": [
+      [
+        -98.5,
+        -81.0,
+        0.0
+      ],
+      [
+        98.5,
+        81.0,
+        55.0
+      ]
+    ],
+    "size_mm": [
+      197.0,
+      162.0,
+      55.0
+    ],
+    "triangles": 6872,
+    "edge_incidence": {
+      "2": 10308
+    },
+    "connected_components": 1,
+    "degenerate_triangles": 0,
+    "signed_volume_mm3": 530722.6365956722,
+    "manifold_edge_check": true,
+    "fits_220mm_bed_xy": true
+  },
+  "carrier": {
+    "bounds_mm": [
+      [
+        -72.0,
+        -54.5,
+        0.0
+      ],
+      [
+        72.0,
+        54.5,
+        3.0
+      ]
+    ],
+    "size_mm": [
+      144.0,
+      109.0,
+      3.0
+    ],
+    "triangles": 2764,
+    "edge_incidence": {
+      "2": 4146
+    },
+    "connected_components": 1,
+    "degenerate_triangles": 0,
+    "signed_volume_mm3": 17994.83806431,
+    "manifold_edge_check": true,
+    "fits_220mm_bed_xy": true
+  },
+  "clamp": {
+    "bounds_mm": [
+      [
+        -9.0,
+        -8.0,
+        0.0
+      ],
+      [
+        25.0,
+        8.0,
+        7.0
+      ]
+    ],
+    "size_mm": [
+      34.0,
+      16.0,
+      7.0
+    ],
+    "triangles": 812,
+    "edge_incidence": {
+      "2": 1218
+    },
+    "connected_components": 1,
+    "degenerate_triangles": 0,
+    "signed_volume_mm3": 3430.26672718688,
+    "manifold_edge_check": true,
+    "fits_220mm_bed_xy": true
+  },
+  "cover": {
+    "bounds_mm": [
+      [
+        -86.5,
+        -69.0,
+        0.0
+      ],
+      [
+        86.5,
+        69.0,
+        3.0
+      ]
+    ],
+    "size_mm": [
+      173.0,
+      138.0,
+      3.0
+    ],
+    "triangles": 4156,
+    "edge_incidence": {
+      "2": 6234
+    },
+    "connected_components": 1,
+    "degenerate_triangles": 0,
+    "signed_volume_mm3": 71115.00375830934,
+    "manifold_edge_check": true,
+    "fits_220mm_bed_xy": true
+  },
+  "fit_test": {
+    "bounds_mm": [
+      [
+        -69.85,
+        -49.725,
+        0.0
+      ],
+      [
+        69.85,
+        49.725,
+        8.0
+      ]
+    ],
+    "size_mm": [
+      139.7,
+      99.45,
+      8.0
+    ],
+    "triangles": 816,
+    "edge_incidence": {
+      "2": 1224
+    },
+    "connected_components": 1,
+    "degenerate_triangles": 0,
+    "signed_volume_mm3": 40328.747928200006,
+    "manifold_edge_check": true,
+    "fits_220mm_bed_xy": true
+  }
+}

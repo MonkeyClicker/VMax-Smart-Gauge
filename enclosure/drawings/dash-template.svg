@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="210mm" viewBox="0 0 210 210">
+<rect width="210" height="210" fill="white"/>
+<g font-family="sans-serif" fill="#111"><text x="105" y="9" text-anchor="middle" font-size="4">VMAX DASH TEMPLATE — PROTOTYPE v1</text>
+<text x="105" y="16" text-anchor="middle" font-size="3">Print at 100%; verify physical fit before cutting</text></g>
+<rect x="6.5" y="18" width="197" height="162" rx="10" fill="none" stroke="#888" stroke-width="0.3" stroke-dasharray="2 2"/>
+<rect x="18" y="29.5" width="174" height="139" rx="6.5" fill="none" stroke="black" stroke-width="0.4"/>
+<rect x="18.5" y="30" width="173" height="138" rx="6" fill="none" stroke="#bbb" stroke-width="0.2"/>
+<rect x="50" y="65.6" width="110" height="66.8" rx="1" fill="none" stroke="#bbb" stroke-width="0.3" stroke-dasharray="2 2"/>
+<g font-family="sans-serif" text-anchor="middle"><text x="105" y="88" font-size="5">DASH CUTOUT</text><text x="105" y="99" font-size="5">174 × 139 mm</text><text x="105" y="109" font-size="4">Corner radius 6.5 mm</text><text x="105" y="145" font-size="3">Solid black line = cutout; outer dashed line = bezel</text>
+<text x="105" y="185" font-size="3">A changed body requires a new template.</text></g>
+<path d="M55 190v4m0 -2h100m0 -2v4" stroke="black" stroke-width="0.4"/>
+<text x="105" y="200" font-family="sans-serif" text-anchor="middle" font-size="4">This line must measure exactly 100 mm</text>
+<text x="105" y="207" font-family="sans-serif" text-anchor="middle" font-size="2.8">Check the printed enclosure against this template. Do not cut from an unverified print.</text>
+</svg>

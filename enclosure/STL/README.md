@@ -18,3 +18,7 @@ version has passed digital mesh checks but awaits a physical print.
 
 Editable source: `../CAD/front-bezel-fit-test-chamfered.scad`.
 Generator: `../CAD/generate_front_bezel_chamfered.py`.
+
+## Flush-dash prototype
+
+Flush-dash parts: `fit_test.stl`, `body.stl`, `carrier.stl`, `cover.stl`, and `clamp.stl` (print four clamps). Start with the fit test and follow the [build guide](../README.md).

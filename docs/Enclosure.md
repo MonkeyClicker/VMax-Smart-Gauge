@@ -4,6 +4,12 @@
 
 Build a serviceable marine enclosure that can tolerate rain, spray, and normal helm exposure. Do not claim a formal IP rating without testing the finished assembly.
 
+## Printable Flush-Dash Prototype
+
+The [enclosure build guide](../enclosure/README.md) contains the adjustable OpenSCAD source, five printable parts, a fit-test print, dash template, hardware list and assembly procedure. The owner selected PETG on an Ender 3, a 1/8–1/4 inch dash and 4–5 inches of rear clearance.
+
+The bezel is 197 × 162 mm, proposed cutout 174 × 139 mm, and housing depth behind the bezel 53 mm before external hardware. **Print the fit test first and verify the provisional carrier height and connector clearance before a full print or dash cut.** Cable-gland and vent holes remain closed until actual hardware sizes are selected. The design has no tested IP rating.
+
 ## Current Mechanical Direction
 
 ### First enclosure: external test unit
@@ -42,7 +48,7 @@ Enclosure availability does not imply SD logging firmware is complete.
 
 ### Marine enclosure construction
 
-- ASA 3D-printed housing
+- PETG flush-dash prototype for the owner’s Ender 3; ASA remains an outdoor-material option
 - touchscreen glass exposed through front bezel
 - perimeter seal around touchscreen glass
 - removable rear cover
@@ -118,7 +124,7 @@ Conformal coating can provide secondary protection against humidity/condensation
 
 ## Material
 
-ASA is preferred over PLA for the final printed prototype because of improved outdoor/UV/heat suitability.
+PETG is selected for this owner’s Ender 3 prototype. Verify heat distortion, clamp creep and water sealing on the printed assembly before permanent installation. ASA remains an option for a later version with a suitable printer setup; changing filament requires a new fit and sealing check.
 
 ## Testing Plan
 

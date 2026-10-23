@@ -72,18 +72,18 @@
     "single_connected_part": true
   },
   "tilt-bracket": {
-    "triangles": 1084,
-    "volume_mm3": 61827.16,
+    "triangles": 862,
+    "volume_mm3": 65860.49,
     "bounds_mm": [
       [
         -96.0,
-        -15.0,
+        0.0,
         0.0
       ],
       [
         96.0,
-        15.0,
-        82.0
+        82.0,
+        30.0
       ]
     ],
     "closed_manifold": true,

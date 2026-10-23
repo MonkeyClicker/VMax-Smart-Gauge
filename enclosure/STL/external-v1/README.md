@@ -31,7 +31,7 @@ still shows the blank panel. Editable two-port source is in
 | rear-cover.stl | 1 | Flat exterior face on bed |
 | cable-panel-blank.stl | 1 | Flat on bed |
 | display-retainer-print-4.stl | **4** | Flat on bed; file contains one retainer |
-| tilt-bracket.stl | 1 | Mounting base on bed, two arms upward |
+| tilt-bracket.stl | 1 | Side face on bed; flat U footprint, 30 mm print height |
 
 The chamfered front bezel is **integral to this housing**. The earlier bezel
 prints are fit-test pieces and do not attach to this housing.
@@ -42,7 +42,17 @@ before printing the cover and bracket. Suggested PETG starting settings:
 have 45-degree support ribs. The draft is designed for printing without
 supports; inspect your slicer's preview around the side bosses and small
 horizontal pivot holes. Clean or drill holes to size after printing. The
-bracket arms are 82 mm tall: use a brim if needed for stability.
+bracket is supplied on its side: import at 100% and keep the supplied orientation.
+Its footprint is 192 x 82 mm and its print height is 30 mm. Both arms extend
+5 mm toward the front to meet the base's front face, providing a continuous
+flat U-shaped bed-contact surface. Pivot locations, 181 mm inside arm spacing,
+and base mounting-hole centers are unchanged. Horizontal M4/M5 clearance holes
+have tangent 45-degree peaked roofs so they do not require hole supports.
+Use supports off and inspect the sliced hole roofs. A brim is optional; check
+the available bed area before adding one to the 192 mm-wide part. This revision
+needs physical fit/load validation; no print-time reduction has been measured.
+
+![Side-print bracket](../../drawings/tilt-bracket-side-print.png)
 
 ## Size and preserved fit
 

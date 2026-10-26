@@ -93,26 +93,42 @@ Goals:
 
 Minimize penetrations.
 
-The final unit needs:
+The final unit needs three rear-panel ports:
 - NMEA 2000/CAN connection
-- power connection
+- USB-C power/programming connection
+- externally accessible microSD/TF connection
 
 Current NMEA panel candidate: **FireEarth/AliExpress M12 A-coded 5-pin male
 pigtail**, 30 cm, 22 AWG, seller-specified 15.5-16 mm panel cutout. Hat Labs is
 deferred due to shipping/tariff cost. See [BOM](../hardware/BOM.md) and
 [current connector specifications](../hardware/datasheets/AliExpress-NMEA2000-Panel-Male.md).
-The new `cable-panel-two-port.stl` has a 16 mm NMEA hole and provisional 16 mm
-USB-C hole, 34 mm apart, preserving the original panel's outline and fasteners.
-Confirm flange/nut clearance, body depth and allowable panel thickness on receipt.
+The existing `cable-panel-two-port.stl` has a 16 mm NMEA hole and provisional
+16 mm USB-C hole. It is retained only as a two-connector fit-test part and is
+superseded as the final rear-panel configuration.
+
+The acquired QIANRENON microSD/TF bulkhead extension requires a third port. The
+listing specifies a **21 mm round opening**, **6.3 mm maximum panel thickness**,
+**13/16-28 UNS mounting thread**, **16 cm / 6.3 in FPC ribbon**, and a nominal
+**28 mm / 1.1 in** dimension. It shows a mounting nut, O-ring and tethered cap
+and claims IP67 water/dust protection. See the
+[microSD component record](../hardware/datasheets/QIANRENON-MicroSD-Panel-Extension.md).
+The current 3 mm printed panel satisfies the listed thickness limit, but the
+existing 64 × 26 mm rear-cover opening and 80 × 42 mm two-port panel have not
+been validated for three flange, cap, nut and cable envelopes. Measure the
+received NMEA, USB-C and microSD parts before enlarging the opening or releasing
+a three-port STL. Preserve tool access, card/cap clearance, ribbon bend radius,
+panel gasket land and strain relief.
 
 USB programming should not require an external exposed port because OTA is planned. Internal USB remains available for recovery.
 
 For the external test enclosure, the user has ordered a panel-mount USB-C
 female-to-male extension, selected **FPC-10cm** variant, for power/programming.
 See [USB component notes](../hardware/datasheets/USB-C-Panel-Extension.md).
-Plan its position alongside NMEA on the replaceable rear panel after measuring
-both connectors. Mounting dimensions, reach, power/data operation and sealing
-require verification; a two-port fit-test panel is now available alongside the blank.
+Plan its position alongside NMEA and the new microSD bulkhead extension on the
+replaceable rear panel after measuring all three connectors. Mounting dimensions,
+reach, power/data operation and sealing require verification. The two-port
+fit-test panel remains available alongside the blank, but the final design now
+requires a new three-port panel and a checked rear-cover opening.
 
 ## Pressure Equalization
 

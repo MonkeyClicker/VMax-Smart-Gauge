@@ -85,4 +85,17 @@ See the [Complete Boat Wiring Guide](docs/Complete-Wiring.md) for Yamaha engine 
 
 ## Status
 
-Project initialized. Hardware selection and system architecture are defined; firmware implementation is next.
+Live Gauge v0.1.2 is implemented and has been uploaded to the ESP32-S3. It includes
+five touch-display pages, live engine/GPS decoding, session trips, CAN diagnostics,
+and saved fuel configuration with fuel inventory tracking. Scanner and simulator
+builds remain available.
+
+Builds, portable host tests, and replay of the saved boat capture have passed, as
+documented in the [live firmware guide](docs/Live-Firmware-v0.1.md). Existing CAN
+errors remain unresolved; on-device screen/touch checks, saved-setting recovery,
+and live engine/GPS comparison on the boat are still pending. This is an initial
+boat-test build, with hardware validation outstanding.
+
+Next work includes resolving CAN errors and completing hardware/boat acceptance
+checks. Persistent trips, microSD logging, Wi-Fi/OTA updates, and further enclosure
+design and testing remain future work.

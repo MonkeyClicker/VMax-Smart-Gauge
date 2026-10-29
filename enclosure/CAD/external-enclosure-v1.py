@@ -117,14 +117,29 @@ slot=cylinder(1.7,5).move(y=-1,z=-1)+cylinder(1.7,5).move(y=1,z=-1)+box(3.4,2,5)
 tab=tab-slot
 
 # U bracket in assembly coordinates; M4 pivot clearance, M5 base mounting.
+# Circular lower bore with a tangent 45-degree roof, pointing toward +Z.
+# Keeps the nominal screw clearance while avoiding unsupported hole ceilings
+# when the bracket is printed on its newly coplanar Z=12 side.
+def roofed_bore(r, length):
+    pts=[(r*math.cos(math.radians(a)),r*math.sin(math.radians(a)))
+         for a in np.linspace(135,405,49)]
+    pts.append((0,r*math.sqrt(2)))
+    bore=S(m.CrossSection([pts]).extrude(length),
+           f'linear_extrude(height={length})polygon(points={json.dumps(pts)});')
+    return bore.rotate(x=90)
+
 bracket=box(192,8,30).move(y=-66,z=12)
 for side in (-1,1):
-    bracket=bracket+box(5.5,75,20).move(side*93.25,-25.5,17)
-    bracket=bracket-cylinder(2.2,10).rotate(y=90).move(side*93.25-5,0,27)
+    # Extend the front edge by 5 mm; rear edge and pivot centers stay fixed.
+    bracket=bracket+box(5.5,75,25).move(side*93.25,-25.5,12)
+    bracket=bracket-roofed_bore(2.2,10).rotate(z=90).move(side*93.25-5,0,27)
 for x in (-60,60):
-    bracket=bracket-cylinder(2.7,12).rotate(x=-90).move(x,-72,27)
-# Print bracket with base on bed; arms grow vertically.
-bracket_print=bracket.move(y=70).rotate(x=90).move(y=27)
+    bracket=bracket-roofed_bore(2.7,12).move(x,-60,27)
+# Print on front side: complete U footprint on bed, only 30 mm high.
+bracket_print=bracket.move(y=70,z=-12)
+assert np.allclose(bracket_print.solid.bounding_box(),(-96,0,0,96,82,30))
+# All three members start on the bed; no suspended arm foundations.
+assert abs(bracket_print.solid.slice(0.1).area()-2350)<0.01
 
 parts={'housing':body,'rear-cover':cover,'cable-panel-blank':panel,
        'display-retainer-print-4':tab,'tilt-bracket':bracket_print}
@@ -188,9 +203,9 @@ except OSError: font=title=ImageFont.load_default()
 draw.text((40,22),'VMax — external enclosure / draft 1',font=title,fill='#162b3a')
 draw.text((40,68),'Proven glass pocket • chamfered front • serviceable back • removable tilt bracket',font=font,fill='#344c5e')
 
-def render(items,eye,rect):
+def render(items,eye,rect,up_axis=(0,1,0)):
     eye=np.array(eye,dtype=float); eye/=np.linalg.norm(eye)
-    right=np.cross([0,1,0],eye);right/=np.linalg.norm(right)
+    right=np.cross(up_axis,eye);right/=np.linalg.norm(right)
     up=np.cross(eye,right)
     alltris=[]
     for part,color in items:
@@ -241,3 +256,13 @@ draw.text((830,888),'Blank cable panel: choose ports after cable trials',font=fo
 draw.text((830,923),'Six cover screws • four internal display retainers',font=font,fill='#344c5e')
 draw.text((40,1015),'DRAFT: dry-fit hardware and verify retention, cable clearance, mounting and seals before boat use.',font=font,fill='#7e4b20')
 canvas.save(ROOT/'drawings'/'external-enclosure-v1.png')
+
+# Separate print-orientation preview for the revised bracket.
+canvas=Image.new('RGB',(1600,1080),'#eef2f5')
+draw=ImageDraw.Draw(canvas)
+draw.text((40,25),'Tilt bracket — side-print revision',font=title,fill='#162b3a')
+draw.text((40,78),'192 × 82 mm footprint · 30 mm print height · flat U-shaped face on bed',font=font,fill='#344c5e')
+render([(bracket_print,blue)],[1,-1.6,2.2],(70,155,1460,720),up_axis=(0,0,1))
+draw.text((40,930),'Mounting centers preserved: M5 base holes 120 mm apart; M4 pivots at original locations.',font=font,fill='#344c5e')
+draw.text((40,975),'45° hole roofs; support-free design. Verify fit and sliced preview before printing.',font=font,fill='#344c5e')
+canvas.save(ROOT/'drawings'/'tilt-bracket-side-print.png')

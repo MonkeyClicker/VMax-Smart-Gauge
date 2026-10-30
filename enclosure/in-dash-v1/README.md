@@ -4,6 +4,7 @@ Version 1 checkpoint, 2026-10-30. This records the current 170 x 130 mm screwles
 
 ## Files
 
+- [STL-only download](vmax-in-dash-mount-v1-stls.zip): six STL files, print notes, validation report and verified SHA-256 manifest. Print four display retainers; choose either the one-piece rear cover or the cover plus removable panel.
 - [Complete version 1 package](vmax-in-dash-mount-v1.zip): CAD, binary STLs, validation report, seven vector drawing sheets and supporting generators.
 - [Dimensioned drawing set](../drawings/screwless-concept-v2/vmax-screwless-enclosure-drawings-rev-j.pdf): seven A3 sheets, drawing revision J.
 - [STLs and assembly/print notes](../STL/screwless-v2/README.md).

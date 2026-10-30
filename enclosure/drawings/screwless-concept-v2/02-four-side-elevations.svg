@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="420" height="297" preserveAspectRatio="xMinYMin meet" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="420" height="297"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-297)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="8" width="404" height="281" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.35; fill: none; fill-rule: evenodd;"/>
+			<text x="14" y="279" style="font-family: Helvetica; font-size: 5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,558) scale(1,-1)">V MAX  /  IN-DASH MOUNT DESIGN V1</text>
+			<text x="14" y="271" style="font-family: Helvetica; font-size: 4px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,542) scale(1,-1)">02  All four side elevations</text>
+			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Depth dimensions below start at bezel face Z0. Raised lettering reaches Z-1; cover Z49, port panel Z52. Views at 1:1.</text>
+			<path d="M 8,258 L 412,258 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
+			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
+			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 02 OF 07</text>
+			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
+			<text x="27" y="231" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,462) scale(1,-1)">TOP - FRONT EDGE AT TOP</text>
+			<rect x="27" y="209" width="170" height="7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="34" y="170" width="156" height="39" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="34" y="167" width="156" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 30,213 L 194,213 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23;"/>
+			<rect x="84" y="216" width="56" height="1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="62" y="164" width="100" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 27,214 L 27,156 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 197,214 L 197,156 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 27,154 L 197,154 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="27 154, 28.9 154.65, 28.9 153.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="197 154, 195.1 154.65, 195.1 153.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="108.6031" y="155.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,310) scale(1,-1)">170 P</text>
+			<path d="M 197,167 L 206,167 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 197,216 L 206,216 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 204,167 L 204,216 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="204 167, 204.65 168.9, 203.35 168.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="204 216, 204.65 214.1, 203.35 214.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="206" y="191.5" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,383) scale(1,-1)">49 B</text>
+			<text x="27" y="129" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,258) scale(1,-1)">BOTTOM - FRONT EDGE AT TOP</text>
+			<rect x="27" y="107" width="170" height="7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="34" y="68" width="156" height="39" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="34" y="65" width="156" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 30,111 L 194,111 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23;"/>
+			<rect x="84" y="114" width="56" height="1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="62" y="62" width="100" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 27,112 L 27,54 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 197,112 L 197,54 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 27,52 L 197,52 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="27 52, 28.9 52.65, 28.9 51.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="197 52, 195.1 52.65, 195.1 51.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="108.6031" y="53.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,106) scale(1,-1)">170 P</text>
+			<path d="M 197,65 L 206,65 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 197,114 L 206,114 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 204,65 L 204,114 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="204 65, 204.65 66.9, 203.35 66.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="204 114, 204.65 112.1, 203.35 112.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="206" y="89.5" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,179) scale(1,-1)">49 B</text>
+			<text x="254" y="244" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,488) scale(1,-1)">LEFT SIDE / FRONT LEFT</text>
+			<polygon points="257 103, 260 100, 264 100, 264 230, 260 230, 257 227" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="256" y="109.0375" width="1" height="15.0" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="264" y="107" width="39" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="303" y="107" width="3" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="306" y="122" width="3" height="42" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 264,113 L 303,113 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 264,217 L 303,217 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 257,100 L 257,82 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 264,100 L 264,82 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 257,80 L 264,80 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="257 80, 258.9 80.65, 258.9 79.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="264 80, 262.1 80.65, 262.1 79.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="258.5487" y="81.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,162) scale(1,-1)">7 P</text>
+			<path d="M 257,100 L 257,92 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 306,100 L 306,92 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 257,90 L 306,90 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="257 90, 258.9 90.65, 258.9 89.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="306 90, 304.1 90.65, 304.1 89.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="278.8259" y="91.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,182) scale(1,-1)">49 B</text>
+			<path d="M 309,100 L 315,100 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 309,230 L 315,230 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 313,100 L 313,230 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="313 100, 313.65 101.9, 312.35 101.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="313 230, 313.65 228.1, 312.35 228.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="315" y="165.0" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,330) scale(1,-1)">130 P</text>
+			<text x="336" y="244" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,488) scale(1,-1)">RIGHT SIDE / FRONT LEFT</text>
+			<polygon points="339 103, 342 100, 346 100, 346 230, 342 230, 339 227" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="338" y="109.0375" width="1" height="15.0" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="346" y="107" width="39" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="385" y="107" width="3" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="388" y="122" width="3" height="42" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 346,113 L 385,113 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 346,217 L 385,217 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 339,100 L 339,82 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 346,100 L 346,82 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 339,80 L 346,80 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="339 80, 340.9 80.65, 340.9 79.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="346 80, 344.1 80.65, 344.1 79.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="340.5487" y="81.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,162) scale(1,-1)">7 P</text>
+			<path d="M 339,100 L 339,92 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 388,100 L 388,92 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 339,90 L 388,90 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="339 90, 340.9 90.65, 340.9 89.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="388 90, 386.1 90.65, 386.1 89.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="360.8259" y="91.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,182) scale(1,-1)">49 B</text>
+			<path d="M 391,100 L 397,100 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 391,230 L 397,230 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 395,100 L 395,230 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="395 100, 395.65 101.9, 394.35 101.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="395 230, 395.65 228.1, 394.35 228.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="397" y="165.0" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,330) scale(1,-1)">130 P</text>
+			<text x="249" y="67" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,134) scale(1,-1)">DEPTH DATUM</text>
+			<text x="249" y="61.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,122) scale(1,-1)">Front face Z0; glass seat Z4; cavity opens at Z7.</text>
+			<text x="249" y="56.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,112) scale(1,-1)">Housing rear Z46; cover Z46 to 49; panel Z49 to 52.</text>
+			<text x="249" y="51.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,103) scale(1,-1)">Flange rear Z7: 39 body, 42 cover, 45 panel behind it.</text>
+			<text x="249" y="46.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,93) scale(1,-1)">Connectors and panel gasket add further depth H.</text>
+		</g>
+	</g>
+</svg>

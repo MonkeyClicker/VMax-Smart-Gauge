@@ -1,0 +1,284 @@
+{
+  "housing": {
+    "bounds_mm": [
+      [
+        -85.0,
+        -65.0,
+        -1.0
+      ],
+      [
+        85.0,
+        65.0,
+        46.0
+      ]
+    ],
+    "volume_mm3": 215364.0452346456,
+    "triangles": 6628,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "rear-cover": {
+    "bounds_mm": [
+      [
+        -78.0,
+        -58.0,
+        0.0
+      ],
+      [
+        78.0,
+        58.0,
+        3.0
+      ]
+    ],
+    "volume_mm3": 47298.2785560742,
+    "triangles": 2894,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "rear-cover-one-piece-three-port": {
+    "bounds_mm": [
+      [
+        -78.0,
+        -58.0,
+        0.0
+      ],
+      [
+        78.0,
+        58.0,
+        3.0
+      ]
+    ],
+    "volume_mm3": 51614.47042313344,
+    "triangles": 4030,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "cable-panel-blank": {
+    "bounds_mm": [
+      [
+        -50.0,
+        -21.0,
+        0.0
+      ],
+      [
+        50.0,
+        21.0,
+        3.0
+      ]
+    ],
+    "volume_mm3": 12467.9113075876,
+    "triangles": 1308,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "cable-panel-three-port": {
+    "bounds_mm": [
+      [
+        -50.0,
+        -21.0,
+        0.0
+      ],
+      [
+        50.0,
+        21.0,
+        3.0
+      ]
+    ],
+    "volume_mm3": 10123.31136102788,
+    "triangles": 3506,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "display-retainer-print-4": {
+    "bounds_mm": [
+      [
+        -3.9951846599578857,
+        -7.495184898376465,
+        0.0
+      ],
+      [
+        3.9951846599578857,
+        3.4951846599578857,
+        3.0
+      ]
+    ],
+    "volume_mm3": 213.37673174153264,
+    "triangles": 504,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "cable_panel": {
+    "view": "outside rear; left-to-right X increasing",
+    "size_mm": [
+      100,
+      42,
+      3
+    ],
+    "mounting_hole_centers_mm": [
+      [
+        -45,
+        -16
+      ],
+      [
+        -45,
+        16
+      ],
+      [
+        45,
+        -16
+      ],
+      [
+        45,
+        16
+      ]
+    ],
+    "pitch_mm": 30.0,
+    "ports": [
+      {
+        "name": "USB power",
+        "center_mm": [
+          -30.0,
+          0
+        ],
+        "diameter_mm": 20.0,
+        "left_flat_inset_mm": 1.0,
+        "left_flat_x_relative_to_center_mm": -9.0
+      },
+      {
+        "name": "NMEA 2000",
+        "center_mm": [
+          0.0,
+          0
+        ],
+        "diameter_mm": 14.5,
+        "left_flat_inset_mm": 0.0,
+        "left_flat_x_relative_to_center_mm": null
+      },
+      {
+        "name": "SD card",
+        "center_mm": [
+          30.0,
+          0
+        ],
+        "diameter_mm": 20.0,
+        "left_flat_inset_mm": 1.0,
+        "left_flat_x_relative_to_center_mm": -9.0
+      }
+    ],
+    "flat_chord_length_mm": 8.717797887081348,
+    "rear_cover_opening_mm": [
+      84,
+      26
+    ],
+    "cover_opening_center_in_rear_view_mm": [
+      0,
+      -22
+    ],
+    "minimum_port_to_cover_opening_edge_clearance_mm": 2,
+    "nmea_diameter_chosen_within_user_range": true,
+    "connector_nut_flange_envelopes_verified": false,
+    "port_clearance_checks": "passed"
+  },
+  "one_piece_cover": {
+    "size_mm": [
+      156,
+      116,
+      3
+    ],
+    "corner_radius_mm": 8,
+    "screws": 6,
+    "port_centers_outside_rear_mm": [
+      [
+        -30,
+        -22
+      ],
+      [
+        0,
+        -22
+      ],
+      [
+        30,
+        -22
+      ]
+    ],
+    "same_ports_as_removable_panel": true,
+    "panel_joint_and_four_panel_screw_holes_removed": true,
+    "installed_z_mm": [
+      46,
+      49
+    ],
+    "pairwise_interference": "passed",
+    "port_clearance_checks": "passed",
+    "hardware_envelopes_verified": false
+  },
+  "lettering": {
+    "text": "VMAX",
+    "style": "geometric bold polygon outlines",
+    "height_mm": 15.0,
+    "width_mm": 56.0,
+    "raised_mm": 1.0,
+    "front_view_center_mm": [
+      0,
+      -48.4625
+    ],
+    "placement": "centered horizontally and vertically in bottom flat land between screen chamfer and accent groove",
+    "vertical_land_bounds_mm": [
+      -59,
+      -37.925
+    ],
+    "equal_vertical_margins_mm": 3.0375,
+    "model_z_mm": [
+      -1,
+      0
+    ],
+    "integral_with_housing": true,
+    "front_view_reading_direction_verified_by_coordinate_transform": true
+  },
+  "assembly": {
+    "revision": "J",
+    "pairwise_interference": "passed",
+    "v1_core_difference_behind_z15_001_mm3": 0.0,
+    "actual_v1_stl_rear_interior_difference_mm3": 0.0006377934177708355,
+    "window_mm": [
+      116.0,
+      72.8
+    ],
+    "window_growth_per_edge_mm": 3,
+    "window_front_chamfer_mm": 3,
+    "window_front_chamfer_degrees": 45,
+    "window_front_mouth_mm": [
+      122,
+      78.8
+    ],
+    "window_straight_throat_mm": 1,
+    "front_bezel_mm": [
+      170,
+      130
+    ],
+    "frontmost_text_z_mm": -1,
+    "overall_depth_to_cover_including_text_mm": 50,
+    "flange_thickness_mm": 7,
+    "outer_chamfer_mm": 3,
+    "outer_chamfer_degrees": 45,
+    "outer_edge_remaining_thickness_mm": 4,
+    "housing_depth_mm": 46,
+    "cover_rear_z_mm": 49,
+    "panel_rear_z_mm": 52,
+    "glass_seat_z_mm": 4,
+    "cavity_start_z_mm": 7,
+    "retainer_post_top_z_mm": 12,
+    "retainer_finger_z_mm": [
+      12,
+      15
+    ],
+    "glass_stack_shift_mm": 2,
+    "window_y_mm": 1.475,
+    "dash_mounting_hardware": "not designed; requires separate validation"
+  },
+  "design_release": {
+    "name": "In-dash mount design",
+    "version": 1,
+    "drawing_revision": "J",
+    "font_status": "provisional; user requested later replacement"
+  }
+}

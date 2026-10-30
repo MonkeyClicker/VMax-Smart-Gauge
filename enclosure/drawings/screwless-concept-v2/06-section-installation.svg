@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="420" height="297" preserveAspectRatio="xMinYMin meet" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="420" height="297"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-297)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="8" width="404" height="281" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.35; fill: none; fill-rule: evenodd;"/>
+			<text x="14" y="279" style="font-family: Helvetica; font-size: 5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,558) scale(1,-1)">V MAX  /  IN-DASH MOUNT DESIGN V1</text>
+			<text x="14" y="271" style="font-family: Helvetica; font-size: 4px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,542) scale(1,-1)">06  Installation section and revision dimensions</text>
+			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Depth shown schematically at 1:1. Housing and retained parts are modeled; real display, connectors, seals and dash mounting hardware are not.</text>
+			<path d="M 8,258 L 412,258 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
+			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
+			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 06 OF 07</text>
+			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
+			<polygon points="37 107, 40 104, 44 104, 44 124.975, 41 124.975, 41 134.075, 40 134.075, 37 131.075" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<polygon points="37 231, 40 234, 44 234, 44 213.025, 41 213.025, 41 206.875, 40 206.875, 37 209.875" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<rect x="44" y="111" width="39" height="6" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<rect x="44" y="221" width="39" height="6" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(94%,95%,96%); fill-rule: evenodd;"/>
+			<rect x="83" y="111" width="3" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="86" y="126" width="3" height="42" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 41,125.275 L 41,212.725 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<rect x="36" y="113.0375" width="1" height="15.0" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(89%,92%,93%); fill-rule: evenodd;"/>
+			<rect x="45" y="227" width="5" height="15" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(90%,90%,90%); fill-rule: evenodd;"/>
+			<rect x="45" y="96" width="5" height="15" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(90%,90%,90%); fill-rule: evenodd;"/>
+			<rect x="44" y="227" width="1" height="7" style="stroke: rgb(9%,43%,60%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="44" y="104" width="1" height="7" style="stroke: rgb(9%,43%,60%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<text x="26" y="245" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,490) scale(1,-1)">SCHEMATIC CENTER SECTION</text>
+			<path d="M 41,184 L 115,210 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.18;"/>
+			<circle cx="41" cy="184" r="0.55" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="117" y="209" style="font-family: Helvetica; font-size: 2.5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,418) scale(1,-1)">Glass seat Z4 P</text>
+			<path d="M 38.5,208.375 L 115,198 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.18;"/>
+			<circle cx="38.5" cy="208.375" r="0.55" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="117" y="197" style="font-family: Helvetica; font-size: 2.5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,394) scale(1,-1)">Screen chamfer 3 x 45 deg P</text>
+			<path d="M 84,199 L 115,192 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.18;"/>
+			<circle cx="84" cy="199" r="0.55" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="117" y="191" style="font-family: Helvetica; font-size: 2.5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,382) scale(1,-1)">Cover Z46 to 49 B</text>
+			<path d="M 87,151 L 115,174 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.18;"/>
+			<circle cx="87" cy="151" r="0.55" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="117" y="173" style="font-family: Helvetica; font-size: 2.5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,346) scale(1,-1)">Cable panel Z49 to 52 B</text>
+			<path d="M 47,237 L 115,227 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.18;"/>
+			<circle cx="47" cy="237" r="0.55" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="117" y="226" style="font-family: Helvetica; font-size: 2.5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,452) scale(1,-1)">Dash + 1 compressed gasket H</text>
+			<path d="M 38.5,105.5 L 115,145 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.18;"/>
+			<circle cx="38.5" cy="105.5" r="0.55" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="117" y="144" style="font-family: Helvetica; font-size: 2.5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,288) scale(1,-1)">3 x 45 deg outer chamfer P</text>
+			<path d="M 36.5,120.5375 L 115,128 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.18;"/>
+			<circle cx="36.5" cy="120.5375" r="0.55" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="117" y="127" style="font-family: Helvetica; font-size: 2.5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,254) scale(1,-1)">Integral VMAX raised 1, height 15 P</text>
+			<path d="M 37,104 L 37,101 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 44,104 L 44,101 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 37,99 L 44,99 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="37 99, 38.9 99.65, 38.9 98.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="44 99, 42.1 99.65, 42.1 98.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="38.5487" y="100.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,200) scale(1,-1)">7 P</text>
+			<path d="M 37,111 L 37,90 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 86,111 L 86,90 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 37,88 L 86,88 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="37 88, 38.9 88.65, 38.9 87.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="86 88, 84.1 88.65, 84.1 87.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="53.8404" y="89.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,178) scale(1,-1)">49 to cover B</text>
+			<path d="M 37,104 L 37,80 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 89,104 L 89,80 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 37,78 L 89,78 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="37 78, 38.9 78.65, 38.9 77.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="89 78, 87.1 78.65, 87.1 77.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="55.3391" y="79.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,158) scale(1,-1)">52 to panel B</text>
+			<text x="237" y="241" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,482) scale(1,-1)">ENVELOPE</text>
+			<text x="237" y="235.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,470) scale(1,-1)">Bezel: 170 x 130 P; clipped corners 10.</text>
+			<text x="237" y="230.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,460) scale(1,-1)">Main shell: 156 x 116, R8; rear rim Z46 B.</text>
+			<text x="237" y="225.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,451) scale(1,-1)">Outer flange thickness 7; overlap 7 per side P.</text>
+			<text x="237" y="220.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,441) scale(1,-1)">Outer chamfer 3 x 45 deg; remaining edge thickness 4.</text>
+			<text x="237" y="216.2" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,432) scale(1,-1)">Rear cover 3 thick; cable panel 3 thick B.</text>
+			<text x="237" y="211.5" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,423) scale(1,-1)">Connectors/gaskets increase the rear envelope H.</text>
+			<text x="237" y="199" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,398) scale(1,-1)">DASH FIT / H</text>
+			<text x="237" y="193.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,386) scale(1,-1)">Dash thickness supplied: 3.175 to 6.35.</text>
+			<text x="237" y="188.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,376) scale(1,-1)">Existing rear space supplied: 101.6 to 127.</text>
+			<text x="237" y="183.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,367) scale(1,-1)">Trial cutout: 157 x 117, R8.5 (0.5/side clearance).</text>
+			<text x="237" y="178.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,357) scale(1,-1)">This leaves 6.5 nominal flange overlap at straight sides.</text>
+			<text x="237" y="174.2" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,348) scale(1,-1)">Verify flange stiffness, gasket overlap and cutout first.</text>
+			<text x="237" y="169.5" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,339) scale(1,-1)">Do not cut the dash from this drawing alone.</text>
+			<text x="237" y="153" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,306) scale(1,-1)">MOUNTING REMAINS TO BE DESIGNED</text>
+			<text x="237" y="147.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,294) scale(1,-1)">No old M4 clamp anchors or old large carrier remain.</text>
+			<text x="237" y="142.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,284) scale(1,-1)">V1 cover posts are preserved without additional holes.</text>
+			<text x="237" y="137.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,275) scale(1,-1)">Rear mounting brackets must avoid the cable panel,</text>
+			<text x="237" y="132.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,265) scale(1,-1)">cover screw access and the continuous seal track.</text>
+			<text x="237" y="128.2" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,256) scale(1,-1)">No external tilt-bracket mounting is included.</text>
+			<text x="237" y="110" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,220) scale(1,-1)">MODEL VERIFICATION</text>
+			<text x="237" y="104.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,208) scale(1,-1)">Housing is a single closed, consistently wound mesh.</text>
+			<text x="237" y="99.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,198) scale(1,-1)">Retained nominal parts pass interference checks.</text>
+			<text x="237" y="94.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,189) scale(1,-1)">Rear core beyond Z15 matches v1; glass seat and</text>
+			<text x="237" y="89.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,179) scale(1,-1)">supports move rearward by 2 total; pivots omitted.</text>
+			<text x="237" y="85.2" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,170) scale(1,-1)">No physical fit, load or water-resistance claim.</text>
+			<text x="27" y="61" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,122) scale(1,-1)">CONFIGURATION OPTIONS / REV J</text>
+			<text x="27" y="55.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,110) scale(1,-1)">Raised text Z-1: overall depth to one-piece cover 50; to separate panel 53. Bezel datum Z0 and glass seat Z4 retained.</text>
+			<text x="27" y="50.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,100) scale(1,-1)">B = enclosure-v1 baseline; P = new bezel detail; H = hardware-dependent. Dimensions govern; plans at labeled scales.</text>
+		</g>
+	</g>
+</svg>

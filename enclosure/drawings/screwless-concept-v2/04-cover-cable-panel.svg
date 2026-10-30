@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="420" height="297" preserveAspectRatio="xMinYMin meet" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="420" height="297"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-297)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="8" width="404" height="281" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.35; fill: none; fill-rule: evenodd;"/>
+			<text x="14" y="279" style="font-family: Helvetica; font-size: 5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,558) scale(1,-1)">V MAX  /  IN-DASH MOUNT DESIGN V1</text>
+			<text x="14" y="271" style="font-family: Helvetica; font-size: 4px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,542) scale(1,-1)">04  Rear cover and replaceable cable panel</text>
+			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Cover and panel viewed from outside rear in installed orientation. Positive Y is up. All plan views at 1:1.</text>
+			<path d="M 8,258 L 412,258 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
+			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
+			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 04 OF 07</text>
+			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
+			<rect x="33" y="114" width="156" height="116" rx="8" ry="8" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="69" y="137" width="84" height="26" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<circle cx="43" cy="124" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 40,124 L 46,124 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 43,121 L 43,127 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="43" cy="220" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 40,220 L 46,220 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 43,217 L 43,223 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="179" cy="124" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 176,124 L 182,124 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 179,121 L 179,127 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="179" cy="220" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 176,220 L 182,220 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 179,217 L 179,223 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="111" cy="124" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 108,124 L 114,124 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 111,121 L 111,127 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="111" cy="220" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 108,220 L 114,220 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 111,217 L 111,223 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="66" cy="134" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 63,134 L 69,134 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 66,131 L 66,137 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="66" cy="166" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 63,166 L 69,166 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 66,163 L 66,169 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="156" cy="134" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 153,134 L 159,134 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 156,131 L 156,137 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="156" cy="166" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 153,166 L 159,166 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 156,163 L 156,169 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 29,172 L 193,172 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 4, 1;"/>
+			<path d="M 111,110 L 111,234 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 4, 1;"/>
+			<path d="M 33,114 L 33,103 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 189,114 L 189,103 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 33,101 L 189,101 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="33 101, 34.9 101.65, 34.9 100.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="189 101, 187.1 101.65, 187.1 100.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="107.6031" y="102.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,204) scale(1,-1)">156 B</text>
+			<path d="M 33,114 L 24,114 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 33,230 L 24,230 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 22,114 L 22,230 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="22 114, 22.65 115.9, 21.35 115.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="22 230, 22.65 228.1, 21.35 228.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="24" y="172.0" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,344) scale(1,-1)">116 B</text>
+			<text x="34" y="243" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,486) scale(1,-1)">REAR COVER / 3 THICK B</text>
+			<rect x="245" y="177" width="100" height="42" rx="3" ry="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<circle cx="250" cy="182" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 247,182 L 253,182 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 250,179 L 250,185 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="250" cy="214" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 247,214 L 253,214 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 250,211 L 250,217 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="340" cy="182" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 337,182 L 343,182 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 340,179 L 340,185 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="340" cy="214" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 337,214 L 343,214 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 340,211 L 340,217 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<polygon points="256 193.6411, 256.1517 193.3409, 256.3133 193.046, 256.4848 192.7567, 256.6659 192.4734, 256.8565 192.1963, 257.0563 191.9257, 257.265 191.662, 257.4825 191.4055, 257.7085 191.1565, 257.9427 190.9152, 258.185 190.6819, 258.4349 190.4568, 258.6922 190.2403, 258.9567 190.0326, 259.2281 189.8339, 259.5059 189.6445, 259.79 189.4644, 260.0799 189.2941, 260.3755 189.1336, 260.6762 188.9831, 260.9819 188.8428, 261.2921 188.7128, 261.6064 188.5934, 261.9247 188.4846, 262.2464 188.3866, 262.5712 188.2994, 262.8987 188.2233, 263.2287 188.1581, 263.5606 188.1041, 263.8942 188.0613, 264.229 188.0298, 264.5647 188.0095, 264.9009 188.0005, 265.2372 188.0028, 265.5732 188.0164, 265.9086 188.0414, 266.2429 188.0775, 266.5759 188.125, 266.9071 188.1835, 267.2361 188.2532, 267.5625 188.3339, 267.8861 188.4255, 268.2064 188.528, 268.5231 188.6412, 268.8358 188.7649, 269.1442 188.8991, 269.4479 189.0436, 269.7465 189.1983, 270.0398 189.3629, 270.3274 189.5372, 270.6089 189.7211, 270.8842 189.9144, 271.1527 190.1168, 271.4143 190.3282, 271.6687 190.5482, 271.9155 190.7767, 272.1544 191.0133, 272.3853 191.2578, 272.6079 191.51, 272.8218 191.7695, 273.0269 192.036, 273.2229 192.3093, 273.4096 192.589, 273.5868 192.8748, 273.7543 193.1665, 273.9118 193.4636, 274.0593 193.7658, 274.1966 194.0728, 274.3234 194.3843, 274.4398 194.6998, 274.5454 195.0191, 274.6402 195.3418, 274.7242 195.6674, 274.7971 195.9957, 274.8589 196.3263, 274.9096 196.6588, 274.9491 196.9927, 274.9774 197.3279, 274.9943 197.6637, 275 198, 274.9943 198.3363, 274.9774 198.6721, 274.9491 199.0073, 274.9096 199.3412, 274.8589 199.6737, 274.7971 200.0043, 274.7242 200.3326, 274.6402 200.6582, 274.5454 200.9809, 274.4398 201.3002, 274.3234 201.6157, 274.1966 201.9272, 274.0593 202.2342, 273.9118 202.5364, 273.7543 202.8335, 273.5868 203.1252, 273.4096 203.411, 273.2229 203.6907, 273.0269 203.964, 272.8218 204.2305, 272.6079 204.49, 272.3853 204.7422, 272.1544 204.9867, 271.9155 205.2233, 271.6687 205.4518, 271.4143 205.6718, 271.1527 205.8832, 270.8842 206.0856, 270.6089 206.2789, 270.3274 206.4628, 270.0398 206.6371, 269.7465 206.8017, 269.4479 206.9564, 269.1442 207.1009, 268.8358 207.2351, 268.5231 207.3588, 268.2064 207.472, 267.8861 207.5745, 267.5625 207.6661, 267.2361 207.7468, 266.9071 207.8165, 266.5759 207.875, 266.2429 207.9225, 265.9086 207.9586, 265.5732 207.9836, 265.2372 207.9972, 264.9009 207.9995, 264.5647 207.9905, 264.229 207.9702, 263.8942 207.9387, 263.5606 207.8959, 263.2287 207.8419, 262.8987 207.7767, 262.5712 207.7006, 262.2464 207.6134, 261.9247 207.5154, 261.6064 207.4066, 261.2921 207.2872, 260.9819 207.1572, 260.6762 207.0169, 260.3755 206.8664, 260.0799 206.7059, 259.79 206.5356, 259.5059 206.3555, 259.2281 206.1661, 258.9567 205.9674, 258.6922 205.7597, 258.4349 205.5432, 258.185 205.3181, 257.9427 205.0848, 257.7085 204.8435, 257.4825 204.5945, 257.265 204.338, 257.0563 204.0743, 256.8565 203.8037, 256.6659 203.5266, 256.4848 203.2433, 256.3133 202.954, 256.1517 202.6591, 256 202.3589" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 263,198 L 267,198 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 265,196 L 265,200 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<polygon points="316 193.6411, 316.1517 193.3409, 316.3133 193.046, 316.4848 192.7567, 316.6659 192.4734, 316.8565 192.1963, 317.0563 191.9257, 317.265 191.662, 317.4825 191.4055, 317.7085 191.1565, 317.9427 190.9152, 318.185 190.6819, 318.4349 190.4568, 318.6922 190.2403, 318.9567 190.0326, 319.2281 189.8339, 319.5059 189.6445, 319.79 189.4644, 320.0799 189.2941, 320.3755 189.1336, 320.6762 188.9831, 320.9819 188.8428, 321.2921 188.7128, 321.6064 188.5934, 321.9247 188.4846, 322.2464 188.3866, 322.5712 188.2994, 322.8987 188.2233, 323.2287 188.1581, 323.5606 188.1041, 323.8942 188.0613, 324.229 188.0298, 324.5647 188.0095, 324.9009 188.0005, 325.2372 188.0028, 325.5732 188.0164, 325.9086 188.0414, 326.2429 188.0775, 326.5759 188.125, 326.9071 188.1835, 327.2361 188.2532, 327.5625 188.3339, 327.8861 188.4255, 328.2064 188.528, 328.5231 188.6412, 328.8358 188.7649, 329.1442 188.8991, 329.4479 189.0436, 329.7465 189.1983, 330.0398 189.3629, 330.3274 189.5372, 330.6089 189.7211, 330.8842 189.9144, 331.1527 190.1168, 331.4143 190.3282, 331.6687 190.5482, 331.9155 190.7767, 332.1544 191.0133, 332.3853 191.2578, 332.6079 191.51, 332.8218 191.7695, 333.0269 192.036, 333.2229 192.3093, 333.4096 192.589, 333.5868 192.8748, 333.7543 193.1665, 333.9118 193.4636, 334.0593 193.7658, 334.1966 194.0728, 334.3234 194.3843, 334.4398 194.6998, 334.5454 195.0191, 334.6402 195.3418, 334.7242 195.6674, 334.7971 195.9957, 334.8589 196.3263, 334.9096 196.6588, 334.9491 196.9927, 334.9774 197.3279, 334.9943 197.6637, 335 198, 334.9943 198.3363, 334.9774 198.6721, 334.9491 199.0073, 334.9096 199.3412, 334.8589 199.6737, 334.7971 200.0043, 334.7242 200.3326, 334.6402 200.6582, 334.5454 200.9809, 334.4398 201.3002, 334.3234 201.6157, 334.1966 201.9272, 334.0593 202.2342, 333.9118 202.5364, 333.7543 202.8335, 333.5868 203.1252, 333.4096 203.411, 333.2229 203.6907, 333.0269 203.964, 332.8218 204.2305, 332.6079 204.49, 332.3853 204.7422, 332.1544 204.9867, 331.9155 205.2233, 331.6687 205.4518, 331.4143 205.6718, 331.1527 205.8832, 330.8842 206.0856, 330.6089 206.2789, 330.3274 206.4628, 330.0398 206.6371, 329.7465 206.8017, 329.4479 206.9564, 329.1442 207.1009, 328.8358 207.2351, 328.5231 207.3588, 328.2064 207.472, 327.8861 207.5745, 327.5625 207.6661, 327.2361 207.7468, 326.9071 207.8165, 326.5759 207.875, 326.2429 207.9225, 325.9086 207.9586, 325.5732 207.9836, 325.2372 207.9972, 324.9009 207.9995, 324.5647 207.9905, 324.229 207.9702, 323.8942 207.9387, 323.5606 207.8959, 323.2287 207.8419, 322.8987 207.7767, 322.5712 207.7006, 322.2464 207.6134, 321.9247 207.5154, 321.6064 207.4066, 321.2921 207.2872, 320.9819 207.1572, 320.6762 207.0169, 320.3755 206.8664, 320.0799 206.7059, 319.79 206.5356, 319.5059 206.3555, 319.2281 206.1661, 318.9567 205.9674, 318.6922 205.7597, 318.4349 205.5432, 318.185 205.3181, 317.9427 205.0848, 317.7085 204.8435, 317.4825 204.5945, 317.265 204.338, 317.0563 204.0743, 316.8565 203.8037, 316.6659 203.5266, 316.4848 203.2433, 316.3133 202.954, 316.1517 202.6591, 316 202.3589" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 323,198 L 327,198 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 325,196 L 325,200 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="295" cy="198" r="7.25" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 293,198 L 297,198 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 295,196 L 295,200 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<text x="262.3272" y="183" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,366) scale(1,-1)">USB</text>
+			<text x="291.2443" y="183" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,366) scale(1,-1)">NMEA</text>
+			<text x="323.1943" y="183" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,366) scale(1,-1)">SD</text>
+			<path d="M 265,198 L 265,233 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 295,198 L 295,233 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 265,231 L 295,231 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="265 231, 266.9 231.65, 266.9 230.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="295 231, 293.1 231.65, 293.1 230.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="277.3259" y="232.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,464) scale(1,-1)">30 P</text>
+			<path d="M 295,198 L 295,233 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 325,198 L 325,233 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 295,231 L 325,231 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="295 231, 296.9 231.65, 296.9 230.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="325 231, 323.1 231.65, 323.1 230.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="307.3259" y="232.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,464) scale(1,-1)">30 P</text>
+			<path d="M 245,177 L 245,165 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 345,177 L 345,165 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 245,163 L 345,163 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="245 163, 246.9 163.65, 246.9 162.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="345 163, 343.1 163.65, 343.1 162.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="291.6031" y="164.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,328) scale(1,-1)">100 P</text>
+			<path d="M 345,177 L 355,177 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 345,219 L 355,219 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 353,177 L 353,219 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="353 177, 353.65 178.9, 352.35 178.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="353 219, 353.65 217.1, 352.35 217.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="355" y="198.0" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,396) scale(1,-1)">42 B</text>
+			<text x="242" y="242" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,484) scale(1,-1)">USB / NMEA / SD PANEL / 3 THICK</text>
+			<text x="225" y="141" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,282) scale(1,-1)">PATTERNS / B + P</text>
+			<text x="225" y="135.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,270) scale(1,-1)">Cover: 6 x diameter 3.4 THRU at (+/-68,+/-48),</text>
+			<text x="225" y="130.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,260) scale(1,-1)">and (0,+/-48). Rear opening 84 x 26 at (0,-22) P.</text>
+			<text x="225" y="125.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,251) scale(1,-1)">Panel attachment on cover: X+/-45, Y-38 and -6.</text>
+			<text x="225" y="120.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,241) scale(1,-1)">Panel local holes: diameter 3.4 at X+/-45, Y+/-16.</text>
+			<text x="225" y="116.2" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,232) scale(1,-1)">All 3 port centers Y0; X=-30, 0, +30 (outside rear).</text>
+			<text x="225" y="111.5" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,223) scale(1,-1)">USB / SD: diameter 20, left flat inset 1 from tangent.</text>
+			<text x="225" y="106.8" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,213) scale(1,-1)">Flat X = center minus 9; flat chord length 8.72.</text>
+			<text x="225" y="102.1" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,204) scale(1,-1)">NMEA: diameter 14.5 (selected within 14-15 range).</text>
+			<text x="26" y="78" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,156) scale(1,-1)">PORTS VIEWED FROM OUTSIDE REAR</text>
+			<text x="26" y="72.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,144) scale(1,-1)">LEFT USB power: 20 mm D-flat. CENTER NMEA 2000: 14.5 mm round. RIGHT SD card: 20 mm D-flat.</text>
+			<text x="26" y="67.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,134) scale(1,-1)">Both flats are vertical on the LEFT of their own hole, 1 mm inward from the nominal circle tangent.</text>
+			<text x="26" y="62.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,125) scale(1,-1)">Use matching revised cover and 100 mm panel: new 84 mm opening leaves 2 mm minimum cutout clearance.</text>
+			<text x="26" y="57.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,115) scale(1,-1)">Seal panel/fasteners; verify actual connector nuts, flanges and cable bends. Blank panel retained as fallback.</text>
+		</g>
+	</g>
+</svg>

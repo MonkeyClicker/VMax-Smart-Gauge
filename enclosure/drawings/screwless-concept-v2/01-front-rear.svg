@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="420" height="297" preserveAspectRatio="xMinYMin meet" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="420" height="297"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-297)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="8" width="404" height="281" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.35; fill: none; fill-rule: evenodd;"/>
+			<text x="14" y="279" style="font-family: Helvetica; font-size: 5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,558) scale(1,-1)">V MAX  /  IN-DASH MOUNT DESIGN V1</text>
+			<text x="14" y="271" style="font-family: Helvetica; font-size: 4px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,542) scale(1,-1)">01  Revised front and rear - 170 x 130 bezel</text>
+			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Rev J: VMAX lettering 15 high x 56 wide, raised 1, centered in bottom bezel land. Rear ports remain on 30 centers.</text>
+			<path d="M 8,258 L 412,258 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
+			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
+			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
+			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 01 OF 07</text>
+			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
+			<polygon points="36 98, 186 98, 196 108, 196 218, 186 228, 36 228, 26 218, 26 108" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<polygon points="37.24264 101, 184.7574 101, 193 109.2426, 193 216.7574, 184.7574 225, 37.24264 225, 29 216.7574, 29 109.2426" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<polygon points="38.07107 103, 183.9289 103, 191 110.0711, 191 215.9289, 183.9289 223, 38.07107 223, 31 215.9289, 31 110.0711" style="stroke: rgb(9%,43%,60%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<polygon points="38.48528 104, 183.5147 104, 190 110.4853, 190 215.5147, 183.5147 222, 38.48528 222, 32 215.5147, 32 110.4853" style="stroke: rgb(9%,43%,60%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="50" y="125.07499999999999" width="122" height="78.80000000000001" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="53" y="128.075" width="116" height="72.80000000000001" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 53,200.875 L 53,213 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 169,200.875 L 169,213 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 53,211 L 169,211 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="53 211, 54.9 211.65, 54.9 210.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="169 211, 167.1 211.65, 167.1 210.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="107.6031" y="212.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,424) scale(1,-1)">116 P</text>
+			<path d="M 169,128.075 L 179,128.075 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 169,200.875 L 179,200.875 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 177,128.075 L 177,200.875 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="177 128.075, 177.65 129.975, 176.35 129.975" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="177 200.875, 177.65 198.975, 176.35 198.975" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="179" y="164.475" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,328) scale(1,-1)">72.8 P</text>
+			<polygon points="83 122.0375, 86.6 122.0375, 89 111.0375, 91.4 122.0375, 95 122.0375, 91.1 107.0375, 86.9 107.0375" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(89%,92%,93%); fill-rule: evenodd;"/>
+			<polygon points="97 107.0375, 97 122.0375, 100.4 122.0375, 104 114.0375, 107.6 122.0375, 111 122.0375, 111 107.0375, 107.6 107.0375, 107.6 115.0375, 105.4 109.5375, 102.6 109.5375, 100.4 115.0375, 100.4 107.0375" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(89%,92%,93%); fill-rule: evenodd;"/>
+			<polygon points="113 107.0375, 117.5 122.0375, 120.5 122.0375, 125 107.0375, 121.6 107.0375, 120.8 110.0375, 117.2 110.0375, 116.4 107.0375" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(89%,92%,93%); fill-rule: evenodd;"/>
+			<polygon points="117.95 113.0375, 120.05 113.0375, 119 117.2375" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<polygon points="127 107.0375, 131 114.6375, 127 122.0375, 130.8 122.0375, 133 117.2375, 135.2 122.0375, 139 122.0375, 135 114.6375, 139 107.0375, 135.2 107.0375, 133 111.8375, 130.8 107.0375" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(89%,92%,93%); fill-rule: evenodd;"/>
+			<text x="26" y="242" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,484) scale(1,-1)">FRONT / OUTSIDE / 1:1</text>
+			<path d="M 26,98 L 26,88 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 196,98 L 196,88 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 26,86 L 196,86 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="26 86, 27.9 86.65, 27.9 85.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="196 86, 194.1 86.65, 194.1 85.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="107.6031" y="87.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,174) scale(1,-1)">170 P</text>
+			<path d="M 26,98 L 20,98 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 26,228 L 20,228 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 18,98 L 18,228 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="18 98, 18.65 99.9, 17.35 99.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="18 228, 18.65 226.1, 17.35 226.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="20" y="163.0" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,326) scale(1,-1)">130 P</text>
+			<polygon points="235 98, 385 98, 395 108, 395 218, 385 228, 235 228, 225 218, 225 108" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="232" y="105" width="156" height="116" rx="8" ry="8" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<circle cx="242" cy="115" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 239.5,115 L 244.5,115 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 242,112.5 L 242,117.5 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="242" cy="211" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 239.5,211 L 244.5,211 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 242,208.5 L 242,213.5 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="378" cy="115" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 375.5,115 L 380.5,115 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 378,112.5 L 378,117.5 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="378" cy="211" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 375.5,211 L 380.5,211 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 378,208.5 L 378,213.5 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="310" cy="115" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 307.5,115 L 312.5,115 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 310,112.5 L 310,117.5 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="310" cy="211" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 307.5,211 L 312.5,211 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 310,208.5 L 310,213.5 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<rect x="260" y="120" width="100" height="42" rx="3" ry="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<rect x="268" y="128" width="84" height="26" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd; stroke-dasharray: 2, 1;"/>
+			<polygon points="271 136.6411, 271.1517 136.3409, 271.3133 136.046, 271.4848 135.7567, 271.6659 135.4734, 271.8565 135.1963, 272.0563 134.9257, 272.265 134.662, 272.4825 134.4055, 272.7085 134.1565, 272.9427 133.9152, 273.185 133.6819, 273.4349 133.4568, 273.6922 133.2403, 273.9567 133.0326, 274.2281 132.8339, 274.5059 132.6445, 274.79 132.4644, 275.0799 132.2941, 275.3755 132.1336, 275.6762 131.9831, 275.9819 131.8428, 276.2921 131.7128, 276.6064 131.5934, 276.9247 131.4846, 277.2464 131.3866, 277.5712 131.2994, 277.8987 131.2233, 278.2287 131.1581, 278.5606 131.1041, 278.8942 131.0613, 279.229 131.0298, 279.5647 131.0095, 279.9009 131.0005, 280.2372 131.0028, 280.5732 131.0164, 280.9086 131.0414, 281.2429 131.0775, 281.5759 131.125, 281.9071 131.1835, 282.2361 131.2532, 282.5625 131.3339, 282.8861 131.4255, 283.2064 131.528, 283.5231 131.6412, 283.8358 131.7649, 284.1442 131.8991, 284.4479 132.0436, 284.7465 132.1983, 285.0398 132.3629, 285.3274 132.5372, 285.6089 132.7211, 285.8842 132.9144, 286.1527 133.1168, 286.4143 133.3282, 286.6687 133.5482, 286.9155 133.7767, 287.1544 134.0133, 287.3853 134.2578, 287.6079 134.51, 287.8218 134.7695, 288.0269 135.036, 288.2229 135.3093, 288.4096 135.589, 288.5868 135.8748, 288.7543 136.1665, 288.9118 136.4636, 289.0593 136.7658, 289.1966 137.0728, 289.3234 137.3843, 289.4398 137.6998, 289.5454 138.0191, 289.6402 138.3418, 289.7242 138.6674, 289.7971 138.9957, 289.8589 139.3263, 289.9096 139.6588, 289.9491 139.9927, 289.9774 140.3279, 289.9943 140.6637, 290 141, 289.9943 141.3363, 289.9774 141.6721, 289.9491 142.0073, 289.9096 142.3412, 289.8589 142.6737, 289.7971 143.0043, 289.7242 143.3326, 289.6402 143.6582, 289.5454 143.9809, 289.4398 144.3002, 289.3234 144.6157, 289.1966 144.9272, 289.0593 145.2342, 288.9118 145.5364, 288.7543 145.8335, 288.5868 146.1252, 288.4096 146.411, 288.2229 146.6907, 288.0269 146.964, 287.8218 147.2305, 287.6079 147.49, 287.3853 147.7422, 287.1544 147.9867, 286.9155 148.2233, 286.6687 148.4518, 286.4143 148.6718, 286.1527 148.8832, 285.8842 149.0856, 285.6089 149.2789, 285.3274 149.4628, 285.0398 149.6371, 284.7465 149.8017, 284.4479 149.9564, 284.1442 150.1009, 283.8358 150.2351, 283.5231 150.3588, 283.2064 150.472, 282.8861 150.5745, 282.5625 150.6661, 282.2361 150.7468, 281.9071 150.8165, 281.5759 150.875, 281.2429 150.9225, 280.9086 150.9586, 280.5732 150.9836, 280.2372 150.9972, 279.9009 150.9995, 279.5647 150.9905, 279.229 150.9702, 278.8942 150.9387, 278.5606 150.8959, 278.2287 150.8419, 277.8987 150.7767, 277.5712 150.7006, 277.2464 150.6134, 276.9247 150.5154, 276.6064 150.4066, 276.2921 150.2872, 275.9819 150.1572, 275.6762 150.0169, 275.3755 149.8664, 275.0799 149.7059, 274.79 149.5356, 274.5059 149.3555, 274.2281 149.1661, 273.9567 148.9674, 273.6922 148.7597, 273.4349 148.5432, 273.185 148.3181, 272.9427 148.0848, 272.7085 147.8435, 272.4825 147.5945, 272.265 147.338, 272.0563 147.0743, 271.8565 146.8037, 271.6659 146.5266, 271.4848 146.2433, 271.3133 145.954, 271.1517 145.6591, 271 145.3589" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 278,141 L 282,141 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 280,139 L 280,143 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<polygon points="331 136.6411, 331.1517 136.3409, 331.3133 136.046, 331.4848 135.7567, 331.6659 135.4734, 331.8565 135.1963, 332.0563 134.9257, 332.265 134.662, 332.4825 134.4055, 332.7085 134.1565, 332.9427 133.9152, 333.185 133.6819, 333.4349 133.4568, 333.6922 133.2403, 333.9567 133.0326, 334.2281 132.8339, 334.5059 132.6445, 334.79 132.4644, 335.0799 132.2941, 335.3755 132.1336, 335.6762 131.9831, 335.9819 131.8428, 336.2921 131.7128, 336.6064 131.5934, 336.9247 131.4846, 337.2464 131.3866, 337.5712 131.2994, 337.8987 131.2233, 338.2287 131.1581, 338.5606 131.1041, 338.8942 131.0613, 339.229 131.0298, 339.5647 131.0095, 339.9009 131.0005, 340.2372 131.0028, 340.5732 131.0164, 340.9086 131.0414, 341.2429 131.0775, 341.5759 131.125, 341.9071 131.1835, 342.2361 131.2532, 342.5625 131.3339, 342.8861 131.4255, 343.2064 131.528, 343.5231 131.6412, 343.8358 131.7649, 344.1442 131.8991, 344.4479 132.0436, 344.7465 132.1983, 345.0398 132.3629, 345.3274 132.5372, 345.6089 132.7211, 345.8842 132.9144, 346.1527 133.1168, 346.4143 133.3282, 346.6687 133.5482, 346.9155 133.7767, 347.1544 134.0133, 347.3853 134.2578, 347.6079 134.51, 347.8218 134.7695, 348.0269 135.036, 348.2229 135.3093, 348.4096 135.589, 348.5868 135.8748, 348.7543 136.1665, 348.9118 136.4636, 349.0593 136.7658, 349.1966 137.0728, 349.3234 137.3843, 349.4398 137.6998, 349.5454 138.0191, 349.6402 138.3418, 349.7242 138.6674, 349.7971 138.9957, 349.8589 139.3263, 349.9096 139.6588, 349.9491 139.9927, 349.9774 140.3279, 349.9943 140.6637, 350 141, 349.9943 141.3363, 349.9774 141.6721, 349.9491 142.0073, 349.9096 142.3412, 349.8589 142.6737, 349.7971 143.0043, 349.7242 143.3326, 349.6402 143.6582, 349.5454 143.9809, 349.4398 144.3002, 349.3234 144.6157, 349.1966 144.9272, 349.0593 145.2342, 348.9118 145.5364, 348.7543 145.8335, 348.5868 146.1252, 348.4096 146.411, 348.2229 146.6907, 348.0269 146.964, 347.8218 147.2305, 347.6079 147.49, 347.3853 147.7422, 347.1544 147.9867, 346.9155 148.2233, 346.6687 148.4518, 346.4143 148.6718, 346.1527 148.8832, 345.8842 149.0856, 345.6089 149.2789, 345.3274 149.4628, 345.0398 149.6371, 344.7465 149.8017, 344.4479 149.9564, 344.1442 150.1009, 343.8358 150.2351, 343.5231 150.3588, 343.2064 150.472, 342.8861 150.5745, 342.5625 150.6661, 342.2361 150.7468, 341.9071 150.8165, 341.5759 150.875, 341.2429 150.9225, 340.9086 150.9586, 340.5732 150.9836, 340.2372 150.9972, 339.9009 150.9995, 339.5647 150.9905, 339.229 150.9702, 338.8942 150.9387, 338.5606 150.8959, 338.2287 150.8419, 337.8987 150.7767, 337.5712 150.7006, 337.2464 150.6134, 336.9247 150.5154, 336.6064 150.4066, 336.2921 150.2872, 335.9819 150.1572, 335.6762 150.0169, 335.3755 149.8664, 335.0799 149.7059, 334.79 149.5356, 334.5059 149.3555, 334.2281 149.1661, 333.9567 148.9674, 333.6922 148.7597, 333.4349 148.5432, 333.185 148.3181, 332.9427 148.0848, 332.7085 147.8435, 332.4825 147.5945, 332.265 147.338, 332.0563 147.0743, 331.8565 146.8037, 331.6659 146.5266, 331.4848 146.2433, 331.3133 145.954, 331.1517 145.6591, 331 145.3589" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<path d="M 338,141 L 342,141 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 340,139 L 340,143 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<circle cx="310" cy="141" r="7.25" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<path d="M 308,141 L 312,141 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<path d="M 310,139 L 310,143 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15; stroke-dasharray: 2, 1;"/>
+			<text x="277.3272" y="126" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,252) scale(1,-1)">USB</text>
+			<text x="306.2443" y="126" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,252) scale(1,-1)">NMEA</text>
+			<text x="338.1943" y="126" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,252) scale(1,-1)">SD</text>
+			<circle cx="265" cy="125" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<circle cx="265" cy="157" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<circle cx="355" cy="125" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<circle cx="355" cy="157" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>
+			<text x="225" y="242" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,484) scale(1,-1)">REAR / OUTSIDE / 1:1</text>
+			<path d="M 225,98 L 225,88 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 395,98 L 395,88 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 225,86 L 395,86 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="225 86, 226.9 86.65, 226.9 85.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="395 86, 393.1 86.65, 393.1 85.35" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="306.6031" y="87.4" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,174) scale(1,-1)">170 P</text>
+			<path d="M 225,98 L 219,98 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 225,228 L 219,228 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<path d="M 217,98 L 217,228 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.15;"/>
+			<polygon points="217 98, 217.65 99.9, 216.35 99.9" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<polygon points="217 228, 217.65 226.1, 216.35 226.1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,14%,18%); fill-rule: evenodd;"/>
+			<text x="219" y="163.0" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,326) scale(1,-1)">130 P</text>
+			<text x="26" y="69" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,138) scale(1,-1)">SCREWLESS FACE / P</text>
+			<text x="26" y="63.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,126) scale(1,-1)">170 x 130 flange, 10 mm corner clips; 7 total thickness.</text>
+			<text x="26" y="58.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,116) scale(1,-1)">3 x 45 deg outer chamfer; 4 remaining edge thickness.</text>
+			<text x="26" y="53.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,107) scale(1,-1)">Accent track 1 wide x 0.6 deep, shifted clear of chamfer.</text>
+			<text x="26" y="48.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,97) scale(1,-1)">VMAX 15 high x 56 wide, integral raised lettering 1 proud.</text>
+			<text x="26" y="44.2" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,88) scale(1,-1)">Letter center X0, Y-48.4625; equal vertical margins 3.0375.</text>
+			<text x="26" y="39.5" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,79) scale(1,-1)">FONT PROVISIONAL - retained for version 1 checkpoint.</text>
+			<text x="225" y="69" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,138) scale(1,-1)">THREE-PORT REAR PANEL / P</text>
+			<text x="225" y="63.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,126) scale(1,-1)">156 x 116 shell; 6 rear-cover screws, 4 cable-panel screws.</text>
+			<text x="225" y="58.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,116) scale(1,-1)">100 x 42 panel; rear-cover opening widened to 84 x 26.</text>
+			<text x="225" y="53.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,107) scale(1,-1)">USB 20 D-flat / NMEA 14.5 round / SD 20 D-flat.</text>
+			<text x="225" y="48.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,97) scale(1,-1)">Optional one-piece rear cover: see sheet 07.</text>
+		</g>
+	</g>
+</svg>

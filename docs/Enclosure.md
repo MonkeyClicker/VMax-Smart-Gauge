@@ -6,6 +6,14 @@ Build a serviceable marine enclosure that can tolerate rain, spray, and normal h
 
 ## Printable Flush-Dash Prototype
 
+The current [in-dash mount design v1 checkpoint](../enclosure/in-dash-v1/README.md)
+uses a 170 x 130 mm screwless bezel, 7 mm flange, 3 mm chamfers, four glass
+retainers and rear ports on 30 mm centers. It includes a removable cable-panel
+cover and a one-piece rear-cover option, seven drawing sheets, CAD/STLs and a
+download package. The VMAX font is provisional; physical fit, seals and dash
+retention still require validation. This checkpoint is separate from the older
+flush-dash prototype below and the protective-cover CAD's smaller bezel.
+
 The [enclosure build guide](../enclosure/README.md) contains the adjustable OpenSCAD source, five printable parts, a fit-test print, dash template, hardware list and assembly procedure. The owner selected PETG on an Ender 3, a 1/8–1/4 inch dash and 4–5 inches of rear clearance.
 
 The bezel is 197 × 162 mm, proposed cutout 174 × 139 mm, and housing depth behind the bezel 53 mm before external hardware. **Print the fit test first and verify the provisional carrier height and connector clearance before a full print or dash cut.** Cable-gland and vent holes remain closed until actual hardware sizes are selected. The design has no tested IP rating.

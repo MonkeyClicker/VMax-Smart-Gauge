@@ -2,6 +2,9 @@
 
 ESP32-S3 based NMEA 2000 multifunction display inspired by the Yamaha 6YC gauge.
 
+[In-dash mount design v1](enclosure/in-dash-v1/README.md) includes the current
+170 x 130 mm bezel, both rear-cover options, CAD/STLs and dimensioned drawings.
+
 ![V MAX Smart Gauge prototype infographic showing the touchscreen, enclosure, rear bulkhead connectors, and NMEA 2000 system connections](media/graphics/vmax-smart-gauge-infographic-v3.png)
 
 ## First live firmware

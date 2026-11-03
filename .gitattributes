@@ -1,0 +1,2 @@
+# Preserve generated drawing PDFs byte-for-byte (no line-ending conversion).
+*.pdf binary

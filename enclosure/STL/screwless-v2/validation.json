@@ -4,7 +4,7 @@
       [
         -85.0,
         -65.0,
-        -1.0
+        0.0
       ],
       [
         85.0,
@@ -12,8 +12,44 @@
         46.0
       ]
     ],
-    "volume_mm3": 215364.0452346456,
-    "triangles": 6628,
+    "volume_mm3": 214924.07523465282,
+    "triangles": 6456,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "front-bezel-with-pins": {
+    "bounds_mm": [
+      [
+        -85.0,
+        -65.0,
+        0.0
+      ],
+      [
+        85.0,
+        65.0,
+        11.0
+      ]
+    ],
+    "volume_mm3": 81139.47670483447,
+    "triangles": 2224,
+    "closed_manifold": true,
+    "single_connected_part": true
+  },
+  "rear-housing-glue-option": {
+    "bounds_mm": [
+      [
+        -78.0,
+        -58.0,
+        0.0
+      ],
+      [
+        78.0,
+        58.0,
+        39.0
+      ]
+    ],
+    "volume_mm3": 133739.21894625714,
+    "triangles": 7266,
     "closed_manifold": true,
     "single_connected_part": true
   },
@@ -216,7 +252,7 @@
     "style": "geometric bold polygon outlines",
     "height_mm": 15.0,
     "width_mm": 56.0,
-    "raised_mm": 1.0,
+    "raised_mm": 0.0,
     "front_view_center_mm": [
       0,
       -48.4625
@@ -228,14 +264,48 @@
     ],
     "equal_vertical_margins_mm": 3.0375,
     "model_z_mm": [
-      -1,
+      0,
       0
     ],
-    "integral_with_housing": true,
-    "front_view_reading_direction_verified_by_coordinate_transform": true
+    "integral_with_housing": false,
+    "treatment": "flat surface marking; no STL relief"
+  },
+  "split_housing": {
+    "split_plane_z_mm": 7.0,
+    "pin_centers_model_xy_mm": [
+      [
+        -75.0,
+        -25.0
+      ],
+      [
+        -75.0,
+        25.0
+      ],
+      [
+        75.0,
+        -20.0
+      ],
+      [
+        75.0,
+        30.0
+      ]
+    ],
+    "pin_diameter_mm": 2.6,
+    "pin_projection_mm": 4.0,
+    "pin_tip_lead_mm": 0.3,
+    "socket_diameter_mm": 3.0,
+    "socket_depth_mm": 4.5,
+    "radial_clearance_mm": 0.19999999999999996,
+    "end_clearance_mm": 0.5,
+    "socket_mouth_diameter_mm": 3.6,
+    "minimum_side_wall_at_socket_mouth_mm": 1.2,
+    "rear_part_export_translation_z_mm": -7.0,
+    "assembled_depth_unchanged": true,
+    "mesh_and_interference_checks": "passed",
+    "glue_joint": "continuous butt joint; adhesive and sealing need physical validation"
   },
   "assembly": {
-    "revision": "J",
+    "revision": "L",
     "pairwise_interference": "passed",
     "v1_core_difference_behind_z15_001_mm3": 0.0,
     "actual_v1_stl_rear_interior_difference_mm3": 0.0006377934177708355,
@@ -255,8 +325,8 @@
       170,
       130
     ],
-    "frontmost_text_z_mm": -1,
-    "overall_depth_to_cover_including_text_mm": 50,
+    "frontmost_text_z_mm": 0,
+    "overall_depth_to_cover_including_text_mm": 49,
     "flange_thickness_mm": 7,
     "outer_chamfer_mm": 3,
     "outer_chamfer_degrees": 45,
@@ -278,7 +348,7 @@
   "design_release": {
     "name": "In-dash mount design",
     "version": 1,
-    "drawing_revision": "J",
+    "drawing_revision": "L",
     "font_status": "provisional; user requested later replacement"
   }
 }

@@ -1,8 +1,8 @@
-"""Rev J drawings: integral raised VMAX lettering, 15 mm high and 1 mm proud."""
+"""Rev L drawings: optional glued split bezel and rear housing at Z7."""
 from pathlib import Path
 from bezel_lettering import lettering, HEIGHT as TEXT_HEIGHT, WIDTH as TEXT_WIDTH, CENTER_Y as TEXT_CENTER_Y
 base=Path(__file__).with_name('draw_screwless_concept.py').read_text()
-helpers=base.split('# Sheet 1:')[0].replace("'screwless-concept-v1'","'screwless-concept-v2'").replace('REV A','REV J').replace('OF 06','OF 07').replace('Styling P; baseline B; hardware-dependent H','New details P; enclosure-v1 B; hardware-dependent H')
+helpers=base.split('# Sheet 1:')[0].replace("'screwless-concept-v1'","'screwless-concept-v2'").replace('REV A','REV L').replace('OF 06','OF 08').replace('Styling P; baseline B; hardware-dependent H','New details P; enclosure-v1 B; hardware-dependent H')
 helpers=helpers.replace('V MAX  /  SCREWLESS FLUSH-DASH ENCLOSURE','V MAX  /  IN-DASH MOUNT DESIGN V1')
 exec(compile(helpers,__file__,'exec'))
 SCREWS=[(x,y) for x in [-68,68] for y in [-48,48]]+[(0,-48),(0,48)]
@@ -38,7 +38,7 @@ def plan(cx,cy,rear=False):
             poly([(cx+x,cy+y) for x,y in letter['outer']],fill=HexColor('#e5ebee'))
             for hole in letter['holes']:poly([(cx+x,cy+y) for x,y in hole],fill=white)
 
-start(1,'01  Revised front and rear - 170 x 130 bezel','Rev J: VMAX lettering 15 high x 56 wide, raised 1, centered in bottom bezel land. Rear ports remain on 30 centers.')
+start(1,'01  Revised front and rear - 170 x 130 bezel','Rev L adds optional separate bezel and rear housing with alignment pins at Z7; see sheet 08. Flat face and existing dimensions retained.')
 for cx,rear in [(111,False),(310,True)]:
     cy=163;plan(cx,cy,rear)
     text(cx-85,242,('REAR / OUTSIDE' if rear else 'FRONT / OUTSIDE')+' / 1:1',3.3,BLUE)
@@ -46,7 +46,7 @@ for cx,rear in [(111,False),(310,True)]:
 note_block(26,69,'SCREWLESS FACE / P', ['170 x 130 flange, 10 mm corner clips; 7 total thickness.',
     '3 x 45 deg outer chamfer; 4 remaining edge thickness.',
     'Accent track 1 wide x 0.6 deep, shifted clear of chamfer.',
-    'VMAX 15 high x 56 wide, integral raised lettering 1 proud.',
+    'VMAX 15 high x 56 wide, flat surface marking; zero relief in STL.',
     'Letter center X0, Y-48.4625; equal vertical margins 3.0375.',
     'FONT PROVISIONAL - retained for version 1 checkpoint.'])
 note_block(225,69,'THREE-PORT REAR PANEL / P', ['156 x 116 shell; 6 rear-cover screws, 4 cable-panel screws.',
@@ -55,18 +55,16 @@ note_block(225,69,'THREE-PORT REAR PANEL / P', ['156 x 116 shell; 6 rear-cover s
     'Optional one-piece rear cover: see sheet 07.'])
 finish('01-front-rear')
 
-start(2,'02  All four side elevations','Depth dimensions below start at bezel face Z0. Raised lettering reaches Z-1; cover Z49, port panel Z52. Views at 1:1.')
+start(2,'02  All four side elevations','Depth dimensions below start at bezel face Z0. Flat bezel front Z0; cover Z49, port panel Z52. Views at 1:1.')
 for x,y,name in [(27,167,'TOP'),(27,65,'BOTTOM')]:
     text(x,y+64,name+' - FRONT EDGE AT TOP',3.3,BLUE)
     rect(x,y+42,170,7);rect(x+7,y+3,156,39);rect(x+7,y,156,3)
     line(x+3,y+46,x+167,y+46)
-    rect(x+57,y+49,56,1)
     rect(x+35,y-3,100,3)
     dh(x,x+170,y-13,y+47,'170 P');dv(y,y+49,x+177,x+170,'49 B')
 for x,name in [(257,'LEFT'),(339,'RIGHT')]:
     y=100;text(x-3,244,name+' SIDE / FRONT LEFT',3,BLUE)
     poly([(x,y+3),(x+3,y),(x+7,y),(x+7,y+130),(x+3,y+130),(x,y+127)])
-    rect(x-1,y+65+TEXT_CENTER_Y-TEXT_HEIGHT/2,1,TEXT_HEIGHT)
     rect(x+7,y+7,39,116);rect(x+46,y+7,3,116)
     rect(x+49,y+22,3,42)
     line(x+7,y+13,x+46,y+13,[2,1],GRAY,.15);line(x+7,y+117,x+46,y+117,[2,1],GRAY,.15)
@@ -172,7 +170,7 @@ note_block(28,116,'FRONT STACK / P + H', ['Front face Z0; bare glass seat Z4; gl
     'The rear cover can be removed without releasing the display.'])
 note_block(28,74,'CAD STATUS', ['Housing STL includes the 170 x 130 screwless flange, perimeter bevel and cosmetic accent groove.',
     'Rear-cover opening widened to 84; panel widened to 100. Retaining fingers retain v1 geometry.',
-    'Raised VMAX is included in housing STL. Accent insert and dash mounting hardware remain unresolved.'])
+    'VMAX is a flat surface marking, with no relief in housing STL. Accent insert and dash mounting hardware remain unresolved.'])
 finish('05-display-retainers')
 
 start(6,'06  Installation section and revision dimensions','Depth shown schematically at 1:1. Housing and retained parts are modeled; real display, connectors, seals and dash mounting hardware are not.')
@@ -182,7 +180,6 @@ poly([(ox,oy+62),(ox+3,oy+65),(ox+7,oy+65),(ox+7,oy+44.025),(ox+4,oy+44.025),(ox
 rect(ox+7,oy-58,39,6,fill=Color(.94,.95,.96));rect(ox+7,oy+52,39,6,fill=Color(.94,.95,.96))
 rect(ox+46,oy-58,3,116);rect(ox+49,oy-43,3,42)
 line(ox+4,oy-43.725,ox+4,oy+43.725,w=.5)
-rect(ox-1,oy+TEXT_CENTER_Y-TEXT_HEIGHT/2,1,TEXT_HEIGHT,fill=HexColor('#e5ebee'))
 rect(ox+8,oy+58,5,15,fill=Color(.9,.9,.9));rect(ox+8,oy-73,5,15,fill=Color(.9,.9,.9))
 rect(ox+7,oy+58,1,7,color=BLUE);rect(ox+7,oy-65,1,7,color=BLUE)
 text(26,245,'SCHEMATIC CENTER SECTION',3.3,BLUE)
@@ -192,7 +189,7 @@ leader(ox+47,oy+30,117,191,'Cover Z46 to 49 B')
 leader(ox+50,oy-18,117,173,'Cable panel Z49 to 52 B')
 leader(ox+10,oy+68,117,226,'Dash + 1 compressed gasket H')
 leader(ox+1.5,oy-63.5,117,144,'3 x 45 deg outer chamfer P')
-leader(ox-.5,oy+TEXT_CENTER_Y,117,127,'Integral VMAX raised 1, height 15 P')
+leader(ox,oy+TEXT_CENTER_Y,117,127,'VMAX flat surface marking, height 15 P')
 dh(ox,ox+7,99,oy-65,'7 P')
 dh(ox,ox+49,88,oy-58,'49 to cover B');dh(ox,ox+52,78,oy-65,'52 to panel B')
 note_block(237,241,'ENVELOPE', ['Bezel: 170 x 130 P; clipped corners 10.',
@@ -217,7 +214,7 @@ note_block(237,110,'MODEL VERIFICATION', ['Housing is a single closed, consisten
     'Rear core beyond Z15 matches v1; glass seat and',
     'supports move rearward by 2 total; pivots omitted.',
     'No physical fit, load or water-resistance claim.'])
-note_block(27,61,'CONFIGURATION OPTIONS / REV J', ['Raised text Z-1: overall depth to one-piece cover 50; to separate panel 53. Bezel datum Z0 and glass seat Z4 retained.',
+note_block(27,61,'CONFIGURATION OPTIONS / REV L', ['Optional glued split at Z7 (sheet 08). Flat front Z0; depth to one-piece cover 49, separate panel 52; glass seat Z4 retained.',
     'B = enclosure-v1 baseline; P = new bezel detail; H = hardware-dependent. Dimensions govern; plans at labeled scales.'])
 finish('06-section-installation')
 
@@ -255,9 +252,40 @@ note_block(30,73,'PRINT AND CONFIGURATION', ['Print rear-cover-one-piece-three-p
     'Nominal part interference and port-clearance checks pass; connector hardware and physical sealing remain unverified.'])
 finish('07-one-piece-rear-cover')
 
-pdf=Canvas(str(OUT/'vmax-screwless-enclosure-drawings-rev-j.pdf'),pagesize=(420*mm,297*mm))
-pdf.setTitle('V MAX In-Dash Mount Design V1 - Drawing Rev J')
+start(8,'08  Optional split housing - alignment and glue joint','Split at Z7, where the 7 mm bezel flange meets the 156 x 116 outer box. Both plans at 1:1; pin/socket pattern is keyed by asymmetric Y positions.')
+pins=[(-75,-25),(-75,25),(75,-20),(75,30)]
+cx,cy=111,167
+octagon(cx-85,cy-65,170,130,10)
+rect(cx-78,cy-58,156,116,8)
+rect(cx-64.15,cy-44.025,128.3,88.05,4.3)
+rect(cx-58,cy+1.475-36.4,116,72.8,0,[2,1],color=GRAY)
+for x,y in pins:circle(cx+x,cy+y,1.3,color=BLUE);cross(cx+x,cy+y,3)
+text(26,242,'BEZEL BACK - PINS POINT TOWARD VIEWER',3.1,BLUE)
+dh(cx-85,cx+85,89,102,'170');dv(102,232,18,26,'130')
+cx=310
+rect(cx-78,cy-58,156,116,8)
+rect(cx-72,cy-52,144,104,5)
+for x,y in pins:
+    circle(cx-x,cy+y,1.5,color=BLUE);circle(cx-x,cy+y,1.8,color=BLUE);cross(cx-x,cy+y,3)
+for x,y in SCREWS:circle(cx-x,cy+y,4.5)
+for x,y in POSTS:circle(cx-x,cy+y,4.5)
+text(225,242,'BOX FRONT - SOCKETS POINT AWAY',3.1,BLUE)
+dh(cx-78,cx+78,89,109,'156');dv(109,225,399,388,'116')
+note_block(26,75,'JOINT AND ALIGNMENT / P', ['Bezel 7 thick; pins diameter 2.6, projection 4; tip lead 0.3.',
+    'Sockets diameter 3.0 x 4.5 deep, with 3.6 mouth x 0.3 lead.',
+    'Radial clearance 0.2; pin end clearance 0.5; no press fit.',
+    'Model pin centers: (-75,-25), (-75,+25), (+75,-20), (+75,+30).',
+    'Right plan is mirrored in X because mating surfaces face each other.'])
+note_block(225,75,'ASSEMBLY AND PRINT / H', ['Print bezel face-down, pins up; box joint-face down, 39 high.',
+    'Rear box STL is shifted -7 in Z for printing; assemble back at Z7.',
+    'Dry-fit first; pins locate parts while adhesive bonds the flat rim.',
+    'Use compatible adhesive and a continuous sealed joint; keep glue',
+    'out of the display seat, sockets and hardware; fit/sealing untested.'])
+finish('08-split-housing-glue-joint')
+
+pdf=Canvas(str(OUT/'vmax-screwless-enclosure-drawings-rev-l.pdf'),pagesize=(420*mm,297*mm))
+pdf.setTitle('V MAX In-Dash Mount Design V1 - Drawing Rev L')
 for name,page in pages:
     pdf.saveState();pdf.scale(mm,mm);renderPDF.draw(page,pdf,0,0);pdf.restoreState();pdf.showPage()
 pdf.save()
-print(OUT/'vmax-screwless-enclosure-drawings-rev-j.pdf')
+print(OUT/'vmax-screwless-enclosure-drawings-rev-l.pdf')

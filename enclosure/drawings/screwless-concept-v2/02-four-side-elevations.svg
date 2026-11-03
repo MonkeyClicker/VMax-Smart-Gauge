@@ -13,19 +13,18 @@
 			<rect x="8" y="8" width="404" height="281" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.35; fill: none; fill-rule: evenodd;"/>
 			<text x="14" y="279" style="font-family: Helvetica; font-size: 5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,558) scale(1,-1)">V MAX  /  IN-DASH MOUNT DESIGN V1</text>
 			<text x="14" y="271" style="font-family: Helvetica; font-size: 4px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,542) scale(1,-1)">02  All four side elevations</text>
-			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Depth dimensions below start at bezel face Z0. Raised lettering reaches Z-1; cover Z49, port panel Z52. Views at 1:1.</text>
+			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Depth dimensions below start at bezel face Z0. Flat bezel front Z0; cover Z49, port panel Z52. Views at 1:1.</text>
 			<path d="M 8,258 L 412,258 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
 			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
 			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
 			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
-			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 02 OF 07</text>
+			<text x="369.153" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV L / 02 OF 08</text>
 			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
 			<text x="27" y="231" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,462) scale(1,-1)">TOP - FRONT EDGE AT TOP</text>
 			<rect x="27" y="209" width="170" height="7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="34" y="170" width="156" height="39" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="34" y="167" width="156" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<path d="M 30,213 L 194,213 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23;"/>
-			<rect x="84" y="216" width="56" height="1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="62" y="164" width="100" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<path d="M 27,214 L 27,156 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
 			<path d="M 197,214 L 197,156 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
@@ -44,7 +43,6 @@
 			<rect x="34" y="68" width="156" height="39" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="34" y="65" width="156" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<path d="M 30,111 L 194,111 Z" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23;"/>
-			<rect x="84" y="114" width="56" height="1" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="62" y="62" width="100" height="3" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<path d="M 27,112 L 27,54 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
 			<path d="M 197,112 L 197,54 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.15;"/>
@@ -60,7 +58,6 @@
 			<text x="206" y="89.5" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,179) scale(1,-1)">49 B</text>
 			<text x="254" y="244" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,488) scale(1,-1)">LEFT SIDE / FRONT LEFT</text>
 			<polygon points="257 103, 260 100, 264 100, 264 230, 260 230, 257 227" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
-			<rect x="256" y="109.0375" width="1" height="15.0" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="264" y="107" width="39" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="303" y="107" width="3" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="306" y="122" width="3" height="42" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
@@ -86,7 +83,6 @@
 			<text x="315" y="165.0" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,330) scale(1,-1)">130 P</text>
 			<text x="336" y="244" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,488) scale(1,-1)">RIGHT SIDE / FRONT LEFT</text>
 			<polygon points="339 103, 342 100, 346 100, 346 230, 342 230, 339 227" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
-			<rect x="338" y="109.0375" width="1" height="15.0" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="346" y="107" width="39" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="385" y="107" width="3" height="116" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<rect x="388" y="122" width="3" height="42" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>

@@ -1,6 +1,6 @@
 """Shared geometric VMAX outlines in outside-front-view coordinates, mm."""
 HEIGHT=15.0
-RAISE=1.0
+RAISE=0.0
 WIDTH=56.0
 # Center usable bottom land between the screen chamfer and accent groove.
 CENTER_Y=(-37.925-59.0)/2

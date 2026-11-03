@@ -5,7 +5,7 @@ Outputs a separate revision, leaving original prototype files intact.
 from pathlib import Path
 import sys, json, struct
 from collections import Counter
-from bezel_lettering import lettering, HEIGHT as TEXT_HEIGHT, WIDTH as TEXT_WIDTH, RAISE as TEXT_RAISE, CENTER_Y as TEXT_CENTER_Y
+from bezel_lettering import HEIGHT as TEXT_HEIGHT, WIDTH as TEXT_WIDTH, RAISE as TEXT_RAISE, CENTER_Y as TEXT_CENTER_Y
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT.parent/'.tmp-cad-deps'))
 source=(ROOT/'CAD'/'external-enclosure-v1.py').read_text(encoding='utf-8')
@@ -57,27 +57,7 @@ body=body-box(*WINDOW,7).move(y=WINDOW_Y,z=-1)-window_chamfer()
 # Shift accent inboard of the enlarged bevel, preserving a 2 mm front land.
 track=clipped(160,120,10-5*(2-math.sqrt(2)),.61)-clipped(158,118,10-6*(2-math.sqrt(2)),.63).move(z=-.01)
 body=body-track.move(z=-.01)
-# Mirror front-view X into model X so the raised lettering reads correctly
-# when viewed from outside the front (looking along +Z).
-def front_to_model(points):
-    pts=[(-x,y) for x,y in points]
-    area=sum(a[0]*b[1]-b[0]*a[1] for a,b in zip(pts,pts[1:]+pts[:1]))
-    return pts if area>0 else list(reversed(pts))
-text_solid=None
-text_code=[]
-for letter in lettering():
-    outer=front_to_model(letter['outer']);holes=[front_to_model(h) for h in letter['holes']]
-    shape=m.CrossSection([outer])
-    for h in holes:shape=shape-m.CrossSection([h])
-    solid=shape.extrude(TEXT_RAISE+.05).translate((0,0,-TEXT_RAISE))
-    text_solid=solid if text_solid is None else text_solid+solid
-    cutters=''.join('polygon(points='+json.dumps(h)+');' for h in holes)
-    text_code.append('translate([0,0,-1])linear_extrude(height=1.05)difference(){polygon(points='+json.dumps(outer)+');'+cutters+'}')
-assert text_solid is not None
-embedded=(text_solid^body.solid).volume()
-assert embedded>1,'raised lettering must overlap bezel'
-assert abs(text_solid.bounding_box()[5]-.05)<1e-6
-body=body+S(text_solid,'union(){'+''.join(text_code)+'}')
+# VMAX is a flat surface marking only; the STL bezel has no raised or recessed text.
 
 # Apply original screw bores, seal track, rear cover, cable panel and retainers.
 tail=source[source.index('for x,y in SCREWS:\n    body=body-cylinder'):source.index('# U bracket in assembly coordinates')]
@@ -107,7 +87,33 @@ assert PORT_PITCH-(20+NMEA_DIAMETER)/2>0,'port overlap'
 cover_one=rounded(156,116,8,3)
 for x,y in SCREWS:cover_one=cover_one-cylinder(1.7,5).move(x,-y,-1)
 for hole in cutters:cover_one=cover_one-hole.move(y=22)
-parts={'housing':body,'rear-cover':cover,'rear-cover-one-piece-three-port':cover_one,'cable-panel-blank':panel,'cable-panel-three-port':panel_three,'display-retainer-print-4':tab}
+# Optional glued split at back of bezel flange. Body's original datums retained.
+SPLIT_Z=7.
+PIN_D=2.6
+HOLE_D=3.0
+PIN_LENGTH=4.
+HOLE_DEPTH=4.5
+# Deliberately asymmetric in Y to prevent reversed assembly.
+PIN_CENTERS=[(-75.,-25.),(-75.,25.),(75.,-20.),(75.,30.)]
+front_clip=box(400,400,SPLIT_Z)
+rear_clip=box(400,400,100).move(z=SPLIT_Z)
+bezel_split=S(body.solid^front_clip.solid,'intersection(){'+body.code+front_clip.code+'}')
+rear_split=S(body.solid^rear_clip.solid,'intersection(){'+body.code+rear_clip.code+'}')
+reconstructed=bezel_split.solid+rear_split.solid
+assert (body.solid-reconstructed).volume()+(reconstructed-body.solid).volume()<.001,'split loses geometry'
+for x,y in PIN_CENTERS:
+    pin=cylinder(PIN_D/2,3.9).move(x,y,6.8)
+    tip=S(m.Manifold.cylinder(.3,PIN_D/2,1.0,circular_segments=64),
+          'cylinder(h=.3,r1=1.3,r2=1.0,$fn=64);').move(x,y,10.7)
+    bezel_split=bezel_split+pin+tip
+    bore=cylinder(HOLE_D/2,HOLE_DEPTH+.01).move(x,y,SPLIT_Z-.01)
+    lead=S(m.Manifold.cylinder(.3,1.8,1.5,circular_segments=64),
+           'cylinder(h=.3,r1=1.8,r2=1.5,$fn=64);').move(x,y,SPLIT_Z)
+    rear_split=rear_split-bore-lead
+assert (bezel_split.solid^rear_split.solid).volume()<.001,'pins interfere with sockets'
+assert (bezel_split.solid-body.solid).volume()<.001,'pins breach original housing envelope'
+rear_split_print=rear_split.move(z=-SPLIT_Z)
+parts={'housing':body,'front-bezel-with-pins':bezel_split,'rear-housing-glue-option':rear_split_print,'rear-cover':cover,'rear-cover-one-piece-three-port':cover_one,'cable-panel-blank':panel,'cable-panel-three-port':panel_three,'display-retainer-print-4':tab}
 report={}
 for name,part in parts.items():
     part.solid=part.solid.set_tolerance(.005).simplify(.005)
@@ -137,6 +143,9 @@ cover_one_asm=cover_one.rotate(x=180).move(z=49)
 one_piece_items=[body,cover_one_asm]+tabs
 for i,a in enumerate(one_piece_items):
     for b in one_piece_items[i+1:]:assert (a.solid^b.solid).volume()<.01,'one-piece assembly interference'
+split_items=[bezel_split,rear_split_print.move(z=SPLIT_Z),cover_one_asm]+tabs
+for i,a in enumerate(split_items):
+    for b in split_items[i+1:]:assert (a.solid^b.solid).volume()<.01,'split housing assembly interference'
 for hole,port in zip(cutters,ports):
     through=hole.move(y=-22,z=47)
     px=port[1]
@@ -192,10 +201,13 @@ for depth,extra in [(0,3),(1,2),(2,1),(2.99,.01)]:
 seat_probe=box(1,1,.1).move(x=62,y=0,z=3.9).solid
 assert abs((body.solid^seat_probe).volume()-.1)<.001,'glass seat is not Z4'
 assert (body.solid^box(1,1,.1).move(x=62,y=0,z=4.01).solid).volume()<.001,'glass pocket blocked behind Z4'
-report['lettering']={'text':'VMAX','style':'geometric bold polygon outlines','height_mm':TEXT_HEIGHT,'width_mm':TEXT_WIDTH,'raised_mm':TEXT_RAISE,'front_view_center_mm':[0,TEXT_CENTER_Y],'placement':'centered horizontally and vertically in bottom flat land between screen chamfer and accent groove','vertical_land_bounds_mm':[-59,-37.925],'equal_vertical_margins_mm':3.0375,'model_z_mm':[-1,0],'integral_with_housing':True,'front_view_reading_direction_verified_by_coordinate_transform':True}
-report['assembly']={'revision':'J','pairwise_interference':'passed','v1_core_difference_behind_z15_001_mm3':delta,'actual_v1_stl_rear_interior_difference_mm3':stl_delta,'window_mm':list(WINDOW),'window_growth_per_edge_mm':3,'window_front_chamfer_mm':3,'window_front_chamfer_degrees':45,'window_front_mouth_mm':[122,78.8],'window_straight_throat_mm':1,'front_bezel_mm':[170,130],'frontmost_text_z_mm':-1,'overall_depth_to_cover_including_text_mm':50,'flange_thickness_mm':7,'outer_chamfer_mm':3,'outer_chamfer_degrees':45,'outer_edge_remaining_thickness_mm':4,'housing_depth_mm':46,'cover_rear_z_mm':49,'panel_rear_z_mm':52,'glass_seat_z_mm':4,'cavity_start_z_mm':7,'retainer_post_top_z_mm':12,'retainer_finger_z_mm':[12,15],'glass_stack_shift_mm':2,'window_y_mm':1.475,'dash_mounting_hardware':'not designed; requires separate validation'}
-report['design_release']={'name':'In-dash mount design','version':1,'drawing_revision':'J','font_status':'provisional; user requested later replacement'}
+assert abs(body.solid.bounding_box()[2])<1e-6,'bezel front must be flat at Z0'
+report['lettering']={'text':'VMAX','style':'geometric bold polygon outlines','height_mm':TEXT_HEIGHT,'width_mm':TEXT_WIDTH,'raised_mm':TEXT_RAISE,'front_view_center_mm':[0,TEXT_CENTER_Y],'placement':'centered horizontally and vertically in bottom flat land between screen chamfer and accent groove','vertical_land_bounds_mm':[-59,-37.925],'equal_vertical_margins_mm':3.0375,'model_z_mm':[0,0],'integral_with_housing':False,'treatment':'flat surface marking; no STL relief'}
+report['split_housing']={'split_plane_z_mm':SPLIT_Z,'pin_centers_model_xy_mm':PIN_CENTERS,'pin_diameter_mm':PIN_D,'pin_projection_mm':PIN_LENGTH,'pin_tip_lead_mm':.3,'socket_diameter_mm':HOLE_D,'socket_depth_mm':HOLE_DEPTH,'radial_clearance_mm':(HOLE_D-PIN_D)/2,'end_clearance_mm':HOLE_DEPTH-PIN_LENGTH,'socket_mouth_diameter_mm':3.6,'minimum_side_wall_at_socket_mouth_mm':1.2,'rear_part_export_translation_z_mm':-SPLIT_Z,'assembled_depth_unchanged':True,'mesh_and_interference_checks':'passed','glue_joint':'continuous butt joint; adhesive and sealing need physical validation'}
+report['assembly']={'revision':'L','pairwise_interference':'passed','v1_core_difference_behind_z15_001_mm3':delta,'actual_v1_stl_rear_interior_difference_mm3':stl_delta,'window_mm':list(WINDOW),'window_growth_per_edge_mm':3,'window_front_chamfer_mm':3,'window_front_chamfer_degrees':45,'window_front_mouth_mm':[122,78.8],'window_straight_throat_mm':1,'front_bezel_mm':[170,130],'frontmost_text_z_mm':0,'overall_depth_to_cover_including_text_mm':49,'flange_thickness_mm':7,'outer_chamfer_mm':3,'outer_chamfer_degrees':45,'outer_edge_remaining_thickness_mm':4,'housing_depth_mm':46,'cover_rear_z_mm':49,'panel_rear_z_mm':52,'glass_seat_z_mm':4,'cavity_start_z_mm':7,'retainer_post_top_z_mm':12,'retainer_finger_z_mm':[12,15],'glass_stack_shift_mm':2,'window_y_mm':1.475,'dash_mounting_hardware':'not designed; requires separate validation'}
+report['design_release']={'name':'In-dash mount design','version':1,'drawing_revision':'L','font_status':'provisional; user requested later replacement'}
 (OUT/'validation.json').write_text(json.dumps(report,indent=2))
 (SRC/'assembly.scad').write_text('// Nominal assembly; not a print file\n'+''.join(q.code for q in items))
 (SRC/'assembly-one-piece-cover.scad').write_text('// Nominal one-piece-cover alternative; not a print file\n'+''.join(q.code for q in one_piece_items))
+(SRC/'assembly-split-housing.scad').write_text('// Glued split housing with one-piece rear cover; not a print file\n'+''.join(q.code for q in split_items))
 print(json.dumps(report,indent=2))

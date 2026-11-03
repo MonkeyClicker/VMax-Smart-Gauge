@@ -18,7 +18,7 @@
 			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
 			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
 			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
-			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 07 OF 07</text>
+			<text x="369.153" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV L / 07 OF 08</text>
 			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
 			<rect x="33" y="109" width="156" height="116" rx="8" ry="8" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<circle cx="43" cy="119" r="1.7" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.23; fill: none; fill-rule: evenodd;"/>

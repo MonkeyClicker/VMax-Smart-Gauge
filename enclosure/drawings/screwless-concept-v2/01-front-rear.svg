@@ -13,12 +13,12 @@
 			<rect x="8" y="8" width="404" height="281" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.35; fill: none; fill-rule: evenodd;"/>
 			<text x="14" y="279" style="font-family: Helvetica; font-size: 5px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,558) scale(1,-1)">V MAX  /  IN-DASH MOUNT DESIGN V1</text>
 			<text x="14" y="271" style="font-family: Helvetica; font-size: 4px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,542) scale(1,-1)">01  Revised front and rear - 170 x 130 bezel</text>
-			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Rev J: VMAX lettering 15 high x 56 wide, raised 1, centered in bottom bezel land. Rear ports remain on 30 centers.</text>
+			<text x="14" y="264" style="font-family: Helvetica; font-size: 2.7px;fill: rgb(40%,47%,51%); stroke:none;" transform="translate(0,528) scale(1,-1)">Rev L adds optional separate bezel and rear housing with alignment pins at Z7; see sheet 08. Flat face and existing dimensions retained.</text>
 			<path d="M 8,258 L 412,258 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
 			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
 			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
 			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
-			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 01 OF 07</text>
+			<text x="369.153" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV L / 01 OF 08</text>
 			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
 			<polygon points="36 98, 186 98, 196 108, 196 218, 186 228, 36 228, 26 218, 26 108" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
 			<polygon points="37.24264 101, 184.7574 101, 193 109.2426, 193 216.7574, 184.7574 225, 37.24264 225, 29 216.7574, 29 109.2426" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
@@ -111,7 +111,7 @@
 			<text x="26" y="63.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,126) scale(1,-1)">170 x 130 flange, 10 mm corner clips; 7 total thickness.</text>
 			<text x="26" y="58.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,116) scale(1,-1)">3 x 45 deg outer chamfer; 4 remaining edge thickness.</text>
 			<text x="26" y="53.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,107) scale(1,-1)">Accent track 1 wide x 0.6 deep, shifted clear of chamfer.</text>
-			<text x="26" y="48.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,97) scale(1,-1)">VMAX 15 high x 56 wide, integral raised lettering 1 proud.</text>
+			<text x="26" y="48.9" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,97) scale(1,-1)">VMAX 15 high x 56 wide, flat surface marking; zero relief in STL.</text>
 			<text x="26" y="44.2" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,88) scale(1,-1)">Letter center X0, Y-48.4625; equal vertical margins 3.0375.</text>
 			<text x="26" y="39.5" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,79) scale(1,-1)">FONT PROVISIONAL - retained for version 1 checkpoint.</text>
 			<text x="225" y="69" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,138) scale(1,-1)">THREE-PORT REAR PANEL / P</text>

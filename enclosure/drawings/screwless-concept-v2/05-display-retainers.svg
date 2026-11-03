@@ -18,7 +18,7 @@
 			<path d="M 8,27 L 412,27 Z" style="stroke: rgb(40%,47%,51%); stroke-linecap: butt; stroke-width: 0.2;"/>
 			<text x="14" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,40) scale(1,-1)">DESIGN PROPOSAL - NOT RELEASED FOR FABRICATION</text>
 			<text x="14" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">Units mm | Dimensions govern | Print A3 at 100% | New details P; enclosure-v1 B; hardware-dependent H</text>
-			<text x="369.321" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV J / 05 OF 07</text>
+			<text x="369.153" y="20" style="font-family: Helvetica; font-size: 3px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,40) scale(1,-1)">VM-SD / REV L / 05 OF 08</text>
 			<text x="349.5576" y="13" style="font-family: Helvetica; font-size: 2.6px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,26) scale(1,-1)">2026-10-30 | View directions labeled individually</text>
 			<text x="28" y="240" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,480) scale(1,-1)">RETAINER / QTY 4 / 4:1</text>
 			<rect x="67" y="154.0" width="32" height="44.0" rx="4" ry="4" style="stroke: rgb(9%,14%,18%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
@@ -65,7 +65,7 @@
 			<text x="28" y="74" style="font-family: Helvetica; font-size: 3.3px;fill: rgb(9%,43%,60%); stroke:none;" transform="translate(0,148) scale(1,-1)">CAD STATUS</text>
 			<text x="28" y="68.0" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,136) scale(1,-1)">Housing STL includes the 170 x 130 screwless flange, perimeter bevel and cosmetic accent groove.</text>
 			<text x="28" y="63.3" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,126) scale(1,-1)">Rear-cover opening widened to 84; panel widened to 100. Retaining fingers retain v1 geometry.</text>
-			<text x="28" y="58.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,117) scale(1,-1)">Raised VMAX is included in housing STL. Accent insert and dash mounting hardware remain unresolved.</text>
+			<text x="28" y="58.6" style="font-family: Helvetica; font-size: 2.65px;fill: rgb(9%,14%,18%); stroke:none;" transform="translate(0,117) scale(1,-1)">VMAX is a flat surface marking, with no relief in housing STL. Accent insert and dash mounting hardware remain unresolved.</text>
 		</g>
 	</g>
 </svg>

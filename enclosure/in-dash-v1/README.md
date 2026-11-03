@@ -1,18 +1,19 @@
 # In-dash mount design - version 1
 
-Version 1 checkpoint, 2026-10-30. This records the current 170 x 130 mm screwless dash design, including both rear-cover options. **The current VMAX font is provisional and is not approved as the final lettering style.** Its geometry is retained in this checkpoint; a future revision can replace the font.
+Version 1 checkpoint, 2026-10-30. This records the current 170 x 130 mm screwless dash design, including both rear-cover options. **The current VMAX font is provisional and is not approved as the final lettering style.** Its flat marking layout is retained in this checkpoint; a future revision can replace the font.
 
 ## Files
 
-- [STL-only download](vmax-in-dash-mount-v1-stls.zip): six STL files, print notes, validation report and verified SHA-256 manifest. Print four display retainers; choose either the one-piece rear cover or the cover plus removable panel.
-- [Complete version 1 package](vmax-in-dash-mount-v1.zip): CAD, binary STLs, validation report, seven vector drawing sheets and supporting generators.
-- [Dimensioned drawing set](../drawings/screwless-concept-v2/vmax-screwless-enclosure-drawings-rev-j.pdf): seven A3 sheets, drawing revision J.
+- [Split housing STL download](vmax-in-dash-mount-v1-split-housing.zip): separate front bezel with locating pins and rear housing with sockets, for gluing at the flange-to-box transition. See [assembly notes](split-housing/README.md).
+- [STL-only download](vmax-in-dash-mount-v1-stls.zip): eight STL files, print notes, validation report and verified SHA-256 manifest. Print four display retainers; choose either the one-piece rear cover or the cover plus removable panel.
+- [Complete version 1 package](vmax-in-dash-mount-v1.zip): CAD, binary STLs, validation report, eight vector drawing sheets and supporting generators.
+- [Dimensioned drawing set](../drawings/screwless-concept-v2/vmax-screwless-enclosure-drawings-rev-l.pdf): seven A3 sheets, drawing revision L.
 - [STLs and assembly/print notes](../STL/screwless-v2/README.md).
 - [Editable OpenSCAD parts](../CAD/screwless-v2/).
 - [Removable-panel assembly](../CAD/screwless-v2/assembly.scad) and [one-piece-cover assembly](../CAD/screwless-v2/assembly-one-piece-cover.scad), for review rather than printing as an assembly.
 - [Screwless dash styling concept](../../media/graphics/vmax-dash-mounted-concept-v2.png): visual reference, not a dimensional rendering of the final model.
 
-The implementation folders retain their working names `screwless-v2` and `screwless-concept-v2`; this checkpoint's design-release version is **1**. Drawing revision J identifies the final working revision included here. Earlier drawing/package iterations are not part of this release.
+The implementation folders retain their working names `screwless-v2` and `screwless-concept-v2`; this checkpoint's design-release version is **1**. Drawing revision L identifies the final working revision included here. Earlier drawing/package iterations are not part of this release.
 
 ## Version 1 dimensions
 
@@ -31,15 +32,15 @@ The implementation folders retain their working names `screwless-v2` and `screwl
 | Removable port panel | 100 x 42 x 3 mm; rear face Z52; cover opening 84 x 26 mm |
 | Rear port spacing | 30 mm centers; USB power left, NMEA center, SD right, viewed from outside rear |
 | Port cutouts | USB/SD nominal diameter 20 mm, 1 mm left flats; NMEA diameter 14.5 mm |
-| VMAX lettering | 15 mm high x 56 mm wide, raised 1 mm; centered in bottom flat land; font provisional |
+| VMAX lettering | 15 mm high x 56 mm wide, flat surface marking (zero relief); centered in bottom flat land; font provisional |
 
-Z0 is the bezel face; positive Z runs toward the rear. Lettering projects to Z-1. Including lettering, assembled depth is 50 mm to the one-piece cover, or 53 mm to the removable panel, excluding gaskets and connectors.
+Z0 is the bezel face; positive Z runs toward the rear. The bezel face is flat at Z0. Assembled depth is 49 mm to the one-piece cover, or 52 mm to the removable panel, excluding gaskets and connectors.
 
 ## Validation and remaining work
 
 The generator checks each exported mesh for a single connected part, closed edges, consistent winding and non-degenerate triangles. Both nominal assemblies pass interference and port-clearance checks. It also checks the screen opening/chamfer, glass seat and retained rear-core geometry against the external-v1 baseline. The final drawings were rendered and visually inspected.
 
-This is a design checkpoint, not a physically validated installation. Dash mounting brackets, real connector nuts/flanges, display/cable clearance, seals, retainer pads and mechanical/water testing remain open. NMEA cutout diameter 14.5 mm follows the requested 14-15 mm range; verify the received part before printing the final cover. Raised lettering changes the housing print setup: inspect slicer supports/orientation rather than using the old support-free face-down instructions.
+This is a design checkpoint, not a physically validated installation. Dash mounting brackets, real connector nuts/flanges, display/cable clearance, seals, retainer pads and mechanical/water testing remain open. NMEA cutout diameter 14.5 mm follows the requested 14-15 mm range; verify the received part before printing the final cover. The housing front face is flat again; inspect the slicer layer preview and chamfers before printing. Flat lettering is a finishing graphic and adds no STL geometry.
 
 The separate [protective-cover CAD V2](../indash-v2/README.md) targets a provisional 163 x 112 mm bezel. It is not a matched cover for this 170 x 130 mm checkpoint; reconcile those dimensions before combining the designs.
 

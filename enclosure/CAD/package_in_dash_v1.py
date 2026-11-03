@@ -19,13 +19,14 @@ files.extend(ENC/'CAD'/name for name in [
     'bezel_lettering.py','external-enclosure-v1.py','package_in_dash_v1.py',
 ])
 files.extend([
-    ENC/'drawings'/'screwless-concept-v2'/'vmax-screwless-enclosure-drawings-rev-j.pdf',
+    ENC/'drawings'/'screwless-concept-v2'/'vmax-screwless-enclosure-drawings-rev-l.pdf',
     ENC/'STL'/'external-v1'/'housing.stl',
     ENC/'in-dash-v1'/'README.md',
+    ENC/'in-dash-v1'/'split-housing'/'README.md',
     ROOT/'media'/'graphics'/'vmax-dash-mounted-concept-v2.png',
 ])
 files=sorted(set(files))
-manifest={'design':'In-dash mount','version':1,'drawing_revision':'J',
+manifest={'design':'In-dash mount','version':1,'drawing_revision':'L',
           'font_status':'provisional; replacement remains open',
           'files':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in files}}
 OUT.parent.mkdir(parents=True,exist_ok=True)
